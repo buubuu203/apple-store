@@ -5,14 +5,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './assets/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF';
+import Navbar from './components/NavBar';
 import './index.css';
-import Header from './components/Header';
-import HomePage from './pages/HomePage';
 import DefaultLayout from './layouts/DefaultLayout';
+import HomePage from './pages/HomePage';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Header></Header>,
+    element: <Navbar></Navbar>,
 
   },
   {
