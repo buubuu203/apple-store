@@ -20,6 +20,7 @@ module.exports = {
     fontFamily: {
       'SFPro': ['SFPro', 'Arial']
     },
+
   },
   plugins: [require("daisyui")],
 
