@@ -8,6 +8,7 @@ import './assets/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF';
 import './index.css';
 import DefaultLayout from './layouts/DefaultLayout';
 import HomePage from './pages/HomePage';
+import Mac from './pages/Mac';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,7 +16,29 @@ const router = createBrowserRouter([
       <HomePage></HomePage>
     </DefaultLayout>,
 
+  }, {
+    path: "/Mac",
+    element: <DefaultLayout>
+      <Mac></Mac>
+    </DefaultLayout>,
+  }, {
+    path: "/iPad",
+    element: <DefaultLayout>
+    </DefaultLayout>,
   },
+  {
+    path: "/iPhone",
+    element: <DefaultLayout>
+    </DefaultLayout>,
+  }, {
+    path: "/Watch",
+    element: <DefaultLayout>
+    </DefaultLayout>,
+  }, {
+    path: "/Airpods",
+    element: <DefaultLayout>
+    </DefaultLayout>,
+  }
   // {
   //   path: "/Home",
   //   element: <DefaultLayout>

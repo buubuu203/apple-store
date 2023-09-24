@@ -12,11 +12,11 @@ import {
 } from '../assets/img/index'
 
 export const navLinks = [
-    { href: "#mac", label: "Mac" },
-    { href: "#ipad", label: "iPad" },
-    { href: "#iphone", label: "iPhone" },
-    { href: "#watch", label: "Watch" },
-    { href: "#airpods", label: "AirPods" },
+    { href: "/Mac", label: "Mac" },
+    { href: "/iPad", label: "iPad" },
+    { href: "/iPhone", label: "iPhone" },
+    { href: "/Watch", label: "Watch" },
+    { href: "/AirPods", label: "AirPods" },
 ];
 
 export const Macbook = [
