@@ -68,18 +68,18 @@ export const Macbook = [
         imgURL: mac_studio_2023_512gb_didongviet,
         name: "Mac Studio M2 Max 2023 | 32GB/512GB",
         price: "54.990.000 đ",
-        // oldPrice: "32.990.000"
+        oldPrice: null
     }, {
         imgURL: mac_studio_2023_1tb_didongviet,
         name: "MacBook Air M2 15-inch 2023 | 8GB/256GB",
         price: "109.990.000 đ",
-        // oldPrice: "32.990.000"
+        oldPrice: null
     },
     {
         imgURL: mac_pro_2023_m2_ultra_didongviet,
         name: "Mac Pro M2 Ultra 2023 | 64GB/1TB",
         price: "179.990.000 đ",
-        // oldPrice: "32.990.000"
+        oldPrice: null
     },
     {
         imgURL: macbook_air_m2_2023_512gb_sac_70w_didongviet,

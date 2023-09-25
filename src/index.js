@@ -9,6 +9,7 @@ import './index.css';
 import DefaultLayout from './layouts/DefaultLayout';
 import HomePage from './pages/HomePage';
 import Mac from './pages/Mac';
+import Header from './components/Header';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   }, {
     path: "/Mac",
     element: <DefaultLayout>
+      <Header />
       <Mac></Mac>
     </DefaultLayout>,
   }, {

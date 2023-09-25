@@ -17,12 +17,12 @@ const Navbar = () => {
                         {/* <AppleIcon /> */}
                         Apple Store
                     </a>
-                    <ul className="flex-1 lg:flex justify-center items-center gap-16  hidden">
+                    <ul className="flex-1 lg:flex justify-center items-center gap-16  hidden ">
                         {navLinks.map((item) => (
-                            <li key={item.label}>
+                            <li key={item.label} >
                                 <a
                                     href={item.href}
-                                    className="  cursor-pointer text-white hover:text-gray"
+                                    className=" cursor-pointer text-white hover:text-gray"
                                 >
                                     {item.label}
                                 </a>
