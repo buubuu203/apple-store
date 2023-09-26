@@ -39,6 +39,69 @@ import macbook_pro_m2_didongviet from './mac/macbook_pro_m2_didongviet.webp'
 import macbook_pro_14_inch_m2_pro_2023_512gb_didongviet_2x from './mac/macbook_pro_14_inch_m2_pro_2023_512gb_didongviet_2x.webp'
 import macbook_pro_16_inch_m2_max_2023_1tb_didongviet_2x from './mac/macbook_pro_16_inch_m2_max_2023_1tb_didongviet_2x.webp'
 
+//Airpods Page
+import apple_airpods_3_2022_didongviet from './Airpods/apple_airpods_2_2022_didongviet.webp'
+import apple_airpods_pro_2_2022_didongviet from './Airpods/apple_airpods_3_2022_didongviet.webp'
+import apple_airpods_2_2022_didongviet from './Airpods/apple_airpods_pro_2_2022_didongviet.webp'
+
+//Iphone Page
+import iphone_11_64gb_chinh_hang_3 from './iphone/iphone_11_64gb_chinh_hang_3.webp'
+import iphone_11_128gb_chinhhang_didongviet from './iphone/iphone_11_128gb_chinhhang_didongviet.webp'
+import iphone_12_64gb_mau_tim_didongviet from './iphone/iphone_12_64gb_mau_tim_didongviet.webp'
+import iphone_12_128gb_didongviet from './iphone/iphone_12_128gb_didongviet.webp'
+import iphone_13_256gb_didongviet_1 from './iphone/iphone_13_256gb_didongviet_1.webp'
+import iphone_14_256gb_didongviet_1_1 from './iphone/iphone_14_256gb_didongviet_1_1.webp'
+import iphone_14_512gb_likenew_didongviet_1 from './iphone/iphone_14_512gb_likenew_didongviet_1.webp'
+import iphone_14_pro_512gb_didongviet_1 from './iphone/iphone_14_pro_512gb_didongviet_1.webp'
+import iphone_14_pro_max_128gb_didongviet_5 from './iphone/iphone_14_pro_max_128gb_didongviet_5.webp'
+import iphone_14_pro_max_256gb_didongviet_1_1 from './iphone/iphone_14_pro_max_256gb_didongviet_1_1.webp'
+import iphone_14_pro_max_512gb_didongviet_2_1 from './iphone/iphone_14_pro_max_512gb_didongviet_2_1.webp'
+
+//Ipad Page
+import ipad_10_9inch_2022_64gb_5G_didongviet from './ipad/ipad_10_9inch_2022_64gb_5G_didongviet.webp'
+import ipad_10_9inch_2022_64gb_wifi_didongviet from './ipad/ipad_10_9inch_2022_64gb_wifi_didongviet.webp'
+import ipad_10_9inch_2022_256gb_5G from './ipad/ipad_10_9inch_2022_256gb_5G.webp'
+import ipad_10_9inch_2022_256gb_wifi_didongviet from './ipad/ipad_10_9inch_2022_256gb_wifi_didongviet.webp'
+import ipad_air_5_2022_M1_64gb_wifi_5G from './ipad/ipad_air_5_2022_M1_64gb_wifi_5G.webp'
+import ipad_air_5_2022_M1_64gb_wifi from './ipad/ipad_air_5_2022_M1_64gb_wifi.webp'
+import ipad_air_5_2022_M1_256gb_wifi from './ipad/ipad_air_5_2022_M1_256gb_wifi.webp'
+import ipad_air5_2022_M1_256gb_wifi_5G from './ipad/ipad_air5_2022_M1_256gb_wifi_5G.webp'
+import ipad_gen_9_2021_64gb_wifi_4g_didongviet from './ipad/ipad_gen_9_2021_64gb_wifi_4g_didongviet.webp'
+import ipad_gen_9_2021_64gb_wifi from './ipad/ipad_gen_9_2021_64gb_wifi.webp'
+import ipad_gen_9_2021_256gb_wifi_4g_didongviet from './ipad/ipad_gen_9_2021_256gb_wifi_4g_didongviet.webp'
+import ipad_gen_9_2021_256gb_wifi from './ipad/ipad_gen_9_2021_256gb_wifi.webp'
+import ipad_mini_6_2021_64gb_wifi_5g from './ipad/ipad_mini_6_2021_64gb_wifi_5g.webp'
+import ipad_mini_6_2021_64gb_wifi from './ipad/ipad_mini_6_2021_64gb_wifi.webp'
+import ipad_mini_6_2021_256gb_wifi_5g from './ipad/ipad_mini_6_2021_256gb_wifi_5g.webp'
+import ipad_mini_6_2021_256gb_wifi from './ipad/ipad_mini_6_2021_256gb_wifi.webp'
+import ipad_pro_11_inch_2022_m2_256gb_wifi_didongviet_1 from './ipad/ipad_pro_11_inch_2022_m2_256gb_wifi_didongviet_1.webp'
+import ipad_pro_11_inch_m2_128gb_5g_didongviet from './ipad/ipad_pro_11_inch_m2_128gb_5g_didongviet.webp'
+import ipad_pro_11_inch_m2_128gb_wifi_didongviet from './ipad/ipad_pro_11_inch_m2_128gb_wifi_didongviet.webp'
+import ipad_pro_M2_11inch_2022_1TB_wifi from './ipad/ipad_pro_M2_11inch_2022_1TB_wifi.webp'
+import ipad_pro_m2_12_9_inch_256gb_wifi_didongviet from './ipad/ipad_pro_m2_12_9_inch_256gb_wifi_didongviet.webp'
+
+//Watch Page
+import Apple_Watch_SE_2_2022_40_mm_GPS_Viền_nhôm_Dây_cao_su from './watch/Apple_Watch_SE_2_2022_40_mm_GPS_Viền_nhôm_ _Dây_cao_su.webp'
+import Apple_Watch_SE_2_2022_44_mm_GPS_Viền_nhôm_Dây_cao_su from './watch/Apple_Watch_SE_2_2022_44_mm_GPS_Viền_nhôm_Dây_cao_su.webp'
+import Apple_Watch_Series_8_45_mm_GPS_Dây_cao_su_didongviet_1 from './watch/Apple_Watch_Series_8_45_mm_GPS_Dây_cao_su_didongviet_1.webp'
+import Apple_Watch_Series_9_41_mm_GPS_Viền_nhôm_Dây_cao_su_size_M_L_didongviet from './watch/Apple_Watch_Series_9_41_mm_GPS_Viền_nhôm_Dây_cao_su_size_M_L_didongviet.webp'
+import Apple_Watch_Series_9_41_mm_GPS_Viền_nhôm_Dây_cao_su_size_S_M_didongviet from './watch/Apple_Watch_Series_9_41_mm_GPS_Viền_nhôm_Dây_cao_su_size_S_M_didongviet.webp'
+import Apple_Watch_Series_9_41_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_M_L_didongviet from './watch/Apple_Watch_Series_9_41_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_M_L_didongviet.webp'
+import Apple_Watch_Series_9_41_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_S_M_didongviet from './watch/Apple_Watch_Series_9_41_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_S_M_didongviet.webp'
+import Apple_Watch_Series_9_41mm_GPS_Viền_nhôm_Dây_quấn_thể_thao_didongviet from './watch/Apple_Watch_Series_9_41mm_GPS_Viền_nhôm_Dây_quấn_thể_thao_didongviet.webp'
+import Apple_Watch_Series_9_45_mm_GPS_Viền_nhôm_Dây_cao_su_size_S_M_didongviet from './watch/Apple_Watch_Series_9_45_mm_GPS_Viền_nhôm_Dây_cao_su_size_S_M_didongviet.webp'
+import Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_cao_su_size_M_L_didongviet from './watch/Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_cao_su_size_M_L_didongviet.webp'
+import Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_cao_su_size_S_M_didongviet from './watch/Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_cao_su_size_S_M_didongviet.webp'
+import Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_quấn_thể_thao_didongviet from './watch/Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_quấn_thể_thao_didongviet.webp'
+import Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_S_M_didongviet from './watch/Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_S_M_didongviet.webp'
+import Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_Milanese_didongviet from './watch/Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_Milanese_didongviet.webp'
+import Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_L_didongviet from './watch/Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_L_didongviet.webp'
+import Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_M_didongviet from './watch/Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_M_didongviet.webp'
+import Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_S_didongviet from './watch/Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_S_didongviet.webp'
+import Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_M_L_didongviet from './watch/Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_M_L_didongviet.webp'
+import Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_S_M_didongviet from './watch/Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_S_M_didongviet.webp'
+import Apple_Watch_Ultra2_49_mm_LTE_Viền_Titan_Dây_Ocean_didongviet from './watch/Apple_Watch_Ultra2_49_mm_LTE_Viền_Titan_Dây_Ocean_didongviet.webp'
+
 export {
     banner1,
     banner2,
@@ -73,4 +136,67 @@ export {
     macbook_pro_m2_didongviet,
     macbook_pro_14_inch_m2_pro_2023_512gb_didongviet_2x,
     macbook_pro_16_inch_m2_max_2023_1tb_didongviet_2x,
+
+    //AirPods page
+    apple_airpods_2_2022_didongviet,
+    apple_airpods_3_2022_didongviet,
+    apple_airpods_pro_2_2022_didongviet,
+
+    //Iphone page
+    iphone_11_64gb_chinh_hang_3,
+    iphone_11_128gb_chinhhang_didongviet,
+    iphone_12_64gb_mau_tim_didongviet,
+    iphone_12_128gb_didongviet,
+    iphone_13_256gb_didongviet_1,
+    iphone_14_256gb_didongviet_1_1,
+    iphone_14_512gb_likenew_didongviet_1,
+    iphone_14_pro_512gb_didongviet_1,
+    iphone_14_pro_max_128gb_didongviet_5,
+    iphone_14_pro_max_256gb_didongviet_1_1,
+    iphone_14_pro_max_512gb_didongviet_2_1,
+
+    //Ipad page
+    ipad_10_9inch_2022_64gb_5G_didongviet,
+    ipad_10_9inch_2022_64gb_wifi_didongviet,
+    ipad_10_9inch_2022_256gb_5G,
+    ipad_10_9inch_2022_256gb_wifi_didongviet,    
+    ipad_air_5_2022_M1_64gb_wifi_5G,
+    ipad_air_5_2022_M1_64gb_wifi,
+    ipad_air5_2022_M1_256gb_wifi_5G,
+    ipad_air_5_2022_M1_256gb_wifi,
+    ipad_gen_9_2021_64gb_wifi_4g_didongviet,
+    ipad_gen_9_2021_64gb_wifi,
+    ipad_gen_9_2021_256gb_wifi_4g_didongviet,
+    ipad_gen_9_2021_256gb_wifi,
+    ipad_mini_6_2021_256gb_wifi,
+    ipad_mini_6_2021_64gb_wifi,
+    ipad_mini_6_2021_64gb_wifi_5g,
+    ipad_mini_6_2021_256gb_wifi_5g,
+    ipad_pro_11_inch_2022_m2_256gb_wifi_didongviet_1,
+    ipad_pro_11_inch_m2_128gb_5g_didongviet,
+    ipad_pro_11_inch_m2_128gb_wifi_didongviet,
+    ipad_pro_M2_11inch_2022_1TB_wifi,
+    ipad_pro_m2_12_9_inch_256gb_wifi_didongviet,
+
+    //Watch page
+    Apple_Watch_SE_2_2022_40_mm_GPS_Viền_nhôm_Dây_cao_su, 
+    Apple_Watch_SE_2_2022_44_mm_GPS_Viền_nhôm_Dây_cao_su, 
+    Apple_Watch_Series_8_45_mm_GPS_Dây_cao_su_didongviet_1, 
+    Apple_Watch_Series_9_41_mm_GPS_Viền_nhôm_Dây_cao_su_size_M_L_didongviet, 
+    Apple_Watch_Series_9_41_mm_GPS_Viền_nhôm_Dây_cao_su_size_S_M_didongviet, 
+    Apple_Watch_Series_9_41_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_M_L_didongviet, 
+    Apple_Watch_Series_9_41_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_S_M_didongviet, 
+    Apple_Watch_Series_9_41mm_GPS_Viền_nhôm_Dây_quấn_thể_thao_didongviet,
+    Apple_Watch_Series_9_45_mm_GPS_Viền_nhôm_Dây_cao_su_size_S_M_didongviet, 
+    Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_cao_su_size_M_L_didongviet, 
+    Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_cao_su_size_S_M_didongviet, 
+    Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_quấn_thể_thao_didongviet, 
+    Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_S_M_didongviet, 
+    Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_Milanese_didongviet, 
+    Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_L_didongviet,
+    Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_M_didongviet,
+    Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_S_didongviet,
+    Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_M_L_didongviet,
+    Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_S_M_didongviet, 
+    Apple_Watch_Ultra2_49_mm_LTE_Viền_Titan_Dây_Ocean_didongviet,
 }
