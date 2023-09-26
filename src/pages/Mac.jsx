@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ProductList from '../components/ProductList';
 import Footer from '../components/Footer'
-const Mac = (props) => {
+import Pagination from '../components/Pagination';
+import { Macbook } from '../constants';
+const MacPage = () => {
     return (
         <div>
             {/* Bread Crumb */}
@@ -76,10 +78,23 @@ const Mac = (props) => {
                 <div class="w-full flex align-middle justify-center"><img src={mac_pro__2x} alt='mac_pro__2x' className='w-1/3' /></div>
             </div>
 
-            <ProductList />
+            <section id='products' className='max-container max-sm:mt-12 font-SFPro p-2 text-center my-3'>
+                <div className='flex flex-col justify-start gap-5 mt-2 pt-5 border-t-neutral-200'>
+                    <h2 className='text-5xl font-medium '>
+                        Macbook - iMac
+                    </h2>
+                    <p className=' mt-2 text-center text-slate-gray'>
+                        Trải nghiệm chất lượng và phong cách hàng đầu với các lựa chọn được săn lùng của chúng tôi. Khám phá thế giới tiện nghi, thiết kế và giá trị
+                    </p>
+                </div>
+
+
+            </section>
+            <ProductList products={Macbook} />
+            <Pagination />
             <Footer />
         </div>
     )
 }
 
-export default Mac;
+export default MacPage;
