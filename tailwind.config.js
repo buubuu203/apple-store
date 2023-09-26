@@ -26,6 +26,7 @@ module.exports = {
     [
       require("daisyui"),
       require('tailwindcss-animated'),
+
     ],
 
 

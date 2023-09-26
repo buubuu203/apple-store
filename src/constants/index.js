@@ -48,10 +48,15 @@ import {
     ipad_pro_M2_11inch_2022_1TB_wifi,
     ipad_pro_m2_12_9_inch_256gb_wifi_didongviet,
 
-    //Airpods
+    // Airpods
     apple_airpods_2_2022_didongviet,
     apple_airpods_3_2022_didongviet,
     apple_airpods_pro_2_2022_didongviet,
+    tile_accessibility,
+    tile_audio_sharing,
+    tile_automatic_switchinge,
+    tile_onetap_setup,
+    tile_spatial_audio,
 
     //Watch
     Apple_Watch_SE_2_2022_40_mm_GPS_Viền_nhôm_Dây_cao_su,
@@ -84,20 +89,57 @@ export const navLinks = [
     { href: "/airpods", label: "AirPods" },
 ];
 
+
+export const Airpods_Carousel = [
+
+    {
+        imgURL: tile_accessibility,
+        title: 'Thiết lập một chạm'
+
+    }, {
+        imgURL: tile_audio_sharing,
+        title: 'Âm Thanh Không Gian Cá Nhân Hóa'
+
+    }, {
+        imgURL: tile_automatic_switchinge,
+        title: 'Chia Sẻ Âm Thanh'
+
+    }, {
+        imgURL: tile_onetap_setup,
+        title: 'Tự Động Chuyển Đổi'
+
+    }, {
+        imgURL: tile_spatial_audio,
+        title: 'Trợ Năng'
+    }
+]
 export const Macbook = [
     {
+        id: '001',
+        type: 'Macbook',
         imgURL: macbook_air_m1_8gb_256gb_didongviet,
         name: "MacBook Air M1 2020 13 inch | 8GB/256GB",
         price: "18.490.000 đ",
-        oldPrice: "28.490.000 đ"
+        oldPrice: "28.490.000 đ",
+        CPU: 'Apple M1 chip with 8-core CPU, 7-core GPU, and 16-core Neural Engine',
+        RAM: " 8 GB",
+        doPhanGiai: '2560x1600 pixel',
+        kichThuocMan: '13-inch Retina display with True Tone',
+        DLpin: 'Khoảng 10 tiếng',
+        trongLuong: '1.29 Kg',
+        kichThuoc: '304.1 x 212.4 x 16.1 mm'
     },
     {
+        type: 'Macbook',
+        id: '002',
         imgURL: macbook_air_m2_8gb_256gb_didongviet,
         name: "MacBook Air M2 13-inch 2022 | 8GB/256GB",
         price: "26.090.000 đ",
         oldPrice: "33.990.000 đ"
     },
     {
+        type: 'Macbook',
+        id: '003',
         imgURL: macbook_pro_14_inch_m2_pro_2023_512gb_didongviet_2x,
         name: "MacBook Pro M2 Pro 14 inch 2023 | 16GB/512GB",
         price: "46.990.000 đ",

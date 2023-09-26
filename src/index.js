@@ -14,15 +14,20 @@ import MacPage from './pages/Mac';
 import IphonePage from './pages/Iphone';
 import WatchPage from './pages/Watch';
 import AirpodsPage from './pages/Airpods';
+import ProductPage from './pages/ProductPage';
+
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <DefaultLayout>
+      <Header>
+      </Header>
       <HomePage></HomePage>
     </DefaultLayout>,
 
   }, {
-    path: "/Mac",
+    path: "/mac",
     element: <DefaultLayout>
       <Header />
       <MacPage></MacPage>
@@ -51,6 +56,12 @@ const router = createBrowserRouter([
     element: <DefaultLayout>
       <Header />
       <AirpodsPage />
+    </DefaultLayout>,
+  }, {
+    path: "/:type/:id",
+    element: <DefaultLayout>
+      <Header />
+      <ProductPage />
     </DefaultLayout>,
   }
   // {

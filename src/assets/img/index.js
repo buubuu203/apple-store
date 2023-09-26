@@ -45,8 +45,11 @@ import apple_airpods_pro_2_2022_didongviet from './Airpods/apple_airpods_3_2022_
 import apple_airpods_2_2022_didongviet from './Airpods/apple_airpods_pro_2_2022_didongviet.webp'
 import Airpods_max_2x from './Airpods/Airpods_max_2x.jpg'
 import Webstore_AirPods_Collection_Banner from './Airpods/Webstore_AirPods_Collection_Banner.webp'
-
-
+import tile_accessibility from './Airpods/tile_accessibility.jpg'
+import tile_audio_sharing from './Airpods/tile_audio_sharing.jpg'
+import tile_automatic_switchinge from './Airpods/tile_automatic_switchinge.jpg'
+import tile_onetap_setup from './Airpods/tile_onetap_setup.jpg'
+import tile_spatial_audio from './Airpods/tile_spatial_audio.jpg'
 
 //Iphone Page
 import iphone_11_64gb_chinh_hang_3 from './iphone/iphone_11_64gb_chinh_hang_3.webp'
@@ -156,6 +159,11 @@ export {
     apple_airpods_pro_2_2022_didongviet,
     Airpods_max_2x,
     Webstore_AirPods_Collection_Banner,
+    tile_accessibility,
+    tile_audio_sharing,
+    tile_automatic_switchinge,
+    tile_onetap_setup,
+    tile_spatial_audio,
 
     //Iphone page
     iphone_11_64gb_chinh_hang_3,

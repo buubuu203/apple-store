@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {
     Airpods_max_2x,
     Webstore_AirPods_Collection_Banner
-} from '../assets/img';
+} from '../assets/img/index';
 import Footer from '../components/Footer';
 import Pagination from '../components/Pagination';
 import ProductList from '../components/ProductList';

@@ -14,11 +14,8 @@ const ProductList = (props) => {
             {props.products.map((product) => (
                 <ProductCard
                     key={product.name}
-                    imgURL={product.imgURL}
-                    name={product.name}
-                    price={product.price}
-                    oldPrice={product.oldPrice}
-                    link={product.link}
+                    product={product}
+
                 />
             ))}
         </div>

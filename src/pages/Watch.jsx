@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import Pagination from '../components/Pagination';
 import ProductList from '../components/ProductList';
 import { Watch } from '../constants';
+import { Gallery } from '../components/Carousel';
 
 
 const WatchPage = () => {
@@ -87,7 +88,6 @@ const WatchPage = () => {
                     </div>
                 </div>
             </div>
-
 
             <section id='products' className='max-container max-sm:mt-12 font-SFPro p-2 text-center my-3'>
                 <div className='flex flex-col justify-start gap-5 mt-2 pt-5 border-t-neutral-200'>
