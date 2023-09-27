@@ -8,17 +8,13 @@ import { navLinks } from '../constants';
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
-    const [isShown, setIsShown] = useState(false);
-    // const [isLogin, setIsLogin] = useState(false);
+    // React state to manage visibility
+    const [show, setShow] = useState();
 
-    const handleClick = event => {
-        // 👇️ toggle shown state
-        setIsShown(current => !current);
-
-        // 👇️ or simply set it to true
-        // setIsShown(true);
-    };
-
+    // function to toggle the boolean value
+    function handleClick() {
+        setShow(!show);
+    }
 
 
     return (
@@ -42,11 +38,10 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-
-                    <div className="relative hover:text-gray w-fit btn btn-ghost btn-circle" onClick={handleClick}>
-                        {isShown && (
-                            <input type="text" onChange={(e) => (e.target.value)} className='absolute right-10' />
-                        )}
+                    {show && (
+                        <input type="text" onChange={(e) => (e.target.value)} className=' lg:flex hidden font-normal text-black absolute right-28 rounded-md px-2 ' placeholder='Search...' />
+                    )}
+                    <div className=" lg:flex  relative hidden hover:text-gray w-fit btn btn-ghost btn-circle" onClick={handleClick}>
 
                         {/* 👇️ show component on click */}
                         {/* {isShown} */}
