@@ -8,37 +8,60 @@ import './assets/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF';
 import './index.css';
 import DefaultLayout from './layouts/DefaultLayout';
 import HomePage from './pages/HomePage';
-import Mac from './pages/Mac';
 import Header from './components/Header';
+import IpadPage from './pages/Ipad';
+import MacPage from './pages/Mac';
+import IphonePage from './pages/Iphone';
+import WatchPage from './pages/Watch';
+import AirpodsPage from './pages/Airpods';
+import ProductPage from './pages/ProductPage';
+
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <DefaultLayout>
+      <Header>
+      </Header>
       <HomePage></HomePage>
     </DefaultLayout>,
 
   }, {
-    path: "/Mac",
+    path: "/mac",
     element: <DefaultLayout>
       <Header />
-      <Mac></Mac>
+      <MacPage></MacPage>
     </DefaultLayout>,
   }, {
     path: "/iPad",
     element: <DefaultLayout>
+      <Header />
+      <IpadPage />
     </DefaultLayout>,
   },
   {
     path: "/iPhone",
     element: <DefaultLayout>
+      <Header />
+      <IphonePage />
     </DefaultLayout>,
   }, {
     path: "/Watch",
     element: <DefaultLayout>
+      <Header />
+      <WatchPage />
     </DefaultLayout>,
   }, {
     path: "/Airpods",
     element: <DefaultLayout>
+      <Header />
+      <AirpodsPage />
+    </DefaultLayout>,
+  }, {
+    path: "/:type/:id",
+    element: <DefaultLayout>
+      <Header />
+      <ProductPage />
     </DefaultLayout>,
   }
   // {

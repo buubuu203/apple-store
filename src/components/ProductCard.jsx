@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 
-const ProductCard = ({ imgURL, name, price, oldPrice }) => {
+const ProductCard = ({ product }) => {
+    const { imgURL, name, price, oldPrice, id, type } = product
     return (
-        <div>
-            <div className='flex flex-1 flex-col w-full max-sm:w-full font-SFPro border-gray-light border-2 rounded-lg gap-1 py-4 px-2 hover:shadow-md' >
+
+        <Link to={`/${type}/${id}`}>
+
+            <div className='flex flex-1 flex-col w-full max-sm:w-full font-SFPro border-gray-light border-2 rounded-lg gap-1 py-4 px-2 hover:shadow-md text-center' >
                 <img src={imgURL} alt={name} className='  rounded-sm' />
 
                 <h3 className='mt-2 text-2xl  font-medium  text-black'>
@@ -24,7 +28,9 @@ const ProductCard = ({ imgURL, name, price, oldPrice }) => {
 
                 )}
             </div>
-        </div>
+        </Link>
+
+
     )
 }
 
