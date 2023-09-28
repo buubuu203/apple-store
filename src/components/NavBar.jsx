@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoCloseSharp } from 'react-icons/io5';
 import { navLinks } from '../constants';
-
+// import { SearchArray } from '../constants';
 
 
 
@@ -16,6 +16,20 @@ const Navbar = () => {
         setShow(!show);
     }
 
+    // const [filteredList, setFilteredList] = new useState(SearchArray);
+
+    // const filterBySearch = (event) => {
+    // Access input value
+    //     const query = event.target.value;
+    // Create copy of item list
+    //     var updatedList = [...SearchArray];
+    // Include all elements which includes the search query
+    //     updatedList = updatedList.filter((item) => {
+    //         return item.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+    //     });
+    // Trigger render with updated values
+    //     setFilteredList(updatedList);
+    // };
 
     return (
         <>
@@ -39,7 +53,16 @@ const Navbar = () => {
                         ))}
                     </ul>
                     {show && (
-                        <input type="text" onChange={(e) => (e.target.value)} className=' lg:flex hidden font-normal text-black absolute right-28 rounded-md px-2 ' placeholder='Search...' />
+                        <div>
+                            <input type="text" id="search-box" onChange={(e) => (e.target.value)} className=' lg:flex hidden font-normal text-black absolute right-28 rounded-md px-2 top-6' placeholder='Search...' />
+                            {/* <div id="item-list" className='absolute text-gray-dark  lg:flex hidden'>
+                                <ol>
+                                    {filteredList.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
+                                </ol>
+                            </div> */}
+                        </div>
                     )}
                     <div className=" lg:flex  relative hidden hover:text-gray w-fit btn btn-ghost btn-circle" onClick={handleClick}>
 

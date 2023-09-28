@@ -74,11 +74,12 @@ import {
     Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_S_M_didongviet,
     Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_Milanese_didongviet,
     Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_L_didongviet,
-    Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_M_didongviet,
+    // Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_M_didongviet,
     Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_S_didongviet,
     Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_M_L_didongviet,
     Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_S_M_didongviet,
     Apple_Watch_Ultra2_49_mm_LTE_Viền_Titan_Dây_Ocean_didongviet,
+    // Apple_Watch_UCPUltra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_M_didongviet
 } from '../assets/img/index'
 
 export const navLinks = [
@@ -203,7 +204,7 @@ export const Macbook = [
         DLpin: '20 giờ',
         trongLuong: '1.4kg',
         kichThuoc: 'dày 1.62cm'
-    }, 
+    },
     {
         type: 'Macbook',
         id: '007',
@@ -233,7 +234,7 @@ export const Macbook = [
         DLpin: '22 giờ',
         trongLuong: null,
         kichThuoc: null
-    }, 
+    },
     {
         type: 'Macbook',
         id: '009',
@@ -1028,22 +1029,22 @@ export const Watch = [
         imgURL: Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_L_didongviet,
         name: "Apple Watch Ultra 2 49mm (LTE) Viền Titan - Dây Alpine Loop size L",
         price: "21.990.000 đ",
-        
+
     },
-    {
-        type: 'Watch',
-        id: '016',
-        imgURL: Apple_Watch_UCPUltra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_M_didongviet,
-        name: "Apple Watch Ultra 2 49mm (LTE) Viền Titan - Dây Alpine Loop size M",
-        price: "21.990.000 đ",
-        CPU: 'Apple S9',
-        RAM: null,
-        doPhanGiai: null,
-        kichThuocMan: '1.92 inch',
-        DLpin: null,
-        trongLuong: null,
-        kichThuoc: '49 x 44 x 14.4 mm'
-    },
+    // {
+    //     type: 'Watch',
+    //     id: '016',
+    //     imgURL: Apple_Watch_UCPUltra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_M_didongviet,
+    //     name: "Apple Watch Ultra 2 49mm (LTE) Viền Titan - Dây Alpine Loop size M",
+    //     price: "21.990.000 đ",
+    //     CPU: 'Apple S9',
+    //     RAM: null,
+    //     doPhanGiai: null,
+    //     kichThuocMan: '1.92 inch',
+    //     DLpin: null,
+    //     trongLuong: null,
+    //     kichThuoc: '49 x 44 x 14.4 mm'
+    // },
     {
         type: 'Watch',
         id: '017',
