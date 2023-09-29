@@ -128,7 +128,8 @@ export const Macbook = [
         kichThuocMan: '13-inch Retina display with True Tone',
         DLpin: 'Khoảng 10 tiếng',
         trongLuong: '1.29 Kg',
-        kichThuoc: '304.1 x 212.4 x 16.1 mm'
+        kichThuoc: '304.1 x 212.4 x 16.1 mm',
+        Colors: ['Xám', 'Vàng', 'Bạc']
     },
     {
         type: 'Macbook',
@@ -143,7 +144,8 @@ export const Macbook = [
         kichThuocMan: '13.6 - Tần số quét 60Hz',
         DLpin: '52.6 Wh',
         trongLuong: '1.24kg',
-        kichThuoc: 'Dài 304.1 mm x Ngang 215 mm x Dày 11.3 mm'
+        kichThuoc: 'Dài 304.1 mm x Ngang 215 mm x Dày 11.3 mm',
+        Colors: ['Xám', 'Trắng', 'Bạc', 'Đen']
     },
     {
         type: 'Macbook',
@@ -158,7 +160,8 @@ export const Macbook = [
         kichThuocMan: '14.2 inch - Tần số quét 120Hz',
         DLpin: '18 giờ',
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Macbook',
@@ -173,7 +176,8 @@ export const Macbook = [
         kichThuocMan: '14.2 inch - Tần số quét 120Hz',
         DLpin: '18 giờ',
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Macbook',
@@ -188,7 +192,8 @@ export const Macbook = [
         kichThuocMan: '16 inch - Tần số quét 120Hz',
         DLpin: '22 giờ',
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Macbook',
@@ -203,7 +208,8 @@ export const Macbook = [
         kichThuocMan: '13.3 inch',
         DLpin: '20 giờ',
         trongLuong: '1.4kg',
-        kichThuoc: 'dày 1.62cm'
+        kichThuoc: 'dày 1.62cm',
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Macbook',
@@ -218,7 +224,8 @@ export const Macbook = [
         kichThuocMan: '15.3 inch',
         DLpin: '18 giờ',
         trongLuong: '1.51kg',
-        kichThuoc: 'Dài 340.4 mm - Rộng 237.6 mm - Dày 11.5 mm'
+        kichThuoc: 'Dài 340.4 mm - Rộng 237.6 mm - Dày 11.5 mm',
+        Colors: ['Xám', 'Bạc', 'Vàng', 'Xanh đen']
     },
     {
         type: 'Macbook',
@@ -233,7 +240,8 @@ export const Macbook = [
         kichThuocMan: '27 inch',
         DLpin: '22 giờ',
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Macbook',
@@ -248,7 +256,8 @@ export const Macbook = [
         kichThuocMan: '27 inch',
         DLpin: '22 giờ',
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Macbook',
@@ -263,7 +272,8 @@ export const Macbook = [
         kichThuocMan: '32 inch',
         DLpin: '22 giờ',
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Macbook',
@@ -278,7 +288,8 @@ export const Macbook = [
         kichThuocMan: '15.3 inch',
         DLpin: '18 giờ',
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Xám', 'Bạc']
     },
 ];
 
@@ -298,7 +309,8 @@ export const Iphone = [
         kichThuocMan: '6.1 inch',
         DLpin: '3110 mAh',
         trongLuong: '194g',
-        kichThuoc: '150.9 x 75.7 x 8.3 mm'
+        kichThuoc: '150.9 x 75.7 x 8.3 mm',
+        Colors: ['Trắng', 'Đen', 'Tím', 'Vàng', 'Đỏ', 'Xanh']
     },
     {
         type: 'Iphone',
@@ -313,7 +325,8 @@ export const Iphone = [
         kichThuocMan: '6.1 inch',
         DLpin: '3110 mAh',
         trongLuong: '194g',
-        kichThuoc: '150.9 x 75.7 x 8.3 mm'
+        kichThuoc: '150.9 x 75.7 x 8.3 mm',
+        Colors: ['Trắng', 'Đen', 'Tím', 'Vàng', 'Đỏ', 'Xanh']
     },
     {
         type: 'Iphone',
@@ -328,7 +341,8 @@ export const Iphone = [
         kichThuocMan: '6.1 inch',
         DLpin: '2815 mAh',
         trongLuong: '164g',
-        kichThuoc: 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.4 mm'
+        kichThuoc: 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.4 mm',
+        Colors: ['Trắng', 'Đen', 'Tím', 'Vàng', 'Đỏ', 'Xanh']
     },
     {
         type: 'Iphone',
@@ -343,7 +357,8 @@ export const Iphone = [
         kichThuocMan: '6.1 inch',
         DLpin: '2815 mAh',
         trongLuong: '164g',
-        kichThuoc: 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.4 mm'
+        kichThuoc: 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.4 mm',
+        Colors: ['Trắng', 'Đen', 'Tím', 'Vàng', 'Đỏ', 'Xanh']
     },
     {
         type: 'Iphone',
@@ -358,7 +373,8 @@ export const Iphone = [
         kichThuocMan: '6.1 inch - Tần số quét 60Hz',
         DLpin: null,
         trongLuong: '164g',
-        kichThuoc: '146.7 x 71.5 x 7.4 mm'
+        kichThuoc: '146.7 x 71.5 x 7.4 mm',
+        Colors: ['Trắng', 'Đen', 'Tím', 'Vàng', 'Đỏ', 'Xanh']
     },
     {
         type: 'Iphone',
@@ -373,7 +389,8 @@ export const Iphone = [
         kichThuocMan: '6.1 inch - Tần số quét 60Hz',
         DLpin: null,
         trongLuong: '172g',
-        kichThuoc: 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.8 mm'
+        kichThuoc: 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.8 mm',
+        Colors: ['Tím', 'Vàng', 'Xám', 'Bạc']
     },
     {
         type: 'Iphone',
@@ -388,7 +405,8 @@ export const Iphone = [
         kichThuocMan: '6.1 inch - Tần số quét 60Hz',
         DLpin: null,
         trongLuong: '172g',
-        kichThuoc: 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.8 mm'
+        kichThuoc: 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.8 mm',
+        Colors: ['Tím', 'Vàng', 'Xám', 'Bạc']
     },
     {
         type: 'Iphone',
@@ -403,7 +421,8 @@ export const Iphone = [
         kichThuocMan: '6.1 inch - Tần số quét 120Hz',
         DLpin: null,
         trongLuong: '206g',
-        kichThuoc: 'Dài 147.5 mm - Ngang 71.5 mm - Dày 7.85 mm'
+        kichThuoc: 'Dài 147.5 mm - Ngang 71.5 mm - Dày 7.85 mm',
+        Colors: ['Tím', 'Vàng', 'Xám', 'Bạc']
     },
     {
         type: 'Iphone',
@@ -418,7 +437,8 @@ export const Iphone = [
         kichThuocMan: '6.7 inch - Tần số quét 120Hz',
         DLpin: null,
         trongLuong: '240g',
-        kichThuoc: 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm'
+        kichThuoc: 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm',
+        Colors: ['Tím', 'Vàng', 'Xám', 'Bạc']
     },
     {
         type: 'Iphone',
@@ -433,7 +453,8 @@ export const Iphone = [
         kichThuocMan: '6.7 inch - Tần số quét 120Hz',
         DLpin: null,
         trongLuong: '240g',
-        kichThuoc: 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm'
+        kichThuoc: 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm',
+        Colors: ['Tím', 'Vàng', 'Xám', 'Bạc']
     },
     {
         type: 'Iphone',
@@ -448,7 +469,8 @@ export const Iphone = [
         kichThuocMan: '6.7 inch - Tần số quét 120Hz',
         DLpin: null,
         trongLuong: '240g',
-        kichThuoc: 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm'
+        kichThuoc: 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm',
+        Colors: ['Tím', 'Vàng', 'Xám', 'Bạc']
     },
 ];
 
@@ -467,7 +489,8 @@ export const Ipad = [
         kichThuocMan: '10.9 inch - Tần số quét 60Hz',
         DLpin: '28.6 Wh',
         trongLuong: '481g',
-        kichThuoc: 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm'
+        kichThuoc: 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
+        Colors: ['Bạc', 'Xanh', 'Hồng', 'Vàng']
     },
     {
         type: 'Ipad',
@@ -482,7 +505,8 @@ export const Ipad = [
         kichThuocMan: '10.9 inch - Tần số quét 60Hz',
         DLpin: '28.6 Wh',
         trongLuong: '477g',
-        kichThuoc: 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm'
+        kichThuoc: 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
+        Colors: ['Bạc', 'Xanh', 'Hồng', 'Vàng']
     },
     {
         type: 'Ipad',
@@ -497,7 +521,8 @@ export const Ipad = [
         kichThuocMan: '10.9 inch - Tần số quét 60Hz',
         DLpin: '28.6 Wh',
         trongLuong: '477g',
-        kichThuoc: 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm'
+        kichThuoc: 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
+        Colors: ['Bạc', 'Xanh', 'Hồng', 'Vàng']
     },
     {
         type: 'Ipad',
@@ -512,7 +537,8 @@ export const Ipad = [
         kichThuocMan: '10.9 inch - Tần số quét 60Hz',
         DLpin: '28.6 Wh',
         trongLuong: '477g',
-        kichThuoc: 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm'
+        kichThuoc: 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
+        Colors: ['Bạc', 'Xanh', 'Hồng', 'Vàng']
     },
     {
         type: 'Ipad',
@@ -527,7 +553,8 @@ export const Ipad = [
         kichThuocMan: '10.9 inches',
         DLpin: 'khoảng 7587 mAh',
         trongLuong: '462g',
-        kichThuoc: 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm'
+        kichThuoc: 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
+        Colors: ['Xám', 'Xanh', 'Hồng', 'Bạc', 'Tím']
     },
     {
         type: 'Ipad',
@@ -543,6 +570,7 @@ export const Ipad = [
         DLpin: 'khoảng 7587 mAh',
         trongLuong: '461g',
         kichThuoc: 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
+        Colors: ['Xám', 'Xanh', 'Hồng', 'Bạc', 'Tím']
     },
     {
         type: 'Ipad',
@@ -558,6 +586,7 @@ export const Ipad = [
         DLpin: 'khoảng 7587 mAh',
         trongLuong: '461g',
         kichThuoc: 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
+        Colors: ['Xám', 'Xanh', 'Hồng', 'Bạc', 'Tím']
     },
     {
         type: 'Ipad',
@@ -572,7 +601,8 @@ export const Ipad = [
         kichThuocMan: '10.9 inches',
         DLpin: 'khoảng 7587 mAh',
         trongLuong: '462g',
-        kichThuoc: 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm'
+        kichThuoc: 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
+        Colors: ['Xám', 'Xanh', 'Hồng', 'Bạc', 'Tím']
     },
     {
         type: 'Ipad',
@@ -587,7 +617,8 @@ export const Ipad = [
         kichThuocMan: '10.2 ',
         DLpin: '32.4 Wh',
         trongLuong: '487g',
-        kichThuoc: '250.6 x 174.1 x 7.5 mm'
+        kichThuoc: '250.6 x 174.1 x 7.5 mm',
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Ipad',
@@ -602,7 +633,8 @@ export const Ipad = [
         kichThuocMan: '10.2 inch',
         DLpin: '32.4 Wh',
         trongLuong: '487g',
-        kichThuoc: '250.6 x 174.1 x 0.29 mm'
+        kichThuoc: '250.6 x 174.1 x 0.29 mm',
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Ipad',
@@ -617,7 +649,8 @@ export const Ipad = [
         kichThuocMan: '10.2 inch',
         DLpin: '32.4 Wh',
         trongLuong: '487g',
-        kichThuoc: '250.6 x 174.1 x 7.5 mm'
+        kichThuoc: '250.6 x 174.1 x 7.5 mm',
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Ipad',
@@ -632,7 +665,8 @@ export const Ipad = [
         kichThuocMan: '10.2 inch',
         DLpin: '32.4 Wh',
         trongLuong: '487g',
-        kichThuoc: '250.6 x 174.1 x 7.5 mm'
+        kichThuoc: '250.6 x 174.1 x 7.5 mm',
+        Colors: ['Xám', 'Bạc']
     },
     {
         type: 'Ipad',
@@ -662,7 +696,8 @@ export const Ipad = [
         kichThuocMan: '8.3 inch',
         DLpin: null,
         trongLuong: null,
-        kichThuoc: '195.4 x 134.8 x 6.3mm'
+        kichThuoc: '195.4 x 134.8 x 6.3mm',
+        Colors: ['Hồng', 'Bạc', 'Xám đen', 'Tím']
     },
     {
         type: 'Ipad',
@@ -677,7 +712,8 @@ export const Ipad = [
         kichThuocMan: '8.5 inch',
         DLpin: null,
         trongLuong: null,
-        kichThuoc: '206 x 138 x 6.1 mm'
+        kichThuoc: '206 x 138 x 6.1 mm',
+        Colors: ['Hồng', 'Bạc', 'Xám đen', 'Tím']
     },
     {
         type: 'Ipad',
@@ -692,8 +728,8 @@ export const Ipad = [
         kichThuocMan: '8.3 inch',
         DLpin: null,
         trongLuong: null,
-        kichThuoc: '195.4 x 134.8 x 6.3mm'
-
+        kichThuoc: '195.4 x 134.8 x 6.3mm',
+        Colors: ['Hồng', 'Bạc', 'Xám đen', 'Tím']
     },
     {
         type: 'Ipad',
@@ -708,7 +744,8 @@ export const Ipad = [
         kichThuocMan: '11 inch',
         DLpin: null,
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Hồng', 'Bạc', 'Xám đen', 'Tím']
     },
     {
         type: 'Ipad',
@@ -723,7 +760,8 @@ export const Ipad = [
         kichThuocMan: '11 inch',
         DLpin: null,
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Hồng', 'Bạc', 'Xám đen', 'Tím']
     },
     {
         type: 'Ipad',
@@ -738,7 +776,8 @@ export const Ipad = [
         kichThuocMan: '11 inches',
         DLpin: null,
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Hồng', 'Bạc', 'Xám đen', 'Tím']
     },
     {
         type: 'Ipad',
@@ -753,7 +792,8 @@ export const Ipad = [
         kichThuocMan: '11 inches',
         DLpin: null,
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Hồng', 'Bạc', 'Xám đen', 'Tím']
     },
     {
         type: 'Ipad',
@@ -768,7 +808,8 @@ export const Ipad = [
         kichThuocMan: '12.9 inches - Tần số quét 120Hz',
         DLpin: null,
         trongLuong: null,
-        kichThuoc: null
+        kichThuoc: null,
+        Colors: ['Hồng', 'Bạc', 'Xám đen', 'Tím']
     },
 ];
 
