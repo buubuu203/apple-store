@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 import Pagination from '../components/Pagination';
 import ProductList from '../components/ProductList';
 import { Watch } from '../constants';
-import { Gallery } from '../components/Carousel';
+// import { Gallery } from '../components/Carousel';
 
 
 const WatchPage = () => {

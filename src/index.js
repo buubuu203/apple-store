@@ -15,6 +15,7 @@ import IphonePage from './pages/Iphone';
 import WatchPage from './pages/Watch';
 import AirpodsPage from './pages/Airpods';
 import ProductPage from './pages/ProductPage';
+import Footer from './components/Footer';
 
 
 const router = createBrowserRouter([
@@ -62,6 +63,7 @@ const router = createBrowserRouter([
     element: <DefaultLayout>
       <Header />
       <ProductPage />
+      <Footer />
     </DefaultLayout>,
   }
   // {
