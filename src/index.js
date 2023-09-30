@@ -16,7 +16,7 @@ import WatchPage from './pages/Watch';
 import AirpodsPage from './pages/Airpods';
 import ProductPage from './pages/ProductPage';
 import Footer from './components/Footer';
-
+import SignIn from './components/SignIn';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     </DefaultLayout>,
 
   }, {
-    path: "/mac",
+    path: "/macbook",
     element: <DefaultLayout>
       <Header />
       <MacPage></MacPage>
@@ -65,13 +65,13 @@ const router = createBrowserRouter([
       <ProductPage />
       <Footer />
     </DefaultLayout>,
+  },
+  {
+    path: "/SignIn",
+    element:
+      <SignIn />
+
   }
-  // {
-  //   path: "/Home",
-  //   element: <DefaultLayout>
-  //     <HomePage></HomePage>
-  //   </DefaultLayout>,
-  // }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

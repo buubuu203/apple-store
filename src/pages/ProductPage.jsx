@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { Iphone, Macbook, AirPods, Ipad, Watch } from '../constants';
 
 const ProductPage = () => {
+
     const { id, type } = useParams();
     const data = {
         Macbook: Macbook,
@@ -13,6 +14,18 @@ const ProductPage = () => {
 
     }
     const product = data[type].find(item => item.id === id)
+    // ref: https://bobbyhadz.com/blog/react-onclick-redirect
+    const navigate = useNavigate();
+
+    const navigateToType = () => {
+        navigate(`/${product.type}`);
+    };
+
+    const navigateHome = () => {
+        navigate('/');
+    };
+
+
     return (
         <div>
             <section className="py-4 sm:px-8 sm:py-8 font-SFPro">
@@ -21,7 +34,7 @@ const ProductPage = () => {
                         <ol className="flex items-center">
                             <li className="text-left">
                                 <div className="-m-1">
-                                    <Link href="#" className="rounded-md p-1 text-sm font-medium text-gray-600 focus:text-gray-900 focus:shadow hover:text-gray-800"> Home </Link>
+                                    <Link href="" onClick={navigateHome} className="rounded-md p-1 text-sm font-medium text-gray-600 focus:text-gray-900 focus:shadow hover:text-gray-800"> Home </Link>
                                 </div>
                             </li>
 
@@ -29,7 +42,7 @@ const ProductPage = () => {
                                 <div className="flex items-center">
                                     <span className="mx-2 text-gray-400">/</span>
                                     <div className="-m-1">
-                                        <Link href='' className="rounded-md p-1 text-sm font-medium text-gray-600 focus:text-gray-900 focus:shadow hover:text-gray-800"> {type} </Link>
+                                        <Link href='' onClick={navigateToType} className="rounded-md p-1 text-sm font-medium text-gray-600 focus:text-gray-900 focus:shadow hover:text-gray-800"> {type} </Link>
                                     </div>
                                 </div>
                             </li>
@@ -97,7 +110,9 @@ const ProductPage = () => {
                             <div className="mt-3 flex select-none flex-wrap items-center gap-1">
                                 <label className="">
                                     <input type="radio" name="type" value="Đen" className="peer sr-only" checked />
-                                    <p className="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">Đen</p>
+                                    <p className="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">Đen
+                                        {/* Map mảng color */}
+                                    </p>
                                 </label>
                                 <label className="">
                                     <input type="radio" name="type" value="Bạc" className="peer sr-only" />
