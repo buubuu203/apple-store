@@ -17,6 +17,7 @@ import AirpodsPage from './pages/Airpods';
 import ProductPage from './pages/ProductPage';
 import Footer from './components/Footer';
 import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,11 @@ const router = createBrowserRouter([
     path: "/SignIn",
     element:
       <SignIn />
+
+  }, {
+    path: "/SignUp",
+    element:
+      <SignUp />
 
   }
 ]);
