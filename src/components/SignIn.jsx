@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import AppleIcon from '../assets/apple.svg'
+import Button from './Button'
 const SignIn = () => {
     return (
         <>
@@ -53,13 +54,8 @@ const SignIn = () => {
                             </div>
                         </div>
 
-                        <div>
-                            <button
-                                type="submit"
-                                className="flex w-[50%] justify-center rounded-md bg-black px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mx-auto mt-12"
-                            >
-                                Đăng nhập
-                            </button>
+                        <div className=''>
+                            <Button title='Đăng nhập' />
                         </div>
                     </form>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { Iphone, Macbook, AirPods, Ipad, Watch } from '../constants';
+import Button from '../components/Button';
 
 const ProductPage = () => {
 
@@ -129,7 +130,7 @@ const ProductPage = () => {
                             {
                                 (product.type === 'Iphone' || product.type === 'Ipad' || product.type === 'Macbook') && (
                                     <>
-                                        <h2 h2 className="mt-8 text-base text-gray-900">Choose subscription</h2>
+                                        <h2 h2 className="mt-8 text-base text-gray-900">Chọn dung lượng</h2>
                                         <div className="mt-3 flex select-none flex-wrap items-center gap-1">
                                             <label className="">
                                                 <input type="radio" name="subscription" value="4 Months" className="peer sr-only" />
@@ -161,7 +162,7 @@ const ProductPage = () => {
                             </div>
 
                             {/* Add to cart btn */}
-                            <button className="btn btn-outline hover:bg-black font-medium ">Thêm vào giỏ hàng</button>
+                            <div class="w-fit"><Button title='Thêm vào giỏ hàng'></Button></div>
 
 
                             <ul className="mt-8 space-y-2">
