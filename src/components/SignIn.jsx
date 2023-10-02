@@ -65,7 +65,7 @@ const SignIn = () => {
 
                     <p className="mt-10 text-center text-sm text-gray-500">
                         Bạn không có ID Apple? {' '}
-                        <Link href="#" className="font-normal leading-6 text-blue hover:text-indigo-500 ">
+                        <Link to='/SignUp' className="font-normal leading-6 text-blue hover:text-indigo-500 hover:text-gray">
                             Tạo tài khoản của bạn ngay bây giờ.
                         </Link>
                     </p>

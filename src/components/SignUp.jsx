@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
     return (
@@ -50,6 +51,10 @@ const SignUp = () => {
                                 <input type="password" placeholder="Nhập lại mật khẩu" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-gray focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
 
+                            <div >
+                                <Link to='/SignIn' onClick={() => { <span className="loading loading-ring loading-lg"></span> }} className='hover:text-gray text-blue  m-auto items-center'>Bạn đã có tài khoản. Đăng nhập ngay</Link>
+
+                            </div>
                             <button
                                 className="flex items-center bg-black gap-4 m-auto col-span-2 px-6 py-3 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-2xl hover:bg-blue focus:outline-none focus:ring focus:ring-blue focus:ring-opacity-50">
                                 <span>Sign Up </span>
