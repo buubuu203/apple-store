@@ -1,11 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import AppleIcon from '../assets/apple.svg'
 import Button from './Button'
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 const SignIn = () => {
+    const navigate = useNavigate();
+
+    const handleLabelClick = () => {
+        // Điều hướng đến component SignIn khi label được nhấp
+        navigate('/');
+    }
     return (
         <>
+            <div className='m-5 text-gray' onClick={handleLabelClick}>
+                <KeyboardDoubleArrowLeftIcon />
+            </div>
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 font-SFPro">
+
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img src={AppleIcon} className='w-12 mx-auto' alt='Apple Icon' />
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">

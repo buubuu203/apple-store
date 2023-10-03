@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ProductList from '../components/ProductList';
 import Footer from '../components/Footer'
-import Pagination from '../components/Pagination';
+// import Pagination from '../components/Pagination';
 import { Macbook } from '../constants';
+import PaginatedItems from '../components/PaginatedItems';
 const MacPage = () => {
     return (
         <div>
@@ -91,7 +92,10 @@ const MacPage = () => {
 
             </section>
             <ProductList products={Macbook} />
-            <Pagination />
+            {/* FIXME: Pagination hoat dong */}
+            <PaginatedItems itemsPerPage={8} products={Macbook} />
+            {/* <Pagination /> */}
+
             <Footer />
         </div>
     )

@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
-import { Iphone, Macbook, AirPods, Ipad, Watch } from '../constants';
+import React from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import Button from '../components/Button';
+import { AirPods, Ipad, Iphone, Macbook, Watch } from '../constants';
 
 const ProductPage = () => {
-
+    // FIXME: refresh khi bam vao product
     const { id, type } = useParams();
     const data = {
         Macbook: Macbook,
@@ -19,7 +19,7 @@ const ProductPage = () => {
     const navigate = useNavigate();
 
     const navigateToType = () => {
-        navigate(`/${product.type}`);
+        navigate(`/${product.type}`, { replace: true });
     };
 
     const navigateHome = () => {
@@ -109,6 +109,7 @@ const ProductPage = () => {
                             {/* Choose color section */}
                             <h2 className="mt-8 text-base text-gray-900">Màu sắc</h2>
                             <div className="mt-3 flex select-none flex-wrap items-center gap-1">
+                                {/* FIXME: update color trong mang */}
                                 <label className="">
                                     <input type="radio" name="type" value="Đen" className="peer sr-only" checked />
                                     <p className="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">Đen
@@ -259,7 +260,7 @@ const ProductPage = () => {
                 </div>
             </section>
 
-
+            {/* TODO: them phan review cua customer */}
 
         </div>
     )

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoCloseSharp } from 'react-icons/io5';
 import { navLinks } from '../constants';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 // import { SearchArray } from '../constants';
-
-
+import Drawer from './Drawer'
+import TopDrawer from './Drawer';
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     // React state to manage visibility
@@ -16,12 +16,12 @@ const Navbar = () => {
         setShow(!show);
     }
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleLabelClick = () => {
-        // Điều hướng đến component SignIn khi label được nhấp
-        navigate('/SignIn');
-    }
+    // const handleLabelClick = () => {
+    //     // Điều hướng đến component SignIn khi label được nhấp
+    //     navigate('/SignIn');
+    // }
 
 
     // const filterBySearch = (event) => {
@@ -58,6 +58,8 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
+                    {/* FIXME: can use search tool */}
+
                     {show && (
                         <div>
                             <input type="text" id="search-box" onChange={(e) => (e.target.value)} className=' lg:flex hidden font-normal text-black absolute right-28 rounded-md px-2 top-6' placeholder='Search...' />
@@ -70,20 +72,23 @@ const Navbar = () => {
                             </div> */}
                         </div>
                     )}
-                    <div className=" lg:flex  relative hidden hover:text-gray w-fit btn btn-ghost btn-circle" onClick={handleClick}>
-
-                        {/* 👇️ show component on click */}
-                        {/* {isShown} */}
-                        <div className="h-5 w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    <div className='flex'>
+                        <div className=" lg:flex  relative hidden hover:text-gray w-fit btn btn-ghost btn-circle" onClick={handleClick}>
+                            {/* 👇️ show component on click */}
+                            {/* {isShown} */}
+                            <div className="h-5 w-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                            </div>
                         </div>
+                        <Drawer />
+
                     </div>
-                    <label tabIndex={0} className=" hidden hover:text-gray lg:flex btn btn-ghost btn-circle" onClick={handleLabelClick}>
+                    {/* <label tabIndex={0} className=" hidden hover:text-gray lg:flex btn btn-ghost btn-circle" onClick={handleLabelClick}>
                         <div className="indicator">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
                             <span className="badge badge-sm indicator-item">0</span>
                         </div>
-                    </label>
+                    </label> */}
 
                     <div
                         className="hidden max-lg:block cursor-pointer"
@@ -116,18 +121,24 @@ const Navbar = () => {
 
                                     ))}
                                 </ul>
-
+                                {/* btn btn-ghost btn-circle w-full */}
                                 {/* Shopping Cart */}
-                                <div class="mx-52 sm:mx-64 md:mx-96">
-                                    <button className="btn btn-ghost btn-circle" >
+                                {/* FIXME: bam vao icon search hien khung search, can giua icon search */}
+                                {show && (
+                                    <div>
+                                        <input type="text" id="search-box" onChange={(e) => (e.target.value)} className=' lg:flex hidden font-normal text-black absolute right-28 rounded-md px-2 top-6' placeholder='Search...' />
+
+                                    </div>
+                                )}
+                                <div class="mx-52 sm:mx-64 md:mx-96 flex w-full" onClick={handleClick}>
+                                    <button className="" >
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                                     </button>
-                                    <label tabIndex={0} className="btn btn-ghost btn-circle" onClick={handleLabelClick}>
-                                        <div className="indicator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                                            <span className="badge badge-sm indicator-item">0</span>
-                                        </div>
-                                    </label>
+                                    {/* FIXME: xuat hien Drawer dang nhap cho dien thoai */}
+                                    <TopDrawer />
+
+
+
                                 </div>
                             </div>
 

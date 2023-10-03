@@ -6,7 +6,7 @@ import {
     Webstore_AirPods_Collection_Banner
 } from '../assets/img/index';
 import Footer from '../components/Footer';
-import Pagination from '../components/Pagination';
+// import Pagination from '../components/Pagination';
 import ProductList from '../components/ProductList';
 import { AirPods } from '../constants';
 
@@ -59,7 +59,7 @@ const AirpodsPage = () => {
                 </div>
             </section>
             <ProductList products={AirPods} />
-            <Pagination />
+            {/* <Pagination /> */}
             <Footer />
         </div>
     )

@@ -2,6 +2,7 @@ import React from 'react'
 import ProductCard from './ProductCard';
 // import { Macbook } from '../constants';
 
+// FIXME: Sort theo gia'
 const ProductList = (props) => {
     return (
 

@@ -1,10 +1,18 @@
 import React from 'react'
 import { carbon_neutral, hero_apple_watch_series_9, hero_iphone15, hero_iphone15pro, logo_watchSE, promo_airpods_pro, promo_apple_watch_se, promo_apple_watch_ultra2, promo_carbon_neutral, promo_ipadpro, promo_m2_chip, promo_macbook_air_15, watch_logo, watch_logo_ultra2 } from '../assets/img/index';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+    const navigate = useNavigate();
+    // FIXME: khi click vao anh -> navigate to san pham
+    const handleLabelClick = () => {
+        // Điều hướng đến component SignIn khi label được nhấp
+        navigate('/SignIn');
+    }
+
     return (
         <div className='bg-[#fbfbfd]'>
-            <div className="h-52 sm:h-96 carousel carousel-vertical font-SFPro ">
+            <div className="h-52 sm:h-96 carousel carousel-vertical font-SFPro " onClick={handleLabelClick}>
                 <div className="carousel-item h-full">
                     <span className='text-center font-medium text-2xl sm:text-3xl py-2 mt-2 absolute text-gray w-full'>iPhone 15 Pro
                         <div className='text-center font-extralight py-2 text-sm sm:text-xl absolute text-gray w-full'>
@@ -81,7 +89,7 @@ const Hero = () => {
             <div className='lg:flex mt-4 h-full font-SFPro gap-1'>
                 <div className="">
                     <div class="absolute lg:w-1/2 w-full">
-                        <div className='font-extralight py-2 text-sm sm:text-xl flex  text-white  text-center justify-center sm:w-full lg:leading-[56px]'>
+                        <div className='font-extralight py-4 text-sm sm:text-xl flex text-white  text-center justify-center sm:w-full lg:leading-[56px]'>
                             Siêu mạnh mẽ với
                             <img src={promo_m2_chip} className='px-2 w-14 lg:w-20' alt='' />
                         </div>
@@ -92,7 +100,7 @@ const Hero = () => {
                 </div>
 
                 <div className="">
-                    <div className='text-center sm:text-2xl font-medium absolute z-10 text-white pt-3 lg:w-1/2 w-full text-base' >
+                    <div className='text-center sm:text-2xl font-medium absolute z-[2] text-white pt-3 lg:w-1/2 w-full text-base' >
                         AirPods Pro
                         <div className=' text-center sm:text-base font-light pt-2 text-sm'>
                             Âm Thanh Thích Ứng. Đang phát.

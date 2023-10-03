@@ -18,6 +18,7 @@ import ProductPage from './pages/ProductPage';
 import Footer from './components/Footer';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
+import Drawer from './components/Drawer';
 
 const router = createBrowserRouter([
   {
@@ -77,7 +78,12 @@ const router = createBrowserRouter([
     element:
       <SignUp />
 
-  }
+  },
+  {
+    path: '/Drawer',
+    element:
+      <Drawer />
+  },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

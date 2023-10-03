@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ProductList from '../components/ProductList';
 import Footer from '../components/Footer'
-import Pagination from '../components/Pagination';
+// import Pagination from '../components/Pagination';
 import { Iphone } from '../constants';
 import {
     hero_iphone_15__2x,
@@ -100,7 +100,7 @@ const IphonePage = () => {
                 </div>
             </section>
             <ProductList products={Iphone} />
-            <Pagination />
+            {/* <Pagination /> */}
             <Footer />
         </div>
     )
