@@ -15,14 +15,20 @@ module.exports = {
       'gray': '#8492a6',
       'gray-light': '#eff1f2',
       'black': '#000000',
-      'white': '#fff'
+      'white': '#fff',
+      'yellow': '#EAB308'
     },
     fontFamily: {
       'SFPro': ['SFPro', 'Arial']
     },
 
   },
-  plugins: [require("daisyui"), require('tailwindcss-animated')],
+  plugins:
+    [
+      require("daisyui"),
+      require('tailwindcss-animated'),
+
+    ],
 
 
 }
