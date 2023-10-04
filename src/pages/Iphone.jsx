@@ -4,6 +4,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ProductList from '../components/ProductList';
 import Footer from '../components/Footer'
 // import Pagination from '../components/Pagination';
+import { useNavigate } from "react-router-dom"
 import { Iphone } from '../constants';
 import {
     hero_iphone_15__2x,
@@ -13,6 +14,7 @@ import {
 
 
 const IphonePage = () => {
+    const navigate = useNavigate();
     return (
         <div>
             {/* Bread Crumb */}
@@ -34,10 +36,10 @@ const IphonePage = () => {
                 </div>
                 <p className='text-xl text-white font-normal my-3'>Từ 28.999.000đ</p>
                 <div class="flex justify-center align-middle gap-5">
-                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'>
+                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray' onClick={() => navigate("/Iphone/012")}>
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
+                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to='/Iphone/012'>
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>
@@ -55,10 +57,10 @@ const IphonePage = () => {
                 </div>
                 <p className='text-xl text-black font-normal my-3'>Từ 22.999.000đ</p>
                 <div class="flex justify-center align-middle gap-5">
-                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'>
+                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray' onClick={() => navigate("/Iphone/013")}>
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
+                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to='/Iphone/013'>
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>

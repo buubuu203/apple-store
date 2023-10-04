@@ -7,13 +7,12 @@ import {
     tile_watch_se_large_2x,
 } from '../assets/img';
 import Footer from '../components/Footer';
-// import Pagination from '../components/Pagination';
 import ProductList from '../components/ProductList';
 import { Watch } from '../constants';
-// import { Gallery } from '../components/Carousel';
-
+import { useNavigate } from "react-router-dom"
 
 const WatchPage = () => {
+    const navigate = useNavigate();
     return (
         <div>
             {/* Bread Crumb */}
@@ -35,10 +34,12 @@ const WatchPage = () => {
                 </div>
                 <p className='text-xl text-white font-normal my-3'>Từ 10.499.000đ</p>
                 <div class="flex justify-center align-middle gap-5">
-                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'>
+                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'
+                        onClick={() => navigate("/Watch/004")}
+                    >
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
+                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to="/Watch/004" >
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>
@@ -57,10 +58,11 @@ const WatchPage = () => {
                 </div>
                 <p className='text-xl text-black font-normal my-3'>Từ 21.999.000đ</p>
                 <div class="flex justify-center align-middle gap-5">
-                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'>
+                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'
+                        onClick={() => navigate("/Watch/015")}>
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
+                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to="/Watch/015">
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>
@@ -79,10 +81,12 @@ const WatchPage = () => {
                     </div>
                     <p className='text-xl text-black font-normal my-3'>Từ 6.399.000đ</p>
                     <div class="flex justify-center align-middle gap-5">
-                        <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'>
+                        <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'
+                            onClick={() => navigate("/Watch/001")}
+                        >
                             Mua
                         </button>
-                        <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
+                        <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to="/Watch/001" >
                             Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                         </Link>
                     </div>
@@ -92,13 +96,15 @@ const WatchPage = () => {
             <section id='products' className='max-container max-sm:mt-12 font-SFPro p-2 text-center my-3'>
                 <div className='flex flex-col justify-start gap-5 mt-2 pt-5 border-t-neutral-200'>
                     <h2 className='text-5xl font-medium '>
-                        Airpods
+                        Watch
                     </h2>
                     <p className=' mt-2 text-center text-slate-gray'>
                         Trải nghiệm chất lượng và phong cách hàng đầu với các lựa chọn được săn lùng của chúng tôi. Khám phá thế giới tiện nghi, thiết kế và giá trị
                     </p>
                 </div>
             </section>
+
+            {/* FIXME: TẠI SAO RENDER PRODUCT PAGE LỖI (AIRPODS VÀ WATCH) */}
             <ProductList products={Watch} />
             {/* <Pagination /> */}
             <Footer />

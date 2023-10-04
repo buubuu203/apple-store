@@ -65,7 +65,9 @@ import iphone_14_pro_max_256gb_didongviet_1_1 from './iphone/iphone_14_pro_max_2
 import iphone_14_pro_max_512gb_didongviet_2_1 from './iphone/iphone_14_pro_max_512gb_didongviet_2_1.webp'
 import hero_iphone_15__2x from './iphone/hero_iphone_15__2x.jpg'
 import hero_iphone_15_pro__2x from './iphone/hero_iphone_15_pro__2x.jpg'
-import iphone_se_hero__2x from './iphone/iphone_se_hero__2x.jpg'
+import iphone_se_hero__2x from './iphone/iphone_se_hero__2x.jpg';
+import iphone_15_didongviet from './iphone/iphone_15_didongviet.webp'
+import iphone_15_pro_didongviet from './iphone/iphone_15_pro_didongviet.webp'
 
 //Ipad Page
 import ipad_hero_2x from './ipad/ipad_hero_2x.jpg'
@@ -180,6 +182,8 @@ export {
     hero_iphone_15__2x,
     hero_iphone_15_pro__2x,
     iphone_se_hero__2x,
+    iphone_15_didongviet,
+    iphone_15_pro_didongviet,
 
     //Ipad page
     ipad_10_9inch_2022_64gb_5G_didongviet,

@@ -112,15 +112,22 @@ const ProductPage = () => {
                                 <p className="ml-2 text-sm font-medium text-gray-500">1,209 Đánh giá</p>
                             </div>
                             {/* Choose color section */}
-                            <h2 className="mt-8 text-base text-gray-900">Màu sắc</h2>
-                            <div className="mt-3 flex select-none flex-wrap items-center gap-1">
 
-                                {product.Colors.map(color =>
-                                    <label className="" key={color}>
-                                        <input type="radio" name="type" value="Trắng" className="peer sr-only" />
-                                        <p className="transition-all ease-linear duration-200 peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">{color}</p>
-                                    </label>)}
-                            </div>
+
+                            {/* Check color properties */}
+                            {product && product.Colors && (
+                                <div>
+                                    <h2 className="mt-8 text-base text-gray-900">Màu sắc</h2>
+                                    <div className="mt-3 flex select-none flex-wrap items-center gap-1">
+                                        {product.Colors.map(color => (
+                                            <label className="" key={color}>
+                                                <input type="radio" name="type" value="Trắng" className="peer sr-only" />
+                                                <p className="transition-all ease-linear duration-200 peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">{color}</p>
+                                            </label>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
 
 
                             {/* Choose GB section */}

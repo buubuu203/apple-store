@@ -6,12 +6,12 @@ import {
     Webstore_AirPods_Collection_Banner
 } from '../assets/img/index';
 import Footer from '../components/Footer';
-// import Pagination from '../components/Pagination';
 import ProductList from '../components/ProductList';
 import { AirPods } from '../constants';
-
+import { useNavigate } from "react-router-dom"
 
 const AirpodsPage = () => {
+    const navigate = useNavigate();
     return (
         <div>
             {/* Bread Crumb */}
@@ -37,10 +37,12 @@ const AirpodsPage = () => {
                 </div>
                 {/* <p className='text-xl text-black font-normal my-3'>Từ 22.999.000đ</p> */}
                 <div class="flex justify-center align-middle gap-5">
-                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'>
+                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'
+                        onClick={() => navigate("/AirPods/001")}
+                    >
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
+                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to="/AirPods/001">
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>
@@ -59,7 +61,6 @@ const AirpodsPage = () => {
                 </div>
             </section>
             <ProductList products={AirPods} />
-            {/* <Pagination /> */}
             <Footer />
         </div>
     )

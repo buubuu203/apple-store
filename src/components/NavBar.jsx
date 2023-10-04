@@ -4,7 +4,7 @@ import { IoCloseSharp } from 'react-icons/io5';
 import { navLinks } from '../constants';
 // import { useNavigate } from 'react-router-dom';
 // import { SearchArray } from '../constants';
-import Drawer from './Drawer'
+// import Drawer from './Drawer'
 import TopDrawer from './Drawer';
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);

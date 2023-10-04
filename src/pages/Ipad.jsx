@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ProductList from '../components/ProductList';
 import Footer from '../components/Footer'
-// import Pagination from '../components/Pagination';
 import { Ipad } from '../constants';
+import { useNavigate } from "react-router-dom";
 import {
     ipad_hero_2x,
     ipad_pro_hero_large,
@@ -13,6 +13,8 @@ import {
 
 
 const IpadPage = () => {
+    const navigate = useNavigate();
+
     return (
         <div>
             {/* Bread Crumb */}
@@ -38,10 +40,10 @@ const IpadPage = () => {
                     </div>
                     {/* <p className='text-xl text-black font-normal my-3'>Từ 32.999.000đ</p> */}
                     <div class="flex justify-center align-middle gap-5">
-                        <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'>
+                        <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray' onClick={() => navigate("/Ipad/001")}>
                             Mua
-                        </button>
-                        <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
+                        </button >
+                        <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to='/Ipad/001'>
                             Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                         </Link>
                     </div>
@@ -58,12 +60,12 @@ const IpadPage = () => {
                     </p>
                     <img src={promo_m2_chip} alt='m2' />
                 </div>
-                <p className='text-xl text-white font-normal my-3'>Từ 54.999.000đ</p>
+                <p className='text-xl text-white font-normal my-3'>Từ 23.290.000 đ</p>
                 <div class="flex justify-center align-middle gap-5">
-                    <button className='bg-blue text-white text-base py-1 px-3 rounded-2xl hover:text-blue hover:bg-gray'>
+                    <button className='bg-blue text-white text-base py-1 px-3 rounded-2xl hover:text-blue hover:bg-gray' onClick={() => navigate("/Ipad/018")}>
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 hover:opacity-50' href='#'>
+                    <Link className='text-blue text-base py-1 px-3 hover:opacity-50' to='/Ipad/018'>
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>

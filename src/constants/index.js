@@ -24,6 +24,8 @@ import {
     iphone_14_pro_max_128gb_didongviet_5,
     iphone_14_pro_max_256gb_didongviet_1_1,
     iphone_14_pro_max_512gb_didongviet_2_1,
+    iphone_15_didongviet,
+    iphone_15_pro_didongviet,
 
     //Ipad
     ipad_10_9inch_2022_64gb_5G_didongviet,
@@ -546,6 +548,36 @@ export const Iphone = [
         trongLuong: '240g',
         kichThuoc: 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm',
         Colors: ['Tím', 'Vàng', 'Xám', 'Bạc']
+    }, {
+        type: 'Iphone',
+        id: '012',
+        imgURL: iphone_15_pro_didongviet,
+        name: "iPhone 15 Pro Max 256GB Chính hãng (VN/A)",
+        price: "34.490.000 đ",
+        oldPrice: "38.990.000 đ",
+        CPU: 'A17 Pro,Apple GPU 6 nhân',
+        RAM: '256GB',
+        doPhanGiai: '2796 x 1290 pixel',
+        kichThuocMan: '6.7 inch - Tần số quét 120Hz',
+        DLpin: "4422mAh",
+        trongLuong: '221 grams',
+        kichThuoc: 'Dài 159.9 mm - Ngang 76.7 mm - Dày 8.25 mm',
+        Colors: ['Titan Xanh', 'Titan Đen', 'Titan Trắng', 'Titan tự nhiên']
+    }, {
+        type: 'Iphone',
+        id: '013',
+        imgURL: iphone_15_didongviet,
+        name: "iPhone 15 128GB Chính hãng (VN/A)",
+        price: "21.790.000 đ",
+        oldPrice: "22.990.000 đ",
+        CPU: 'A17 Pro,Apple GPU 6 nhân',
+        RAM: '256GB',
+        doPhanGiai: '2556 x 1179 pixels',
+        kichThuocMan: '6.1 inch - Tần số quét 120Hz',
+        DLpin: "3349mAh",
+        trongLuong: '171 grams',
+        kichThuoc: 'Dài 147.6 mm - Ngang 71.6 mm - Dày 7.80 mm',
+        Colors: ['Xanh dương', 'Vàng', 'Đen', 'Xanh lá', 'Hồng']
     },
 ];
 

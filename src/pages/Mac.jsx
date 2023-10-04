@@ -6,8 +6,10 @@ import ProductList from '../components/ProductList';
 import Footer from '../components/Footer'
 // import Pagination from '../components/Pagination';
 import { Macbook } from '../constants';
+import { useNavigate } from "react-router-dom"
 // import PaginatedItems from '../components/PaginatedItems';
 const MacPage = () => {
+    const navigate = useNavigate();
     return (
         <div>
             {/* Bread Crumb */}
@@ -29,10 +31,10 @@ const MacPage = () => {
                 </div>
                 <p className='text-xl text-black font-normal my-3'>Từ 32.999.000đ</p>
                 <div class="flex justify-center align-middle gap-5">
-                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'>
+                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray' onClick={() => navigate("/Macbook/007")}>
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
+                    <Link to='/Macbook/007' className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>
@@ -49,10 +51,10 @@ const MacPage = () => {
                 </div>
                 <p className='text-xl text-black font-normal my-3'>Từ 54.999.000đ</p>
                 <div class="flex justify-center align-middle gap-5">
-                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'>
+                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray' onClick={() => navigate("/Macbook/008")}>
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
+                    <Link to='/Macbook/008' className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>
@@ -69,10 +71,10 @@ const MacPage = () => {
                 </div>
                 <p className='text-xl text-black font-normal my-3'>Từ 179.999.000đ</p>
                 <div class="flex justify-center align-middle gap-5">
-                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'>
+                    <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray' onClick={() => navigate("/Macbook/010")}>
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
+                    <Link to='/Macbook/010' className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' href='#'>
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>
