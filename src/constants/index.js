@@ -79,6 +79,19 @@ import {
     Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_M_L_didongviet,
     Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_S_M_didongviet,
     Apple_Watch_Ultra2_49_mm_LTE_Viền_Titan_Dây_Ocean_didongviet,
+    hero_iphone15,
+    hero_iphone15pro,
+    hero_apple_watch_series_9,
+    watch_logo,
+    watch_logo_ultra2,
+    promo_apple_watch_ultra2,
+    carbon_neutral,
+    promo_carbon_neutral,
+    logo_watchSE,
+    promo_apple_watch_se,
+    promo_macbook_air_15,
+    promo_ipadpro,
+    promo_airpods_pro,
     // Apple_Watch_UCPUltra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_M_didongviet
 } from '../assets/img/index'
 
@@ -113,6 +126,68 @@ export const Airpods_Carousel = [
         imgURL: tile_spatial_audio,
         title: 'Trợ Năng'
     }
+]
+
+export const HomePage_Hero = [
+
+    {
+        // 00
+        imgURL: hero_iphone15,
+        title: 'iPhone 15 Pro',
+        description: 'Titan. Thật bền chắc. Thật nhẹ. Thật Pro.',
+    }, {
+        //01
+        imgURL: hero_iphone15pro,
+        title: null,
+        description: null
+
+    }, {
+        //02
+        imgURL: hero_apple_watch_series_9,
+        logoURL: watch_logo,
+        title: null,
+        description: 'Thông minh hơn. Sáng hơn. Quyền năng hơn.'
+
+    }, {
+        //03
+        imgURL: promo_apple_watch_ultra2,
+        logoURL: watch_logo_ultra2,
+        title: null,
+        description: 'Một đẳng cấp phiêu lưu mới.'
+
+    }, {
+        //04
+        imgURL: promo_carbon_neutral,
+        logoURL: carbon_neutral,
+        title: null,
+        description: 'Thành tựu đầu tiên từ Apple Watch. Và Apple.'
+    }, {
+        //05
+        imgURL: promo_apple_watch_se,
+        logoURL: logo_watchSE,
+        title: null,
+        description: 'Một mối quá tuyệt.'
+    }, {
+        //06
+        imgURL: promo_macbook_air_15,
+        logoURL: null,
+        title: ' MacBook Air 15”',
+        description: 'Lớn ấn tượng. Mỏng không tưởng.'
+    }, {
+        //07
+        imgURL: promo_ipadpro,
+        logoURL: null,
+        title: null,
+        description: 'Siêu mạnh mẽ với'
+
+    }, {
+        //08
+        imgURL: promo_airpods_pro,
+        logoURL: null,
+        title: 'AirPods Pro',
+        description: 'Âm Thanh Thích Ứng. Đang phát.'
+
+    },
 ]
 export const Macbook = [
     {

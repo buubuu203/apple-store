@@ -13,7 +13,7 @@ function TopDrawer() {
     return (
         <div className="drawer font-SFPro">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" ></input>
-            <div className="drawer-content  hidden hover:text-gray lg:flex btn btn-ghost btn-circle">
+            <div className="drawer-content hidden hover:text-gray lg:flex btn btn-ghost btn-circle">
                 {/* Page content here */}
                 <label htmlFor="my-drawer" className="p-2 text-white drawer-button border-none">
                     {/* <label tabIndex={0} className="btn btn-ghost btn-circle"> */}

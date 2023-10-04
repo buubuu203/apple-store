@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import Button from '../components/Button';
 import { AirPods, Ipad, Iphone, Macbook, Watch } from '../constants';
 
 const ProductPage = () => {
-    // FIXME: refresh khi bam vao product
     const { id, type } = useParams();
     const data = {
         Macbook: Macbook,
@@ -25,7 +24,13 @@ const ProductPage = () => {
     const navigateHome = () => {
         navigate('/');
     };
-
+    useEffect(() => {
+        if (window !== undefined)
+            window?.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+    }, [])
 
     return (
         <div>
@@ -109,21 +114,12 @@ const ProductPage = () => {
                             {/* Choose color section */}
                             <h2 className="mt-8 text-base text-gray-900">Màu sắc</h2>
                             <div className="mt-3 flex select-none flex-wrap items-center gap-1">
-                                {/* FIXME: update color trong mang */}
-                                <label className="">
-                                    <input type="radio" name="type" value="Đen" className="peer sr-only" checked />
-                                    <p className="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">Đen
-                                        {/* Map mảng color */}
-                                    </p>
-                                </label>
-                                <label className="">
-                                    <input type="radio" name="type" value="Bạc" className="peer sr-only" />
-                                    <p className="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">Bạc</p>
-                                </label>
-                                <label className="">
-                                    <input type="radio" name="type" value="Trắng" className="peer sr-only" />
-                                    <p className="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">Trắng</p>
-                                </label>
+
+                                {product.Colors.map(color =>
+                                    <label className="" key={color}>
+                                        <input type="radio" name="type" value="Trắng" className="peer sr-only" />
+                                        <p className="transition-all ease-linear duration-200 peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">{color}</p>
+                                    </label>)}
                             </div>
 
 

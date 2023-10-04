@@ -6,7 +6,7 @@ import ProductList from '../components/ProductList';
 import Footer from '../components/Footer'
 // import Pagination from '../components/Pagination';
 import { Macbook } from '../constants';
-import PaginatedItems from '../components/PaginatedItems';
+// import PaginatedItems from '../components/PaginatedItems';
 const MacPage = () => {
     return (
         <div>
@@ -93,7 +93,7 @@ const MacPage = () => {
             </section>
             <ProductList products={Macbook} />
             {/* FIXME: Pagination hoat dong */}
-            <PaginatedItems itemsPerPage={8} products={Macbook} />
+            {/* <PaginatedItems itemsPerPage={8} products={Macbook} /> */}
             {/* <Pagination /> */}
 
             <Footer />
