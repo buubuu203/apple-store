@@ -1,3 +1,7 @@
+//customer review
+import customer1 from './reviews/customer1.jpg'
+import customer2 from './reviews/customer2.jpg'
+import customer3 from './reviews/customer3.jpg'
 
 // banner
 import banner1 from './banner1.png';
@@ -121,6 +125,11 @@ import tile_watch_se_large_2x from './watch/tile_watch_se_large_2x.jpg'
 
 
 export {
+    //customer reviews
+    customer1,
+    customer2,
+    customer3,
+
     banner1,
     banner2,
     banner3,

@@ -95,6 +95,10 @@ import {
     promo_ipadpro,
     promo_airpods_pro,
     // Apple_Watch_UCPUltra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_M_didongviet
+
+    // Reviews
+    customer1, customer2, customer3
+
 } from '../assets/img/index'
 
 export const navLinks = [
@@ -105,7 +109,26 @@ export const navLinks = [
     { href: "/airpods", label: "AirPods" },
 ];
 
-
+export const reviews = [
+    {
+        imgURL: customer1,
+        customerName: 'Ariana Grande',
+        rating: 5,
+        feedback: "Sự chú ý đến từng chi tiết và chất lượng của sản phẩm vượt quá sự mong đợi của tôi. Rất khuyến khích!"
+    },
+    {
+        imgURL: customer2,
+        customerName: 'The Weeknd',
+        rating: 5,
+        feedback: "Sản phẩm không chỉ đáp ứng mà còn vượt quá sự mong đợi của tôi. Tôi chắc chắn sẽ là khách hàng quay trở lại!"
+    },
+    {
+        imgURL: customer3,
+        customerName: 'Taylor Swift',
+        rating: 5,
+        feedback: "Sản phẩm không chỉ đáp ứng mà còn vượt quá sự mong đợi của tôi. Rất khuyến khích!"
+    }
+];
 export const Airpods_Carousel = [
 
     {
@@ -206,7 +229,8 @@ export const Macbook = [
         DLpin: 'Khoảng 10 tiếng',
         trongLuong: '1.29 Kg',
         kichThuoc: '304.1 x 212.4 x 16.1 mm',
-        Colors: ['Xám', 'Vàng', 'Bạc']
+        Colors: ['Xám', 'Vàng', 'Bạc'],
+        Capacities: ['256GB']
     },
     {
         type: 'Macbook',
@@ -222,7 +246,8 @@ export const Macbook = [
         DLpin: '52.6 Wh',
         trongLuong: '1.24kg',
         kichThuoc: 'Dài 304.1 mm x Ngang 215 mm x Dày 11.3 mm',
-        Colors: ['Xám', 'Trắng', 'Bạc', 'Đen']
+        Colors: ['Xám', 'Trắng', 'Bạc', 'Đen'],
+        Capacities: ['256GB']
     },
     {
         type: 'Macbook',

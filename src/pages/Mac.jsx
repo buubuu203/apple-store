@@ -94,9 +94,6 @@ const MacPage = () => {
 
             </section>
             <ProductList products={Macbook} />
-            {/* FIXME: Pagination hoat dong */}
-            {/* <PaginatedItems itemsPerPage={8} products={Macbook} /> */}
-            {/* <Pagination /> */}
 
             <Footer />
         </div>

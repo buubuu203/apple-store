@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import Button from '../components/Button';
 import { AirPods, Ipad, Iphone, Macbook, Watch } from '../constants';
-
+import CustomerReviews from '../sections/CustomerReviews'
 const ProductPage = () => {
     const { id, type } = useParams();
     const data = {
@@ -130,32 +130,20 @@ const ProductPage = () => {
                             )}
 
 
-                            {/* Choose GB section */}
-                            {
-                                (product.type === 'Iphone' || product.type === 'Ipad' || product.type === 'Macbook') && (
-                                    <>
-                                        <h2 h2 className="mt-8 text-base text-gray-900">Chọn dung lượng</h2>
-                                        <div className="mt-3 flex select-none flex-wrap items-center gap-1">
-                                            <label className="">
-                                                <input type="radio" name="subscription" value="4 Months" className="peer sr-only" />
-                                                <p className="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">128GB</p>
-                                                <span className="mt-1 block text-center text-xs">+0đ</span>
+                            {/* Choose Capacities (GB) section */}
+                            {(product.type === 'Iphone' || product.type === 'Ipad' || product.type === 'Macbook') && product.Capacities && (
+                                <div>
+                                    <h2 className="mt-8 text-base text-gray-900">Dung lượng</h2>
+                                    <div className="mt-3 flex select-none flex-wrap items-center gap-1">
+                                        {product.Capacities.map(capacity => (
+                                            <label className="" key={capacity}>
+                                                <input type="radio" name="type" value="Trắng" className="peer sr-only" />
+                                                <p className="transition-all ease-linear duration-200 peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">{capacity}</p>
                                             </label>
-                                            <label className="">
-                                                <input type="radio" name="subscription" value="8 Months" className="peer sr-only" checked />
-                                                <p className="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">256GB</p>
-                                                <span className="mt-1 block text-center text-xs">+3.000.000đ</span>
-                                            </label>
-                                            <label className="">
-                                                <input type="radio" name="subscription" value="12 Months" className="peer sr-only" />
-                                                <p className="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">512GB</p>
-                                                <span className="mt-1 block text-center text-xs">+5.500.000đ</span>
-                                            </label>
-                                        </div>
-                                    </>
-                                )
-                            }
-
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
 
                             <div className="mt-10 flex flex-col  justify-between  border-t  py-4 sm:flex-row sm:space-y-0">
                                 <div className="flex items-end gap-8">
@@ -259,11 +247,16 @@ const ProductPage = () => {
                                 }
                             </div>
                         </div>
+
+                        <div className="col-span-full  border-t mt-4 pt-6 " >
+                            <p className='font-semibold text-2xl uppercase text-gray-dark'>Reviews</p>
+                            <CustomerReviews />
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* TODO: them phan review cua customer */}
+
 
         </div>
     )
