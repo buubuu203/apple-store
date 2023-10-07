@@ -19,6 +19,7 @@ import Footer from './components/Footer';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import Drawer from './components/Drawer';
+import ShoppingCart from './pages/ShoppingCart';
 
 const router = createBrowserRouter([
   {
@@ -83,7 +84,13 @@ const router = createBrowserRouter([
     path: '/Drawer',
     element:
       <Drawer />
+  }, {
+    path: '/ShoppingCart',
+    element:
+      <ShoppingCart />
   },
+
+
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

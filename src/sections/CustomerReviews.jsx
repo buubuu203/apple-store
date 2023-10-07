@@ -1,5 +1,7 @@
 import ReviewCard from "../components/ReviewCard";
 import { reviews } from "../constants";
+
+
 const CustomerReviews = () => {
     return (
         <reveal className='max-container font-SFPro'>

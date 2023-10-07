@@ -10,6 +10,10 @@ function TopDrawer() {
         navigate('/SignIn');
     }
 
+    // const handleCartClick = () => {
+    //     navigate('/ShoppingCart');
+    // }
+
     return (
         <div className="drawer font-SFPro">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" ></input>
@@ -41,7 +45,7 @@ function TopDrawer() {
                     <li><Link>Mục đã lưu</Link></li>
                     <li><Link>Tài khoản</Link></li>
                     <li><Link onClick={handleLabelClick}>Đăng nhập</Link></li>
-
+                    <li><Link to='/ShoppingCart'>Xem giỏ hàng</Link></li>
 
                 </ul>
             </div>
