@@ -22,7 +22,9 @@ module.exports = {
     fontFamily: {
       'SFPro': ['SFPro', 'Arial']
     },
-
+    backgroundImage: {
+      'shopping-cart': "url('./assets/img/shoppingCart/wallpapers.webp')",
+    }
   },
   plugins:
     [
@@ -30,6 +32,7 @@ module.exports = {
       require('tailwindcss-animated'),
 
     ],
+
 
 
 }
