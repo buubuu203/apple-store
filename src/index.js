@@ -20,6 +20,7 @@ import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import Drawer from './components/Drawer';
 import ShoppingCart from './pages/ShoppingCart';
+import CheckOut from './pages/CheckOut';
 
 const router = createBrowserRouter([
   {
@@ -89,7 +90,11 @@ const router = createBrowserRouter([
     element:
       <ShoppingCart />
   },
-
+  {
+    path: '/CheckOut',
+    element:
+      <CheckOut />
+  },
 
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

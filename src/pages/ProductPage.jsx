@@ -154,6 +154,7 @@ const ProductPage = () => {
                             </div>
 
                             {/* Add to cart btn */}
+                            {/* TODO: add to cart can be used, connect w the shopping cart page */}
                             <div class="w-fit"><Button title='Thêm vào giỏ hàng'></Button></div>
 
 
