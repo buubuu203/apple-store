@@ -123,8 +123,15 @@ import tile__large_2x from './watch/tile__large_2x.jpg'
 import tile_large_2x from './watch/tile_large_2x.jpg'
 import tile_watch_se_large_2x from './watch/tile_watch_se_large_2x.jpg'
 
+//delivery
+import giaohangnhanh from './icons/giaohangnhanh.png'
+import giaohangtietkiem from './icons/giaohangtietkiem.png'
 
 export {
+    // Delivery
+    giaohangnhanh,
+    giaohangtietkiem,
+
     //customer reviews
     customer1,
     customer2,
