@@ -1,8 +1,76 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Macbook } from '../constants'
+import { giaohangnhanh, giaohangtietkiem } from '../assets/img'
 
 const CheckOut = () => {
+    const Provinces = [
+        'An Giang',
+        'Bà Rịa - Vũng Tàu',
+        'Bạc Liêu',
+        'Bắc Kạn',
+        'Bắc Giang',
+        'Bắc Ninh',
+        'Bến Tre',
+        'Bình Dương',
+        'Bình Định',
+        'Bình Phước',
+        'Bình Thuận',
+        'Cà Mau',
+        'Cao Bằng',
+        'Cần Thơ',
+        'Đà Nẵng',
+        'Đắk Lắk',
+        'Đắk Nông',
+        'Điện Biên',
+        'Đồng Nai',
+        'Đồng Tháp',
+        'Gia Lai',
+        'Hà Giang',
+        'Hà Nam',
+        'Hà Nội',
+        'Hà Tây',
+        'Hà Tĩnh',
+        'Hải Dương',
+        'Hải Phòng',
+        'Hòa Bình',
+        'Hồ Chí Minh',
+        'Hậu Giang',
+        'Hưng Yên',
+        'Khánh Hòa',
+        'Kiên Giang',
+        'Kon Tum',
+        'Lai Châu',
+        'Lào Cai',
+        'Lạng Sơn',
+        'Lâm Đồng',
+        'Long An',
+        'Nam Định',
+        'Nghệ An',
+        'Ninh Bình',
+        'Ninh Thuận',
+        'Phú Thọ',
+        'Phú Yên',
+        'Quảng Bình',
+        'Quảng Nam',
+        'Quảng Ngãi',
+        'Quảng Ninh',
+        'Quảng Trị',
+        'Sóc Trăng',
+        'Sơn La',
+        'Tây Ninh',
+        'Thái Bình',
+        'Thái Nguyên',
+        'Thanh Hóa',
+        'Thừa Thiên – Huế',
+        'Tiền Giang',
+        'Trà Vinh',
+        'Tuyên Quang',
+        'Vĩnh Long',
+        'Vĩnh Phúc',
+        'Yên Bái',
+    ]
+
     return (
         <div>
             <div class="font-SFPro flex flex-col items-center border-b bg-white py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32">
@@ -19,7 +87,7 @@ const CheckOut = () => {
                             <div class="flex w-full flex-col px-4 py-4">
                                 <span class="font-semibold">{Macbook[1].name}</span>
                                 {/* ten bien the - color; gb (backend) */}
-                                <span class="float-right text-gray-400">{Macbook[1].RAM}</span>
+                                <span class="float-right text-gray-dark">{Macbook[1].RAM}</span>
                                 <p class="text-lg font-bold">{Macbook[1].price}</p>
                             </div>
                         </div>
@@ -28,22 +96,22 @@ const CheckOut = () => {
                             <div class="flex w-full flex-col px-4 py-4">
                                 <span class="font-semibold">{Macbook[2].name}</span>
                                 {/* ten bien the - color; gb (backend) */}
-                                <span class="float-right text-gray-400">{Macbook[2].RAM}</span>
+                                <span class="float-right text-gray-dark">{Macbook[2].RAM}</span>
                                 <p class="text-lg font-bold">{Macbook[2].price}</p>
                             </div>
                         </div>
                     </div>
 
-                    <p class="mt-8 text-lg font-medium">Shipping Methods</p>
+                    <p class="mt-8 text-lg font-medium">Phương thức vận chuyển</p>
                     <form class="mt-5 grid gap-6">
                         <div class="relative">
                             <input class="peer hidden" id="radio_1" type="radio" name="radio" checked />
                             <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
                             <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_1">
-                                <img class="w-14 object-contain" src="/images/naorrAeygcJzX0SyNI4Y0.png" alt="" />
+                                <img class="w-14 object-contain" src={giaohangnhanh} alt="" />
                                 <div class="ml-5">
-                                    <span class="mt-2 font-semibold">Fedex Delivery</span>
-                                    <p class="text-slate-500 text-sm leading-6">Delivery: 2-4 Days</p>
+                                    <span class="mt-2 font-semibold">Giao hàng nhanh</span>
+                                    <p class="text-slate-500 text-sm leading-6">Thời gian dự tính: 1-3 ngày</p>
                                 </div>
                             </label>
                         </div>
@@ -51,18 +119,18 @@ const CheckOut = () => {
                             <input class="peer hidden" id="radio_2" type="radio" name="radio" checked />
                             <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
                             <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_2">
-                                <img class="w-14 object-contain" src="/images/oG8xsl3xsOkwkMsrLGKM4.png" alt="" />
+                                <img class="w-14 object-contain" src={giaohangtietkiem} alt="" />
                                 <div class="ml-5">
-                                    <span class="mt-2 font-semibold">Fedex Delivery</span>
-                                    <p class="text-slate-500 text-sm leading-6">Delivery: 2-4 Days</p>
+                                    <span class="mt-2 font-semibold">Giao hàng tiết kiệm</span>
+                                    <p class="text-slate-500 text-sm leading-6">Thời gian dự tính: 1-3 ngày</p>
                                 </div>
                             </label>
                         </div>
                     </form>
                 </div>
                 <div class="mt-10 bg-gray-50 px-4 pt-8 lg:mt-0">
-                    <p class="text-xl font-medium">Payment Details</p>
-                    <p class="text-gray-400">Complete your order by providing your payment details.</p>
+                    <p class="text-xl font-medium">Chi tiết thanh toán</p>
+                    <p class="text-gray-400">Hoàn tất đơn đặt hàng của bạn bằng cách cung cấp chi tiết thanh toán của bạn.</p>
                     <div class="">
                         <label for="email" class="mt-4 mb-2 block text-sm font-medium">Email</label>
                         <div class="relative">
@@ -73,7 +141,7 @@ const CheckOut = () => {
                                 </svg>
                             </div>
                         </div>
-                        <label for="card-holder" class="mt-4 mb-2 block text-sm font-medium">Card Holder</label>
+                        <label for="card-holder" class="mt-4 mb-2 block text-sm font-medium">Chủ thẻ</label>
                         <div class="relative">
                             <input type="text" id="card-holder" name="card-holder" class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm uppercase shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="Your full name here" />
                             <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
@@ -82,8 +150,8 @@ const CheckOut = () => {
                                 </svg>
                             </div>
                         </div>
-                        <label for="card-no" class="mt-4 mb-2 block text-sm font-medium">Card Details</label>
-                        <div class="flex">
+                        <label for="card-no" class="mt-4 mb-2 block text-sm font-medium">Chi tiết thẻ</label>
+                        <div class="flex gap-2">
                             <div class="relative w-7/12 flex-shrink-0">
                                 <input type="text" id="card-no" name="card-no" class="w-full rounded-md border border-gray-200 px-2 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="xxxx-xxxx-xxxx-xxxx" />
                                 <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
@@ -96,16 +164,22 @@ const CheckOut = () => {
                             <input type="text" name="credit-expiry" class="w-full rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="MM/YY" />
                             <input type="text" name="credit-cvc" class="w-1/6 flex-shrink-0 rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="CVC" />
                         </div>
-                        <label for="billing-address" class="mt-4 mb-2 block text-sm font-medium">Billing Address</label>
-                        <div class="flex flex-col sm:flex-row">
+                        <label for="billing-address" class="mt-4 mb-2 block text-sm font-medium">Địa chỉ thanh toán</label>
+                        <div class="flex gap-2 flex-col sm:flex-row">
                             <div class="relative flex-shrink-0 sm:w-7/12">
-                                <input type="text" id="billing-address" name="billing-address" class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="Street Address" />
+                                <input type="text" id="billing-address" name="billing-address" class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="Số nhà, đường, phường/xã, quận/huyện" />
                                 <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
-                                    <img class="h-4 w-4 object-contain" src="https://flagpack.xyz/_nuxt/4c829b6c0131de7162790d2f897a90fd.svg" alt="" />
+                                    <img class="h-4 w-4 object-contain" src="https://flagpack.xyz/_nuxt/82862d96f28cd0c385b2afb862be8393.svg" alt="" />
                                 </div>
                             </div>
                             <select type="text" name="billing-state" class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500">
-                                <option value="State">State</option>
+                                {Provinces.map((item) =>
+                                    <option value={item}>{item}</option>
+                                )}
+
+
+                                <option value="Hồ Chí Minh">Hải Phòng</option>
+
                             </select>
                             <input type="text" name="billing-zip" class="flex-shrink-0 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none sm:w-1/6 focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="ZIP" />
                         </div>
@@ -113,16 +187,16 @@ const CheckOut = () => {
                         {/* <!-- Total --> */}
                         <div class="mt-6 border-t border-b py-2">
                             <div class="flex items-center justify-between">
-                                <p class="text-sm font-medium text-gray-900">Subtotal</p>
+                                <p class="text-sm font-medium text-gray-900">Tổng phụ</p>
                                 <p class="font-semibold text-gray-900">$399.00</p>
                             </div>
                             <div class="flex items-center justify-between">
-                                <p class="text-sm font-medium text-gray-900">Shipping</p>
+                                <p class="text-sm font-medium text-gray-900">Phí vận chuyển</p>
                                 <p class="font-semibold text-gray-900">$8.00</p>
                             </div>
                         </div>
                         <div class="mt-6 flex items-center justify-between">
-                            <p class="text-sm font-medium text-gray-900">Total</p>
+                            <p class="text-sm font-medium text-gray-900">Tổng cộng</p>
                             <p class="text-2xl font-semibold text-gray-900">$408.00</p>
                         </div>
                     </div>
