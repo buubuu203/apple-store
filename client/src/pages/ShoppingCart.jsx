@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Macbook } from '../constants'
 import { useState } from 'react';
 import Checkbox from '@mui/material/Checkbox';
@@ -30,7 +30,12 @@ const ShoppingCart = () => {
 
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
+    const navigate = useNavigate();
 
+    const handleLabelClick = () => {
+        // Điều hướng đến component SignIn khi label được nhấp
+        navigate('/CheckOut');
+    }
     return (
         <div className='font-SFPro'>
 
@@ -109,6 +114,7 @@ const ShoppingCart = () => {
                                 </div>
                                 <button
                                     className="bg-white gap-4  px-6 py-3 text-base tracking-wide text-black transition-colors duration-300 transform bg-blue-500 rounded-2xl hover:bg-blue hover:text-white focus:outline-none focus:ring focus:ring-blue focus:ring-opacity-50 w-fit mx-auto"
+                                    onClick={handleLabelClick}
                                 >
                                     Thanh toán
                                 </button>
