@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import Button from './Button';
+import Button from '../../components/Button';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 const SignUp = () => {
+
     const navigate = useNavigate();
 
     const handleLabelClick = () => {

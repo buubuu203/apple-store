@@ -6,7 +6,7 @@ import { navLinks } from '../constants';
 // import { SearchArray } from '../constants';
 // import Drawer from './Drawer'
 import TopDrawer from './Drawer';
-const Navbar = () => {
+const Navbar = ({ count }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
     // React state to manage visibility
     const [show, setShow] = useState();
@@ -81,7 +81,7 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <TopDrawer />
+                        <TopDrawer count={count} />
 
 
                     </div>

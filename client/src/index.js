@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
@@ -16,8 +16,8 @@ import WatchPage from './pages/Watch';
 import AirpodsPage from './pages/Airpods';
 import ProductPage from './pages/ProductPage';
 import Footer from './components/Footer';
-import SignIn from './components/SignIn';
-import SignUp from './components/SignUp';
+import SignIn from './pages/Login/SignIn';
+import SignUp from './pages/SignUp/SignUp';
 import Drawer from './components/Drawer';
 import ShoppingCart from './pages/ShoppingCart';
 import CheckOut from './pages/CheckOut';
@@ -26,48 +26,60 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <DefaultLayout>
-      <Header>
-      </Header>
-      <HomePage></HomePage>
+      <Fragment>
+        <Header>
+        </Header>
+        <HomePage></HomePage>
+      </Fragment>
     </DefaultLayout>,
 
   }, {
     path: "/macbook",
     element: <DefaultLayout>
-      <Header />
-      <MacPage></MacPage>
+      <Fragment>
+        <Header />
+        <MacPage></MacPage>
+      </Fragment>
     </DefaultLayout>,
   }, {
     path: "/iPad",
     element: <DefaultLayout>
-      <Header />
-      <IpadPage />
+      <Fragment>
+        <Header />
+        <IpadPage />
+      </Fragment>
     </DefaultLayout>,
   },
   {
     path: "/iPhone",
     element: <DefaultLayout>
-      <Header />
-      <IphonePage />
+      <Fragment>
+        <Header />
+        <IphonePage />
+      </Fragment>
     </DefaultLayout>,
   }, {
     path: "/Watch",
     element: <DefaultLayout>
-      <Header />
-      <WatchPage />
+      <Fragment>
+        <Header />
+        <WatchPage />
+      </Fragment>
     </DefaultLayout>,
   }, {
     path: "/Airpods",
     element: <DefaultLayout>
-      <Header />
-      <AirpodsPage />
+      <Fragment>
+        <Header />
+        <AirpodsPage />
+      </Fragment>
     </DefaultLayout>,
   }, {
     path: "/:type/:id",
     element: <DefaultLayout>
-      <Header />
+
       <ProductPage />
-      <Footer />
+
     </DefaultLayout>,
   },
   {

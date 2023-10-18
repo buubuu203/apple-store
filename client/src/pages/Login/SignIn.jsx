@@ -1,15 +1,25 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import AppleIcon from '../assets/apple.svg'
-import Button from './Button'
+import AppleIcon from '../../assets/apple.svg'
+import Button from '../../components/Button'
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
-const SignIn = () => {
+const SignIn = ({ loginError }) => {
     const navigate = useNavigate();
 
     const handleLabelClick = () => {
         // Điều hướng đến component SignIn khi label được nhấp
         navigate('/');
     }
+
+
+    // const userName = useRef()
+    // const password = useRef()
+    // const handleLogin = () => {
+    //     if (userName.current.value === 'admin@gmail.com' && password.current.value === 'admin') {
+    //         localStorage.setItem("userNameData", "admin@gmail.com")
+    //         localStorage.setItem("passwordData", "admin")
+    //     }
+    // }
     return (
         <>
             <div className='m-5 text-gray' onClick={handleLabelClick}>
@@ -25,7 +35,8 @@ const SignIn = () => {
                 </div>
 
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form className="space-y-6" action="#" method="POST">
+                    <form className="space-y-6" action="#" method="POST"
+                        onSubmit={(e) => e.preventDefault()}>
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                                 Email hoặc số điện thoại
@@ -36,9 +47,12 @@ const SignIn = () => {
                                     name="email"
                                     type="email"
                                     autoComplete="email"
+                                    // value={userName}
+                                    // ref={userName}
                                     required
                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray placeholder:text-gray-400 focus:ring-1 focus:ring-inset sm:text-sm sm:leading-6 pl-3"
                                 />
+                                {loginError && <span className="error-text">{loginError}</span>}
                             </div>
                         </div>
 
@@ -60,6 +74,8 @@ const SignIn = () => {
                                     type="password"
                                     autoComplete="current-password"
                                     required
+                                    // value={password}
+                                    // ref={password}
                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray placeholder:text-gray-400 focus:ring-1 focus:ring-inset sm:text-sm sm:leading-6 pl-3"
                                 />
                             </div>
@@ -81,4 +97,6 @@ const SignIn = () => {
         </>
     )
 }
+
+
 export default SignIn

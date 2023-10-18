@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import Button from '../components/Button';
 import { AirPods, Ipad, Iphone, Macbook, Watch } from '../constants';
 import CustomerReviews from '../sections/CustomerReviews'
-const ProductPage = () => {
+const ProductPage = ({ updateCount }) => {
     const { id, type } = useParams();
+    const colorRef = useRef('')
     const data = {
         Macbook: Macbook,
         Iphone: Iphone,
@@ -24,6 +25,30 @@ const ProductPage = () => {
     const navigateHome = () => {
         navigate('/');
     };
+
+    const addToCart = (prod) => {
+        // lay data cua gio hang (localStorage chi luu data dang string)
+        const cartJSONString = window.localStorage.getItem('cart')
+        // Vi string JSON muon chuyen ve dang truoc do [1] thi dungf JSON.parse
+        const cart = JSON.parse(cartJSONString)
+        // Khoi tao san pham vua bam
+        const productCart = {
+            id: prod.id,
+            imgURL: prod.imgURL,
+            name: prod.name,
+            price: prod.price,
+            color: colorRef.current,
+            quantity: 1,
+            total: prod.price
+        }
+        // Tao mang moi
+        const newCart = [...cart || [], productCart]
+        // Vi newCart la list nen phai JSON.stringify de thanh chuoi string
+        // O day [1] o tren co nghia la dang list
+        updateCount(newCart.length)
+        window.localStorage.setItem('cart', JSON.stringify(newCart))
+    }
+
     useEffect(() => {
         if (window !== undefined)
             window?.scrollTo({
@@ -120,7 +145,7 @@ const ProductPage = () => {
                                     <h2 className="mt-8 text-base text-gray-900">Màu sắc</h2>
                                     <div className="mt-3 flex select-none flex-wrap items-center gap-1">
                                         {product.Colors.map(color => (
-                                            <label className="" key={color}>
+                                            <label onClick={() => colorRef.current = color} className="" key={color}>
                                                 <input type="radio" name="type" value="Trắng" className="peer sr-only" />
                                                 <p className="transition-all ease-linear duration-200 peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">{color}</p>
                                             </label>
@@ -155,7 +180,7 @@ const ProductPage = () => {
 
                             {/* Add to cart btn */}
                             {/* TODO: add to cart can be used, connect w the shopping cart page */}
-                            <div class="w-fit"><Button title='Thêm vào giỏ hàng'></Button></div>
+                            <div class="w-fit"><Button onClick={() => addToCart(product)} title='Thêm vào giỏ hàng'></Button></div>
 
 
                             <ul className="mt-8 space-y-2">

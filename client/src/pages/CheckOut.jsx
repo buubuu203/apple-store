@@ -1,9 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Macbook } from '../constants'
+import React, { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { giaohangnhanh, giaohangtietkiem } from '../assets/img'
+import Button from '../components/Button'
 
 const CheckOut = () => {
+
+    const navigate = useNavigate();
+    const [products, setProducts] = useState([]);
+    const [totalPrice, setTotalPrice] = useState(0);
+
     const Provinces = [
         'An Giang',
         'Bà Rịa - Vũng Tàu',
@@ -70,6 +75,25 @@ const CheckOut = () => {
         'Vĩnh Phúc',
         'Yên Bái',
     ]
+    const resetCart = () => {
+        window.localStorage.removeItem('cart')
+        navigate('/')
+    }
+
+    useEffect(() => {
+        // lay data cua gio hang (localStorage chi luu data dang string)
+        const cartJSONString = window.localStorage.getItem('cart')
+        // Vi string JSON muon chuyen ve dang truoc do [1] thi dungf JSON.parse
+        const cart = JSON.parse(cartJSONString)
+        const totalPrice = cart?.reduce((total, product) => {
+            return total + (+product?.total?.replaceAll('.', '')?.replace('đ', '') * +product.quantity
+            )
+
+        }, 0)
+        setTotalPrice(totalPrice)
+        setProducts(cart)
+
+    }, [])
 
     return (
         <div>
@@ -82,24 +106,19 @@ const CheckOut = () => {
                     <p class="text-xl font-medium">Sản phẩm đã chọn</p>
                     <p class="text-gray-400">Kiểm tra các mục của bạn. Và lựa chọn phương thức vận chuyển phù hợp.</p>
                     <div class="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6">
-                        <div class="flex flex-col rounded-lg bg-white sm:flex-row">
-                            <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src={Macbook[1].imgURL} alt={Macbook[1].name} />
-                            <div class="flex w-full flex-col px-4 py-4">
-                                <span class="font-semibold">{Macbook[1].name}</span>
-                                {/* ten bien the - color; gb (backend) */}
-                                <span class="float-right text-gray-dark">{Macbook[1].RAM}</span>
-                                <p class="text-lg font-bold">{Macbook[1].price}</p>
+                        {products?.map(product => {
+                            return <div class="flex flex-col rounded-lg bg-white sm:flex-row">
+                                <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src={product?.imgURL} alt={product?.name} />
+                                <div class="flex w-full flex-col px-4 py-4">
+                                    <span class="font-semibold">{product?.name}</span>
+                                    {/* ten bien the - color; gb (backend) */}
+                                    <span class="float-right text-gray-dark">{product?.RAM}</span>
+                                    <p class="text-lg font-bold">{product?.price}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex flex-col rounded-lg bg-white sm:flex-row">
-                            <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src={Macbook[2].imgURL} alt={Macbook[2].name} />
-                            <div class="flex w-full flex-col px-4 py-4">
-                                <span class="font-semibold">{Macbook[2].name}</span>
-                                {/* ten bien the - color; gb (backend) */}
-                                <span class="float-right text-gray-dark">{Macbook[2].RAM}</span>
-                                <p class="text-lg font-bold">{Macbook[2].price}</p>
-                            </div>
-                        </div>
+                        })}
+
+
                     </div>
 
                     <p class="mt-8 text-lg font-medium">Phương thức vận chuyển</p>
@@ -188,19 +207,19 @@ const CheckOut = () => {
                         <div class="mt-6 border-t border-b py-2">
                             <div class="flex items-center justify-between">
                                 <p class="text-sm font-medium text-gray-900">Tổng phụ</p>
-                                <p class="font-semibold text-gray-900">$399.00</p>
+                                <p class="font-semibold text-gray-900">{totalPrice?.toLocaleString()}</p>
                             </div>
                             <div class="flex items-center justify-between">
                                 <p class="text-sm font-medium text-gray-900">Phí vận chuyển</p>
-                                <p class="font-semibold text-gray-900">$8.00</p>
+                                <p class="font-semibold text-gray-900">0.000 đ</p>
                             </div>
                         </div>
                         <div class="mt-6 flex items-center justify-between">
                             <p class="text-sm font-medium text-gray-900">Tổng cộng</p>
-                            <p class="text-2xl font-semibold text-gray-900">$408.00</p>
+                            <p class="text-2xl font-semibold text-gray-900">{(totalPrice)?.toLocaleString()} đ</p>
                         </div>
                     </div>
-                    <button class="mt-4 mb-8 w-full rounded-md bg-gray-900 px-6 py-3 font-medium text-white">Place Order</button>
+                    <Button title="Place Order" onClick={resetCart} class="mt-4 mb-8 w-full rounded-md bg-gray-900 px-6 py-3 font-medium text-white"></Button>
                 </div>
             </div>
         </div>
