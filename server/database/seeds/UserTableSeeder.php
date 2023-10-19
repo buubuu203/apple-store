@@ -13,7 +13,7 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('User')->insert([
+        DB::table('user')->insert([
             [
                 'del_flag' => false,
                 'fullname' => 'John Doe',
