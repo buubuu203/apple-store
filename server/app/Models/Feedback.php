@@ -11,9 +11,9 @@ class Feedback extends Model
 
     protected $table = 'feedback';
     protected $primaryKey = 'feedback_id';
-    protected $fillable = ['member_id', 'product_id', 'rate', 'note'];
+    protected $fillable = ['user_id', 'product_id', 'rate', 'note'];
 
-    public function member() {
-        return $this->belongsTo(Member::class);
+    public function user() {
+        return $this->belongsTo(User::class);
     }
 }
