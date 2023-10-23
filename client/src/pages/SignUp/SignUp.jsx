@@ -10,6 +10,31 @@ const SignUp = () => {
         // Điều hướng đến component SignIn khi label được nhấp
         navigate('/');
     }
+    // Check Password
+    const [password1, setPassword1] = useState('');
+    const [password2, setPassword2] = useState('');
+    const [passwordsMatch, setPasswordsMatch] = useState(true);
+
+    const handlePasswordChange = (e) => {
+        const { id, value } = e.target;
+        if (id === 'password1') {
+            setPassword1(value);
+        } else if (id === 'password2') {
+            setPassword2(value);
+        }
+    }
+
+    const handleCheckPassword = () => {
+        if (password1 === password2) {
+            setPasswordsMatch(true);
+            navigate('/')
+        } else {
+            setPasswordsMatch(false);
+            window.alert('Mật khẩu không trùng khớp')
+        }
+
+
+    }
     return (
         <section className="bg-white dark:bg-gray-900 font-SFPro">
 
@@ -33,16 +58,16 @@ const SignUp = () => {
 
 
                         <form className="grid grid-cols-1 gap-4 md:gap-6 mt-8 md:grid-cols-2">
-                            <div className=''>
+                            {/* <div className=''>
                                 <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Họ</label>
                                 <input type="text" placeholder="John" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-gray focus:outline-none focus:ring focus:ring-opacity-40" />
-                            </div>
+                            </div> */}
 
                             <div>
-                                <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Tên</label>
+                                <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Họ và tên</label>
                                 <input type="text" placeholder="Snow" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-gray focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
-
+                            {/* /TODO: kiểm tra SĐT (vì trong DB xài varchar) */}
                             <div>
                                 <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Số điện thoại</label>
                                 <input type="text" placeholder="XXX-XX-XXXX-XXX" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-gray focus:outline-none focus:ring focus:ring-opacity-40" />
@@ -55,20 +80,35 @@ const SignUp = () => {
 
                             <div>
                                 <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Mật khẩu</label>
-                                <input type="password" placeholder="Nhập mật khẩu" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-gray focus:outline-none focus:ring focus:ring-opacity-40" />
+                                <input
+                                    id="password1"
+                                    type="password"
+                                    placeholder="Nhập mật khẩu"
+                                    value={password1}
+                                    onChange={handlePasswordChange}
+                                    className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-gray focus:outline-none focus:ring focus:ring-opacity-40"
+                                />
                             </div>
 
                             <div>
                                 <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Xác nhận mật khẩu</label>
-                                <input type="password" placeholder="Nhập lại mật khẩu" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-gray focus:outline-none focus:ring focus:ring-opacity-40" />
+                                <input
+                                    id="password2"
+                                    type="password"
+                                    placeholder="Nhập lại mật khẩu"
+                                    value={password2}
+                                    onChange={handlePasswordChange}
+                                    className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-gray focus:outline-none focus:ring focus:ring-opacity-40"
+                                />
                             </div>
+
 
                             <div className='text-gray-dark col-span-2'>
                                 Bạn đã có tài khoản.
                                 <Link to='/SignIn' onClick={() => { <span className="loading loading-ring loading-lg"></span> }} className='hover:text-gray text-blue  m-auto items-center'> Đăng nhập ngay</Link>
 
                             </div>
-                            <div class="justify-self-start"><Button title="Đăng ký" /></div>
+                            <div class="justify-self-start"><Button title="Đăng ký" onClick={handleCheckPassword} /></div>
 
                         </form>
                     </div>
