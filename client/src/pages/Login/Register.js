@@ -1,4 +1,4 @@
-function Login()
+function Register()
 {
     return(
         <div>
@@ -7,4 +7,4 @@ function Login()
     )
 }
 
-export default Login
+export default Register
