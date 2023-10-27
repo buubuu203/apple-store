@@ -1,7 +1,8 @@
 <?php
-
+//php artisan db:seed --class=RolesTableSeeder
 namespace Database\Seeders;
 
+use App\Models\Role;
 use Illuminate\Database\Seeder;
 
 class RolesTableSeeder extends Seeder
@@ -13,6 +14,15 @@ class RolesTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $roles = [
+            ['name' => 'Administrator',],
+            ['name' => 'User'],
+            // Add more categories as needed
+        ];
+
+        // Loop through the categories and insert them into the 'categories' table
+        foreach ($roles as $role) {
+            Role::create($role);
+        }
     }
 }
