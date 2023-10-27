@@ -1,73 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # apple-store
 
 <div id="top"></div>
@@ -156,9 +86,9 @@ Visit our website now and discover the magic of Apple at your fingertips.
 <p>The application is developed using the following technologies:</p>
 
 <ul>
-    <li>Tool : </li>
+    <li>Tool : BE: Laravel + FE: ReactJS</li>
     <li>IDE: Visual Studio Code</li>
-    <li>Database: </li>
+    <li>Database: MySQL</li>
     <li>Management tools: Git, GitHub</li>
 </ul>
 
@@ -178,15 +108,15 @@ Visit our website now and discover the magic of Apple at your fingertips.
    <strong>
     Practical Application
 </strong>
-<p>A highly practical and user-friendly application that is easy to modify.</p>
+<p>......</p>
 <strong>Application Requirements</strong>
 
 <p>
-    * Easy information retrieval. <br>
-    * The application must be compatible with most common operating systems such as Android 10, Android 11, Android 12, Ios 13, Ios 14, etc. It should operate stably, avoiding system crashes that cause inconvenience to users
-    during use. Additionally, the application should be easy to expand and upgrade in the future. <br>
-    * A friendly interface with a reasonable layout that is harmonious in color and highly synchronized, and allows
-    granting of user permissions through an account.
+    ......
+     <br>
+    ......
+     <br>
+    ......
 </p>
   
 </div>
@@ -225,37 +155,37 @@ Rental Vouchers and Invoices Management
 
 ## Installation
 
-1. Download the Flutter SDK from [the Flutter website](https://flutter.dev/sdk/).
-2. Install the Dart SDK from [the Dart website](https://dart.dev/get-dart).
-3. Download Paradise Hotel Management Source :  https://github.com/ManhHoDinh/Paradise_Hotel_Management.
-4. In the project directory, run the following command to install the dependencies:
+1. Download and install NodeJS from [Node.JS](https://nodejs.org/en)
+2. Download and install Composer from [Composer](https://getcomposer.org/).
+3. Download Apple Store Source : https://github.com/buubuu203/apple-store.
+4. In the project terminal, run the following command to start the BE and FE:
++ With BE, run: php artisan serve
++ With FE, run: npm start
 
-+ flutter pub get
-5. Run the app by clicking the "Run" button in your IDE.
-The app should now run on your device or in the simulator.
 # Author
 
 <div id="tacGia">
 
 <ul>
-    <li><a style="text-decoration: none;" href="https://github.com/ManhHoDinh">Hồ Đình Mạnh</a></li>
-    <li><a style="text-decoration: none;" href="https://github.com/TuongPhamCT">Phạm Thanh Tường</a></li>
-    <li><a style="text-decoration: none;" href="https://github.com/vocongbinh">Võ Công Bình</a></li>
+    <li><a style="text-decoration: none;" href="https://github.com/Huynhphuoclan">Huỳnh Phước Lân</a></li>
+    <li><a style="text-decoration: none;" href="https://github.com/hhanh123">Hoàng Thị Mỹ Hạnh</a></li>
+    <li><a style="text-decoration: none;" href="https://github.com/LTThuyLinh">Lê Trần Thùy Linh</a></li>
     <li><a style="text-decoration: none;" href="https://github.com/thienenpi">Nguyễn Phước Thiện</a></li>
     <li><a style="text-decoration: none;" href="https://github.com/buubuu203">Châu Ngọc Bửu Đăng</a></li>
+    <li><a style="text-decoration: none;" href="https://github.com/">Lê Yến Nhi</a></li>
 </
    </div>
   
   <!-- Instructor -->
 <div id="nguoiHuongDan">
-   <h3>Instructor</h3>GV. Đỗ Thị Thanh Tuyền
+   <h3>Instructor</h3>GV. 
 </div>
 <!-- Summary -->
 <div id="tongKet">
     <h3>Conclusion</h3>
     <p>
         This product is the result of the project that the members in the team have worked on together. Through this process, the members have gained knowledge and specific professional skills in real programming processes, gained a better understanding of programming, and learned valuable lessons for their future work.
-    In addition, the team would like to express their sincere gratitude and deep appreciation to the instructor, Ms. Đỗ Thị Thanh Tuyền, who has accompanied them throughout the project to achieve today's results.
+    In addition, the team would like to express their sincere gratitude and deep appreciation to the instructor, Mr. ......, who has accompanied them throughout the project to achieve today's results.
     Thank you for your interest!
 
 
