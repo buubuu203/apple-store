@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoCloseSharp } from 'react-icons/io5';
-import { navLinks } from '../constants';
+// import { navLinks } from '../constants';
+import { getAllNameCategories } from '../api/category'
 // import { useNavigate } from 'react-router-dom';
 // import { SearchArray } from '../constants';
 // import Drawer from './Drawer'
@@ -10,6 +11,7 @@ const Navbar = ({ count }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
     // React state to manage visibility
     const [show, setShow] = useState();
+    const [navLinks, setNavLinks] = useState([]);
 
     // function to toggle the boolean value
     function handleClick() {
@@ -36,6 +38,13 @@ const Navbar = ({ count }) => {
     // Trigger render with updated values
     //     setFilteredList(updatedList);
     // };
+    useEffect(()=>{
+        getAllNameCategories().then(({data})=>{
+
+            console.log('data', data)
+            setNavLinks(data)
+        }).catch(e=> console.log('e', e))
+    },[])
 
     return (
         <>
@@ -48,12 +57,12 @@ const Navbar = ({ count }) => {
                     </a>
                     <ul className="flex-1 lg:flex justify-center items-center gap-16  hidden ">
                         {navLinks.map((item) => (
-                            <li key={item.label} >
+                            <li key={item.name} >
                                 <a
-                                    href={item.href}
+                                    href={`/categories/${item?.id}`}
                                     className=" cursor-pointer text-white hover:text-gray"
                                 >
-                                    {item.label}
+                                    {item.name}
                                 </a>
                             </li>
                         ))}

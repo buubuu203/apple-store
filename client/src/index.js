@@ -8,9 +8,7 @@ import './assets/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF';
 import './index.css';
 import DefaultLayout from './layouts/DefaultLayout';
 import HomePage from './pages/HomePage';
-import Header from './components/Header';
-import IpadPage from './pages/Ipad';
-import MacPage from './pages/Mac';
+import Header from './components/Header'; 
 import IphonePage from './pages/Iphone';
 import WatchPage from './pages/Watch';
 import AirpodsPage from './pages/Airpods';
@@ -21,7 +19,41 @@ import SignUp from './pages/SignUp/SignUp';
 import Drawer from './components/Drawer';
 import ShoppingCart from './pages/ShoppingCart';
 import CheckOut from './pages/CheckOut';
-
+import Products from './pages/Products';
+// {
+//   path: "/iPad",
+//   element: <DefaultLayout>
+//     <Fragment>
+//       <Header />
+//       <IpadPage />
+//     </Fragment>
+//   </DefaultLayout>,
+// },
+// {
+//   path: "/iPhone",
+//   element: <DefaultLayout>
+//     <Fragment>
+//       <Header />
+//       <IphonePage />
+//     </Fragment>
+//   </DefaultLayout>,
+// }, {
+//   path: "/Watch",
+//   element: <DefaultLayout>
+//     <Fragment>
+//       <Header />
+//       <WatchPage />
+//     </Fragment>
+//   </DefaultLayout>,
+// }, {
+//   path: "/Airpods",
+//   element: <DefaultLayout>
+//     <Fragment>
+//       <Header />
+//       <AirpodsPage />
+//     </Fragment>
+//   </DefaultLayout>,
+// }
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,52 +66,17 @@ const router = createBrowserRouter([
     </DefaultLayout>,
 
   }, {
-    path: "/macbook",
+    path: "/categories/:id",
     element: <DefaultLayout>
       <Fragment>
         <Header />
-        <MacPage></MacPage>
+        <Products></Products>
       </Fragment>
     </DefaultLayout>,
   }, {
-    path: "/iPad",
+    path: "/product/:id",
     element: <DefaultLayout>
-      <Fragment>
-        <Header />
-        <IpadPage />
-      </Fragment>
-    </DefaultLayout>,
-  },
-  {
-    path: "/iPhone",
-    element: <DefaultLayout>
-      <Fragment>
-        <Header />
-        <IphonePage />
-      </Fragment>
-    </DefaultLayout>,
-  }, {
-    path: "/Watch",
-    element: <DefaultLayout>
-      <Fragment>
-        <Header />
-        <WatchPage />
-      </Fragment>
-    </DefaultLayout>,
-  }, {
-    path: "/Airpods",
-    element: <DefaultLayout>
-      <Fragment>
-        <Header />
-        <AirpodsPage />
-      </Fragment>
-    </DefaultLayout>,
-  }, {
-    path: "/:type/:id",
-    element: <DefaultLayout>
-
       <ProductPage />
-
     </DefaultLayout>,
   },
   {

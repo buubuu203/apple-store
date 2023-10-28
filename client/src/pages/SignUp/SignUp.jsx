@@ -32,8 +32,14 @@ const SignUp = () => {
             setPasswordsMatch(false);
             window.alert('Mật khẩu không trùng khớp')
         }
+    
 
-
+    }
+    const checkPhoneNumber=(phone)=>{
+        // phone la string nghe bubu
+                const reg =
+                /((84|0[3|5|7|8|9])+([0-9]{8})\b)|(1[8|9]00)+([0-9]{4}\b)/g
+        return !!reg.test(phone)
     }
     return (
         <section className="bg-white dark:bg-gray-900 font-SFPro">

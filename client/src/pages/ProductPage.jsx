@@ -1,25 +1,19 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef,useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import Button from '../components/Button';
 import { AirPods, Ipad, Iphone, Macbook, Watch } from '../constants';
 import CustomerReviews from '../sections/CustomerReviews'
-const ProductPage = ({ updateCount }) => {
-    const { id, type } = useParams();
-    const colorRef = useRef('')
-    const data = {
-        Macbook: Macbook,
-        Iphone: Iphone,
-        AirPods: AirPods,
-        Ipad: Ipad,
-        Watch: Watch,
+import {getProductById} from '../api/products'
 
-    }
-    const product = data[type].find(item => item.id === id)
-    // ref: https://bobbyhadz.com/blog/react-onclick-redirect
+const ProductPage = ({ updateCount }) => {
+    const { id } = useParams();
+    const colorRef = useRef('')
+  const [product,setProduct]= useState(null)
+    // // ref: https://bobbyhadz.com/blog/react-onclick-redirect
     const navigate = useNavigate();
 
     const navigateToType = () => {
-        navigate(`/${product.type}`, { replace: true });
+        // navigate(`/${product.type}`, { replace: true });
     };
 
     const navigateHome = () => {
@@ -35,7 +29,7 @@ const ProductPage = ({ updateCount }) => {
         const productCart = {
             id: prod.id,
             imgURL: prod.imgURL,
-            name: prod.name,
+            title: prod.title,
             price: prod.price,
             color: colorRef.current,
             quantity: 1,
@@ -50,15 +44,17 @@ const ProductPage = ({ updateCount }) => {
     }
 
     useEffect(() => {
+        getProductById(id).then(({data})=>{
+            console.log('data', data)
+            setProduct(data)
+        })
         if (window !== undefined)
             window?.scrollTo({
                 top: 0,
                 behavior: "smooth"
             });
     }, [])
-
-    return (
-        <div>
+return  <div>
             <section className="py-4 sm:px-8 sm:py-8 font-SFPro">
                 <div className="container mx-auto px-4">
                     <nav className="flex">
@@ -73,7 +69,7 @@ const ProductPage = ({ updateCount }) => {
                                 <div className="flex items-center">
                                     <span className="mx-2 text-gray-400">/</span>
                                     <div className="-m-1">
-                                        <Link href='' onClick={navigateToType} className="rounded-md p-1 text-sm font-medium text-gray-600 focus:text-gray-900 focus:shadow hover:text-gray-800"> {type} </Link>
+                                        <Link href='' onClick={navigateToType} className="rounded-md p-1 text-sm font-medium text-gray-600 focus:text-gray-900 focus:shadow hover:text-gray-800"> {product?.type} </Link>
                                     </div>
                                 </div>
                             </li>
@@ -82,7 +78,7 @@ const ProductPage = ({ updateCount }) => {
                                 <div className="flex items-center">
                                     <span className="mx-2 text-gray-400">/</span>
                                     <div className="-m-1">
-                                        <Link href="#" className="rounded-md p-1 text-sm font-medium text-gray-600 focus:text-gray-900 focus:shadow hover:text-gray-800" aria-current="page"> {product.name} </Link>
+                                        <Link href="#" className="rounded-md p-1 text-sm font-medium text-gray-600 focus:text-gray-900 focus:shadow hover:text-gray-800" aria-current="page"> {product?.title} </Link>
                                     </div>
                                 </div>
                             </li>
@@ -94,19 +90,19 @@ const ProductPage = ({ updateCount }) => {
                             <div className="lg:flex lg:items-start">
                                 <div className="lg:order-2 lg:ml-5">
                                     <div className="max-w-xl overflow-hidden rounded-lg">
-                                        <img className="h-full w-full max-w-full object-cover" src={product.imgURL} alt="" />
+                                        <img className="h-full w-full max-w-full object-cover" src={product?.imgURL} alt="" />
                                     </div>
                                 </div>
                                 <div className="mt-2 w-full lg:order-1 lg:w-32 lg:flex-shrink-0">
                                     <div className="flex flex-row items-start lg:flex-col">
                                         <button type="button" className="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg text-center border-gray border-2" >
-                                            <img className="h-full w-full object-cover" src={product.imgURL} alt="" />
+                                            <img className="h-full w-full object-cover" src={product?.imgURL} alt="" />
                                         </button>
                                         <button type="button" className="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg text-center " >
-                                            <img className="h-full w-full object-cover" src={product.imgURL} alt="" />
+                                            <img className="h-full w-full object-cover" src={product?.imgURL} alt="" />
                                         </button>
                                         <button type="button" className="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg text-center " >
-                                            <img className="h-full w-full object-cover" src={product.imgURL} alt="" />
+                                            <img className="h-full w-full object-cover" src={product?.imgURL} alt="" />
                                         </button>
                                     </div>
                                 </div>
@@ -114,7 +110,7 @@ const ProductPage = ({ updateCount }) => {
                         </div>
 
                         <div className="lg:col-span-2 lg:row-span-2 lg:row-end-2">
-                            <h1 className="sm: text-2xl font-bold text-gray-900 sm:text-3xl">{product.name}</h1>
+                            <h1 className="sm: text-2xl font-bold text-gray-900 sm:text-3xl">{product?.title}</h1>
                             {/* Rating section */}
                             <div className="mt-5 flex items-center">
                                 <div className="flex items-center">
@@ -140,7 +136,7 @@ const ProductPage = ({ updateCount }) => {
 
 
                             {/* Check color properties */}
-                            {product && product.Colors && (
+                            {product && product.colors && (
                                 <div>
                                     <h2 className="mt-8 text-base text-gray-900">Màu sắc</h2>
                                     <div className="mt-3 flex select-none flex-wrap items-center gap-1">
@@ -156,11 +152,11 @@ const ProductPage = ({ updateCount }) => {
 
 
                             {/* Choose Capacities (GB) section */}
-                            {(product.type === 'Iphone' || product.type === 'Ipad' || product.type === 'Macbook') && product.Capacities && (
+                            { product?.capacities && (
                                 <div>
                                     <h2 className="mt-8 text-base text-gray-900">Dung lượng</h2>
                                     <div className="mt-3 flex select-none flex-wrap items-center gap-1">
-                                        {product.Capacities.map(capacity => (
+                                        {product.capacities.map(capacity => (
                                             <label className="" key={capacity}>
                                                 <input type="radio" name="type" value="Trắng" className="peer sr-only" />
                                                 <p className="transition-all ease-linear duration-200 peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">{capacity}</p>
@@ -172,8 +168,8 @@ const ProductPage = ({ updateCount }) => {
 
                             <div className="mt-10 flex flex-col  justify-between  border-t  py-4 sm:flex-row sm:space-y-0">
                                 <div className="flex items-end gap-8">
-                                    <h1 className="text-3xl font-bold">{product.price}</h1>
-                                    <h1 className="text-xl font-thin line-through text-gray ">{product.oldPrice}</h1>
+                                    <h1 className="text-3xl font-bold">{product?.price}</h1>
+                                    <h1 className="text-xl font-thin line-through text-gray ">{product?.oldPrice}</h1>
 
                                 </div>
                             </div>
@@ -203,28 +199,28 @@ const ProductPage = ({ updateCount }) => {
                         <div className="col-span-full  border-t mt-4 pt-6 " >
                             <p className='font-semibold text-2xl uppercase text-gray-dark'>Thông tin chi tiết</p>
 
-                            <div className="flow-root  sm:mt-4">
+                         <div className="flow-root  sm:mt-4">
                                 {
-                                    product.CPU && (
+                                    product?.CPU && (
                                         <div className='flex gap-4 mt-2'>
                                             <p className="font-medium">
                                                 CPU:
                                             </p>
-                                            <p className='font-normal text-gray-dark'>{product.CPU}</p>
+                                            <p className='font-normal text-gray-dark'>{product?.CPU}</p>
                                         </div>
                                     )
                                 }
                                 {
-                                    product.RAM && (
+                                    product?.RAM && (
                                         <div className='flex gap-4  mt-2'>
                                             <p className="font-medium">
                                                 RAM:
                                             </p>
-                                            <p className='font-normal text-gray-dark'>{product.RAM}</p>
+                                            <p className='font-normal text-gray-dark'>{product?.RAM}</p>
                                         </div>
                                     )
                                 }
-                                {
+                                {/* {
                                     product.doPhanGiai && (
                                         <div className='flex gap-4 mt-2'>
                                             <p className="font-medium">
@@ -270,8 +266,8 @@ const ProductPage = ({ updateCount }) => {
                                             <p className='font-normal text-gray-dark'> {product.kichThuoc}</p>
                                         </div>
                                     )
-                                }
-                            </div>
+                                } */}
+                            </div> 
                         </div>
 
                         <div className="col-span-full  border-t mt-4 pt-6 " >
@@ -285,7 +281,7 @@ const ProductPage = ({ updateCount }) => {
 
 
         </div>
-    )
+    
 }
 
 export default ProductPage

@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import AppleIcon from '../../assets/apple.svg'
 import Button from '../../components/Button'
+import {login} from '../../api/login'
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 const SignIn = ({ loginError }) => {
     const navigate = useNavigate();
@@ -12,14 +13,21 @@ const SignIn = ({ loginError }) => {
     }
 
 
-    // const userName = useRef()
-    // const password = useRef()
-    // const handleLogin = () => {
-    //     if (userName.current.value === 'admin@gmail.com' && password.current.value === 'admin') {
-    //         localStorage.setItem("userNameData", "admin@gmail.com")
-    //         localStorage.setItem("passwordData", "admin")
-    //     }
-    // }
+    const userName = useRef()
+    const password = useRef()
+    const handleLogin = () => {
+      const data={
+        username:userName.current,
+        password:password.current
+      }
+        login(data).then(({data})=>{
+            console.log('data', data)
+        }).catch((e)=> console.log('e', e))
+        // if (userName.current.value === 'admin@gmail.com' && password.current.value === 'admin') {
+        //     localStorage.setItem("userNameData", "admin@gmail.com")
+        //     localStorage.setItem("passwordData", "admin")
+        // }
+    }
     return (
         <>
             <div className='m-5 text-gray' onClick={handleLabelClick}>
@@ -39,7 +47,7 @@ const SignIn = ({ loginError }) => {
                         onSubmit={(e) => e.preventDefault()}>
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                                Email hoặc số điện thoại
+                                Email
                             </label>
                             <div className="mt-2">
                                 <input
@@ -47,8 +55,8 @@ const SignIn = ({ loginError }) => {
                                     name="email"
                                     type="email"
                                     autoComplete="email"
-                                    // value={userName}
-                                    // ref={userName}
+
+                                    onChange={(e)=>{userName.current= e.target.value}}
                                     required
                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray placeholder:text-gray-400 focus:ring-1 focus:ring-inset sm:text-sm sm:leading-6 pl-3"
                                 />
@@ -74,15 +82,15 @@ const SignIn = ({ loginError }) => {
                                     type="password"
                                     autoComplete="current-password"
                                     required
-                                    // value={password}
-                                    // ref={password}
+                                  
+                                    onChange={(e)=>{password.current= e.target.value}}
                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray placeholder:text-gray-400 focus:ring-1 focus:ring-inset sm:text-sm sm:leading-6 pl-3"
                                 />
                             </div>
                         </div>
 
                         <div className=''>
-                            <Button title='Đăng nhập' />
+                            <Button title='Đăng nhập' onClick={handleLogin} />
                         </div>
                     </form>
 

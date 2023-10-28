@@ -1,7 +1,9 @@
 <?php
 
 namespace Database\Seeders;
+//php artisan db:seed --class=ProductsTableSeeder
 
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class ProductsTableSeeder extends Seeder
@@ -9,10 +11,10 @@ class ProductsTableSeeder extends Seeder
     /**
      * Run the database seeds.
      *['name' => 'Macbook'],
-            ['name' => 'iPad'],
-            ['name' => 'iPhone'],
-            ['name' => 'Watch'],
-            ['name' => 'AirPods'],
+     *['name' => 'iPad'],
+     *['name' => 'iPhone'],
+     *['name' => 'Watch'],
+     *['name' => 'AirPods'],
      * @return void
      */
     public function run()
@@ -1061,5 +1063,9 @@ class ProductsTableSeeder extends Seeder
                 'deleted' => 0,
             ],
         ];
+
+        foreach ($products as $product) {
+            Product::create($product);
+        }
     }
 }

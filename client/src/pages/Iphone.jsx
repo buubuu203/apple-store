@@ -35,7 +35,7 @@ const IphonePage = () => {
                     Titan
                 </div>
                 <p className='text-xl text-white font-normal my-3'>Từ 28.999.000đ</p>
-                <div class="flex justify-center align-middle gap-5">
+                <div className="flex justify-center align-middle gap-5">
                     <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray' onClick={() => navigate("/Iphone/012")}>
                         Mua
                     </button>
