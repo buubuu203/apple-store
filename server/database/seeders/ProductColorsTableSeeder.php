@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\ProductColors;
 use Illuminate\Database\Seeder;
 //php artisan db:seed --class=ProductColorsTableSeeder
 
@@ -733,7 +734,7 @@ class ProductColorsTableSeeder extends Seeder
 
         ];
         foreach ($colors as $color) {
-            ProductColor::create($color);
+            ProductColors::create($color);
         }
     }
 }

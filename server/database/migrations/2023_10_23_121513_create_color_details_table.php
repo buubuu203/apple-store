@@ -18,7 +18,7 @@ class CreateColorDetailsTable extends Migration
             $table->integer('product_color_id');
             $table->string('URL');
             $table->timestamps();
-        });
+        }); 
     }
 
     /**
