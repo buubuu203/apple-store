@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '../../components/Button';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import { postSignUpInfo } from '../../api/signup';
 const SignUp = () => {
 
     const navigate = useNavigate();
@@ -41,6 +42,23 @@ const SignUp = () => {
                 /((84|0[3|5|7|8|9])+([0-9]{8})\b)|(1[8|9]00)+([0-9]{4}\b)/g
         return !!reg.test(phone)
     }
+    const checkEmail = (email) => {
+        // Biểu thức chính quy để kiểm tra địa chỉ email
+        const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+      
+        return emailRegex.test(email);
+    };
+      
+    // Sử dụng hàm kiểm tra địa chỉ email
+    const isEmailValid = checkEmail("example@email.com");
+    if (isEmailValid) {
+        console.log("Địa chỉ email hợp lệ.");
+    } else {
+        console.log("Địa chỉ email không hợp lệ.");
+    }
+    
+    
+
     return (
         <section className="bg-white dark:bg-gray-900 font-SFPro">
 
@@ -114,7 +132,7 @@ const SignUp = () => {
                                 <Link to='/SignIn' onClick={() => { <span className="loading loading-ring loading-lg"></span> }} className='hover:text-gray text-blue  m-auto items-center'> Đăng nhập ngay</Link>
 
                             </div>
-                            <div class="justify-self-start"><Button title="Đăng ký" onClick={handleCheckPassword} /></div>
+                            <div class="justify-self-start"><Button title="Đăng ký" onClick={()=>{postSignUpInfo(); checkPhoneNumber(); handleCheckPassword(); isEmailValid()}} /></div>
 
                         </form>
                     </div>

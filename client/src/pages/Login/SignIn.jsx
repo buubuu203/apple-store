@@ -16,10 +16,10 @@ const SignIn = ({ loginError }) => {
     const userName = useRef()
     const password = useRef()
     const handleLogin = () => {
-      const data={
-        username:userName.current,
-        password:password.current
-      }
+        const data={
+            username:userName.current.value,
+            password:password.current.value
+        }
         login(data).then(({data})=>{
             console.log('data', data)
         }).catch((e)=> console.log('e', e))
