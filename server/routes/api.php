@@ -26,3 +26,4 @@ Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/categories/{id}/products', [ProductController::class, 'getProductsByCatID']);
 Route::get('/products/{id}', [ProductController::class, 'getProductByID']);
 Route::post('/users/register', [UserController::class, 'register']);
+Route::post('/users/login', [UserController::class, 'login']);

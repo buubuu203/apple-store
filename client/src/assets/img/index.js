@@ -72,7 +72,7 @@ import hero_iphone_15_pro__2x from './iphone/hero_iphone_15_pro__2x.jpg'
 import iphone_se_hero__2x from './iphone/iphone_se_hero__2x.jpg';
 import iphone_15_didongviet from './iphone/iphone_15_didongviet.webp'
 import iphone_15_pro_didongviet from './iphone/iphone_15_pro_didongviet.webp'
-
+ 
 //Ipad Page
 import ipad_hero_2x from './ipad/ipad_hero_2x.jpg'
 import ipad_pro_hero_large from './ipad/ipad_pro_hero_large.jpg'

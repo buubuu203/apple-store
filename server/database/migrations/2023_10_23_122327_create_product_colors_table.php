@@ -16,7 +16,7 @@ class CreateProductColorsTable extends Migration
         Schema::create('product_colors', function (Blueprint $table) {
             $table->id();
             $table->integer('product_id');
-            $table->string('name', 10);
+            $table->string('name', 50);
             $table->integer('quantity');
             $table->timestamps();
         });

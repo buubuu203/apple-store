@@ -49,6 +49,24 @@ class UserController extends Controller
         return response()->json(['message' => 'Người dùng đã đăng ký thành công']);
     }
 
+    function login(Request $req){
+        $req->validate([
+            'email' =>'required|email',
+            'password' => 'required',
+        ]);
+
+        $user = User::where('email', $req->input('email'))->first();
+        if($user){
+            if(Hash::check($req->input('password'), $user->password)){
+                return response()->json(['message' => 'Đăng nhập thành công']);
+            }else{
+                return response()->json(['message' => 'Mật khẩu không đúng']);
+            }
+        }else{
+            return response()->json(['message' => 'Email không đúng']);
+        }
+    }
+
     /**
      * Store a newly created resource in storage.
      *
