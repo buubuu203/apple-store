@@ -57,7 +57,12 @@ const SignUp = () => {
         console.log("Địa chỉ email không hợp lệ.");
     }
     
-    
+    const [formData, setFormData] = useState({
+        fullName: '',
+        phoneNumber: '',
+        email: '',
+        password: ''
+    });
 
     return (
         <section className="bg-white dark:bg-gray-900 font-SFPro">
