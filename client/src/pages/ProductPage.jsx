@@ -265,14 +265,24 @@ return (
                                 </div>
                             )} */}
 
-            
-
             <div className="mt-10 flex flex-col  justify-between  border-t  py-4 sm:flex-row sm:space-y-0">
               <div className="flex items-end gap-8">
-                <h1 className="text-3xl font-bold">{product?.price}</h1>
-                <h1 className="text-xl font-thin line-through text-gray ">
-                  {product?.oldPrice}
+                <h1 className="text-3xl font-bold">
+                  {product?.price.toLocaleString("vi-VN", {
+                    style: "currency",
+                    currency: "VND",
+                  })}
                 </h1>
+                {product?.discount !== null ? (
+                  <h1 className="text-xl font-thin line-through text-gray">
+                    {(
+                      (product?.price || 0) + (product?.discount || 0)
+                    ).toLocaleString("vi-VN", {
+                      style: "currency",
+                      currency: "VND",
+                    })}
+                  </h1>
+                ) : null}
               </div>
             </div>
 
