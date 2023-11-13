@@ -1,17 +1,14 @@
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
     tile__large_2x,
     tile_large_2x,
     tile_watch_se_large_2x,
 } from '../assets/img';
-import Footer from '../components/Footer';
-import ProductList from '../components/ProductList';
-import { Watch } from '../constants';
-import { useNavigate } from "react-router-dom"
 
-const WatchPage = () => {
+const WatchPromotion = () => {
+    
     const navigate = useNavigate();
     return (
         <div>
@@ -35,11 +32,11 @@ const WatchPage = () => {
                 <p className='text-xl text-white font-normal my-3'>Từ 10.499.000đ</p>
                 <div class="flex justify-center align-middle gap-5">
                     <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'
-                        onClick={() => navigate("/Watch/004")}
+                        onClick={() => navigate("/product/53")}
                     >
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to="/Watch/004" >
+                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to="/product/53" >
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>
@@ -59,10 +56,10 @@ const WatchPage = () => {
                 <p className='text-xl text-black font-normal my-3'>Từ 21.999.000đ</p>
                 <div class="flex justify-center align-middle gap-5">
                     <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'
-                        onClick={() => navigate("/Watch/015")}>
+                        onClick={() => navigate("/product/62")}>
                         Mua
                     </button>
-                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to="/Watch/015">
+                    <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to="/product/62">
                         Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                     </Link>
                 </div>
@@ -82,11 +79,11 @@ const WatchPage = () => {
                     <p className='text-xl text-black font-normal my-3'>Từ 6.399.000đ</p>
                     <div class="flex justify-center align-middle gap-5">
                         <button className='bg-blue text-white text-base py-1 px-3 my-4 rounded-2xl hover:text-blue hover:bg-gray'
-                            onClick={() => navigate("/Watch/001")}
+                            onClick={() => navigate("/product/48")}
                         >
                             Mua
                         </button>
-                        <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to="/Watch/001" >
+                        <Link className='text-blue text-base py-1 px-3 my-4 hover:opacity-50' to="/product/48" >
                             Tìm hiểu thêm<ChevronRightIcon className='text-base' />
                         </Link>
                     </div>
@@ -105,11 +102,9 @@ const WatchPage = () => {
             </section>
 
             {/* FIXME: TẠI SAO RENDER PRODUCT PAGE LỖI (AIRPODS VÀ WATCH) */}
-            <ProductList products={Watch} />
-            {/* <Pagination /> */}
-            <Footer />
+            
         </div>
     )
 }
 
-export default WatchPage;
+export default WatchPromotion

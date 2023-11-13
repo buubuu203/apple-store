@@ -1,19 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ProductList from '../components/ProductList';
-import Footer from '../components/Footer'
-// import Pagination from '../components/Pagination';
-import { useNavigate } from "react-router-dom"
-import { Iphone } from '../constants';
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import {
     hero_iphone_15__2x,
     hero_iphone_15_pro__2x,
     iphone_se_hero__2x,
 } from '../assets/img';
 
-
-const IphonePage = () => {
+const IphonePromotion = () => {
+    
     const navigate = useNavigate();
     return (
         <div>
@@ -101,11 +96,9 @@ const IphonePage = () => {
                     </p>
                 </div>
             </section>
-            <ProductList products={Iphone} />
-            {/* <Pagination /> */}
-            <Footer />
+            
         </div>
     )
 }
 
-export default IphonePage;
+export default IphonePromotion

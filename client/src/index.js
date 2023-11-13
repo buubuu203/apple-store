@@ -5,55 +5,18 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './assets/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF';
+import Drawer from './components/Drawer';
+import Header from './components/Header';
 import './index.css';
 import DefaultLayout from './layouts/DefaultLayout';
-import HomePage from './pages/HomePage';
-import Header from './components/Header'; 
-import IphonePage from './pages/Iphone';
-import WatchPage from './pages/Watch';
-import AirpodsPage from './pages/Airpods';
-import ProductPage from './pages/ProductPage';
-import Footer from './components/Footer';
-import SignIn from './pages/Login/SignIn';
-import SignUp from './pages/SignUp/SignUp';
-import Drawer from './components/Drawer';
-import ShoppingCart from './pages/ShoppingCart';
 import CheckOut from './pages/CheckOut';
+import HomePage from './pages/HomePage';
+import SignIn from './pages/Login/SignIn';
+import ProductPage from './pages/ProductPage';
 import Products from './pages/Products';
-// {
-//   path: "/iPad",
-//   element: <DefaultLayout>
-//     <Fragment>
-//       <Header />
-//       <IpadPage />
-//     </Fragment>
-//   </DefaultLayout>,
-// },
-// {
-//   path: "/iPhone",
-//   element: <DefaultLayout>
-//     <Fragment>
-//       <Header />
-//       <IphonePage />
-//     </Fragment>
-//   </DefaultLayout>,
-// }, {
-//   path: "/Watch",
-//   element: <DefaultLayout>
-//     <Fragment>
-//       <Header />
-//       <WatchPage />
-//     </Fragment>
-//   </DefaultLayout>,
-// }, {
-//   path: "/Airpods",
-//   element: <DefaultLayout>
-//     <Fragment>
-//       <Header />
-//       <AirpodsPage />
-//     </Fragment>
-//   </DefaultLayout>,
-// }
+import ShoppingCart from './pages/ShoppingCart';
+import SignUp from './pages/SignUp/SignUp';
+
 const router = createBrowserRouter([
   {
     path: "/",

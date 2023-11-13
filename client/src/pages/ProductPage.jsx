@@ -1,9 +1,8 @@
-import React, { useEffect, useRef,useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { getProductById } from '../api/products';
 import Button from '../components/Button';
-import { AirPods, Ipad, Iphone, Macbook, Watch } from '../constants';
-import CustomerReviews from '../sections/CustomerReviews'
-import {getProductById} from '../api/products'
+import CustomerReviews from '../sections/CustomerReviews';
 
 const ProductPage = ({ updateCount }) => {
     const { id } = useParams();
