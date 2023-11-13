@@ -10,16 +10,18 @@ class User extends Model
     use HasFactory;
 
     protected $table = 'users';
-    protected $primaryKey = 'user_id';
+    protected $primaryKey = 'id';
     protected $fillable = ['fullname', 'email', 'phone_number', 'address', 'password', 'role_id', 'deleted'];
 
     protected $hidden = ['password'];
 
-    public function role() {
+    public function role()
+    {
         return $this->belongsTo(Role::class);
     }
 
-    public function orders() {
+    public function orders()
+    {
         return $this->hasMany(Order::class);
     }
 }

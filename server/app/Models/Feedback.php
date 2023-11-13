@@ -10,10 +10,11 @@ class Feedback extends Model
     use HasFactory;
 
     protected $table = 'feedback';
-    protected $primaryKey = 'feedback_id';
+    protected $primaryKey = 'id';
     protected $fillable = ['user_id', 'product_id', 'rate', 'note'];
 
-    public function user() {
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 }

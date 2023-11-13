@@ -19,8 +19,3 @@ use App\Models\User;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('test', function () {
-    $elm = User::find(1);
-    return $elm;
-});

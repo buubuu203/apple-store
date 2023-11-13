@@ -30,15 +30,15 @@ class ProductController extends Controller
 
     public function getProductsByCatID($id)
     {
-  
-        $products = DB::table('products')->where('category_id',$id)->get();
+
+        $products = DB::table('products')->where('category_id', $id)->get();
         return response()->json($products);
     }
 
     public function getProductByID($id)
     {
-  
-        $products = DB::table('products')->find($id);
+
+        $products = Product::with('product_colors', 'product_colors.colorDetails')->find($id);
         return response()->json($products);
     }
 

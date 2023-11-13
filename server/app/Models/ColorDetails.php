@@ -10,10 +10,11 @@ class ColorDetails extends Model
     use HasFactory;
 
     protected $table = 'color_details';
-    protected $primaryKey = 'color_detail_id';
+    protected $primaryKey = 'id';
     protected $fillable = ['product_color_id', 'URL'];
 
-    public function product_color() {
-        return $this->belongsTo(ProductColor::class, 'product_color_id');
+    public function product_color()
+    {
+        return $this->belongsTo(ProductColors::class, 'product_color_id');
     }
 }
