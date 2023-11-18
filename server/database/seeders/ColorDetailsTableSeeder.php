@@ -53,8 +53,21 @@ class ColorDetailsTableSeeder extends Seeder
                 'URL' => 'http://127.0.0.1:8000/img/iphone/iphone_12_128gb_didongviet.webp'
             ],
             [
-                'product_color_id' => '25',
+                'product_color_id' => '91',
                 'URL' => 'http://127.0.0.1:8000/img/ipad/ipad_10_9inch_2022_64gb_wifi_didongviet.webp'
+            ],
+            [
+                'product_color_id' => '95',
+                'URL' => 'http://127.0.0.1:8000/img/ipad/ipad_10_9inch_2022_256gb_5G.webp'
+            ],
+            [
+                'product_color_id' => '99',
+                'URL' => 'http://127.0.0.1:8000/img/ipad/ipad_10_9inch_2022_256gb_wifi_didongviet.webp'
+            ]
+            ,
+            [
+                'product_color_id' => '103',
+                'URL' => 'http://127.0.0.1:8000/img/ipad/ipad_air_5_2022_M1_64gb_wifi_5G.webp'
             ]
             // Add more categories as needed
         ];
