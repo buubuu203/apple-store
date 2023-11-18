@@ -28,6 +28,7 @@ class CreateProductsTable extends Migration
             $table->string('weight')->nullable();
             $table->string('size')->nullable();
             $table->string('capacities')->nullable();
+            $table->string('thumbnail')->nullable();
             $table->timestamps();
             $table->integer('deleted');
         });
@@ -43,4 +44,3 @@ class CreateProductsTable extends Migration
         Schema::dropIfExists('products');
     }
 }
-
