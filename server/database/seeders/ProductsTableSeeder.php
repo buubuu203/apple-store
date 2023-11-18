@@ -691,7 +691,11 @@ class ProductsTableSeeder extends Seeder
                 'deleted' => 0,
             ],
             [
+<<<<<<< HEAD
                 'category_id' => 2,
+=======
+                'category_id' => 2, 
+>>>>>>> 8131942e33c580cfc8233ac8bb7d3fd992f75d5a
                 'title' => 'Ipad Pro M2 11-inch (2022) | 1TB Wifi',
                 'price' => 38990000,
                 'discount' => 43990000,
