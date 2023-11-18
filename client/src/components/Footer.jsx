@@ -7,23 +7,23 @@ const Footer = () => {
         <div className='mt-5'>
             <footer className="footer p-10 bg-base-200 text-black font-SFPro text-base">
                 <nav>
-                    <header className="footer-title text-base">Dịch vụ</header>
-                    <Link className="text-gray hover:text-black font-thin ">Thương hiệu</Link>
-                    <Link className="text-gray hover:text-black font-thin ">Thiết kế</Link>
-                    <Link className="text-gray hover:text-black font-thin ">Marketing</Link>
+                    <header className="footer-title  dark:text-white text-base">Dịch vụ</header>
+                    <Link className="text-gray dark:text-neutral-200 dark:hover:text-white hover:text-black font-thin ">Thương hiệu</Link>
+                    <Link className="text-gray dark:text-neutral-200 dark:hover:text-white hover:text-black font-thin ">Thiết kế</Link>
+                    <Link className="text-gray dark:text-neutral-200 dark:hover:text-white hover:text-black font-thin ">Marketing</Link>
                 </nav>
                 <nav>
-                    <header className="footer-title text-base">Về Apple Store</header>
-                    <Link className="text-gray hover:text-black font-thin ">Về chúng tôi</Link>
-                    <Link className="text-gray hover:text-black font-thin ">Liên hệ</Link>
-                    <Link className="text-gray hover:text-black font-thin ">Việc làm</Link>
+                    <header className="footer-title dark:text-white text-base">Về Apple Store</header>
+                    <Link className="text-gray dark:text-neutral-200 dark:hover:text-white hover:text-black font-thin ">Về chúng tôi</Link>
+                    <Link className="text-gray dark:text-neutral-200 dark:hover:text-white hover:text-black font-thin ">Liên hệ</Link>
+                    <Link className="text-gray dark:text-neutral-200 dark:hover:text-white hover:text-black font-thin ">Việc làm</Link>
 
                 </nav>
                 <nav>
-                    <header className="footer-title text-base">Pháp lý</header>
-                    <Link className="text-gray hover:text-black font-thin ">Điều khoản sử dụng</Link>
-                    <Link className="text-gray hover:text-black font-thin ">Chính sách quyền riêng tư</Link>
-                    <Link className="text-gray hover:text-black font-thin ">Chính sách cookie</Link>
+                    <header className="footer-title dark:text-white text-base">Pháp lý</header>
+                    <Link className="text-gray dark:text-neutral-200 dark:hover:text-white hover:text-black font-thin ">Điều khoản sử dụng</Link>
+                    <Link className="text-gray dark:text-neutral-200 dark:hover:text-white hover:text-black font-thin ">Chính sách quyền riêng tư</Link>
+                    <Link className="text-gray dark:text-neutral-200 dark:hover:text-white hover:text-black font-thin ">Chính sách cookie</Link>
                 </nav>
             </footer>
             <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 font-SFPro">

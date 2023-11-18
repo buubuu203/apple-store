@@ -36,6 +36,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 1.29,
                 'size' => '304.1 x 212.4 x 16.1 mm',
                 'capacities' => '256GB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0
             ],
             [
@@ -52,6 +53,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 1.24,
                 'size' => 'Dài 304.1 mm x Ngang 215 mm x Dày 11.3 mm',
                 'capacities' => '256GB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0
             ],
             [
@@ -67,6 +69,7 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 18.0,
                 'size' => '14.2 inch',
                 'capacities' => '512GB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -82,6 +85,7 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 22.0,
                 'size' => '16 inch',
                 'capacities' => '1TB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -98,6 +102,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 1.4,
                 'size' => 'Dày 1.62cm',
                 'capacities' => '256GB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -114,6 +119,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 1.51,
                 'size' => 'Dài 340.4 mm - Rộng 237.6 mm - Dày 11.5 mm',
                 'capacities' => '256GB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -129,6 +135,7 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 22.0,
                 'size' => null,
                 'capacities' => '512GB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0, 
             ],
             [
@@ -144,6 +151,7 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 22.0,
                 'size' => null,
                 'capacities' => '256GB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -159,6 +167,7 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 22.0,
                 'size' => null,
                 'capacities' => '1TB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -174,6 +183,7 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 18.0,
                 'size' => null,
                 'capacities' => '512GB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             //Iphone
@@ -191,6 +201,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 194,
                 'size' => '150.9 x 75.7 x 8.3 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -207,6 +218,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 194,
                 'size' => '150.9 x 75.7 x 8.3 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -223,6 +235,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 164,
                 'size' => 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.4 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -239,6 +252,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 164,
                 'size' => 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.4 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -255,6 +269,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 164,
                 'size' => '146.7 x 71.5 x 7.4 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -271,6 +286,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 172,
                 'size' => 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.8 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -287,6 +303,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 172,
                 'size' => 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.8 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -303,6 +320,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 206,
                 'size' => 'Dài 147.5 mm - Ngang 71.5 mm - Dày 7.85 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -319,6 +337,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 240,
                 'size' => 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -335,6 +354,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 240,
                 'size' => 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -351,6 +371,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 240,
                 'size' => 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -367,6 +388,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 221,
                 'size' => 'Dài 159.9 mm - Ngang 76.7 mm - Dày 8.25 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -383,6 +405,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 171,
                 'size' => 'Dài 147.6 mm - Ngang 71.6 mm - Dày 7.80 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             //Ipad
@@ -400,6 +423,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 481,
                 'size' => 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -416,6 +440,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 477,
                 'size' => 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -432,6 +457,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 477,
                 'size' => 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -448,6 +474,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 477,
                 'size' => 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -464,6 +491,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 462,
                 'size' => 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -480,6 +508,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 461,
                 'size' => 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -496,6 +525,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 461,
                 'size' => 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -512,6 +542,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 462,
                 'size' => 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -528,6 +559,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 487,
                 'size' => '250.6 x 174.1 x 7.5 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -544,6 +576,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 487,
                 'size' => '250.6 x 174.1 x 0.29 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -560,6 +593,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 487,
                 'size' => '250.6 x 174.1 x 7.5 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -576,6 +610,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 487,
                 'size' => '250.6 x 174.1 x 7.5 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -592,6 +627,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 487,
                 'size' => 'Dài 195.4 mm - Ngang 134.8 mm - Dày 6.3 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -608,6 +644,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '195.4 x 134.8 x 6.3mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -624,6 +661,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '206 x 138 x 6.1 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -640,6 +678,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '195.4 x 134.8 x 6.3mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -656,6 +695,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -672,6 +712,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -688,6 +729,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -704,6 +746,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -720,6 +763,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             //AirPods            
@@ -737,6 +781,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 'hộp sạc 38.2g',
                 'size' => '16.5 x 18.0 x 40.5 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -753,6 +798,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 'tai nghe 5.3g, hộp sạc 38.2g',
                 'size' => 'Dài 30.9 mm x Rộng 21.8 mm x Dày 24 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -769,6 +815,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '4.28 gram (mỗi tai nghe)',
                 'size' => '30.79 x 18.26 x 19.21 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             //Watch
@@ -786,6 +833,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '26.4g',
                 'size' => '40 mm - 34 mm - 10.7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -802,6 +850,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '33g',
                 'size' => '44 x 38 x 10.7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -818,6 +867,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '38.8g',
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -833,6 +883,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '41 x 35 x 10,7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -849,6 +900,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '41 x 35 x 10,7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -865,6 +917,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '41 x 35 x 10,7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -880,6 +933,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '41 x 35 x 10,7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -895,6 +949,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -910,6 +965,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -925,6 +981,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -940,6 +997,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -955,6 +1013,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -970,6 +1029,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '38.8 gram',
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -985,6 +1045,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '38.8 gram',
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -1000,6 +1061,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '49 x 44 x 14.4 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -1015,6 +1077,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '49 x 44 x 14.4 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -1030,6 +1093,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '49 x 44 x 14.4 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -1045,6 +1109,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
             [
@@ -1060,6 +1125,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '49 x 44 x 14.4 mm',
                 'capacities' => null,
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
                 'deleted' => 0,
             ],
         ];

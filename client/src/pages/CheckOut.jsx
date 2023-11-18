@@ -86,7 +86,7 @@ const CheckOut = () => {
         // Vi string JSON muon chuyen ve dang truoc do [1] thi dungf JSON.parse
         const cart = JSON.parse(cartJSONString)
         const totalPrice = cart?.reduce((total, product) => {
-            return total + (+product?.total?.replaceAll('.', '')?.replace('đ', '') * +product.quantity
+            return total + (+product?.total * +product.quantity
             )
 
         }, 0)
@@ -108,7 +108,7 @@ const CheckOut = () => {
                     <div class="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6">
                         {products?.map(product => {
                             return <div class="flex flex-col rounded-lg bg-white sm:flex-row">
-                                <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src={product?.imgURL} alt={product?.name} />
+                                <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src={product?.thumbnail} alt={product?.name} />
                                 <div class="flex w-full flex-col px-4 py-4">
                                     <span class="font-semibold">{product?.name}</span>
                                     {/* ten bien the - color; gb (backend) */}

@@ -17,7 +17,7 @@ const ShoppingCart = () => {
         product.quantity = +quantity
         setProducts(newProducts)
         const totalPrice = newProducts.reduce((total, product) => {
-            return total + (+product?.total?.replaceAll('.', '')?.replace('đ', '') * +product.quantity
+            return total + (+product?.total * +product.quantity
             )
 
         }, 0)
@@ -62,7 +62,7 @@ const ShoppingCart = () => {
         // Vi string JSON muon chuyen ve dang truoc do [1] thi dungf JSON.parse
         const cart = JSON.parse(cartJSONString)
         const totalPrice = cart.reduce((total, product) => {
-            return total + (+product?.total?.replaceAll('.', '')?.replace('đ', '') * +product.quantity
+            return total + (+product?.total * +product.quantity
             )
 
         }, 0)
@@ -118,7 +118,7 @@ const ShoppingCart = () => {
                                         </td>
                                         <td className="py-4 text-sm">
                                             <div className="flex items-center">
-                                                <img className="h-16 w-16" src={product?.imgURL} alt='product img' />
+                                                <img className="h-16 w-16" src={product?.thumbnail} alt='product img' />
                                                 <span className="font-medium hidden sm:flex text-sm  sm:flex-wrap max-w-xs">{product?.name}</span>
                                             </div>
                                         </td>
@@ -130,7 +130,7 @@ const ShoppingCart = () => {
                                                 <button className="rounded-md px-2 py-1 ml-2" onClick={() => incrementQuantity(product?.id, product?.quantity)}>+</button>
                                             </div>
                                         </td>
-                                        <td className="py-4 text-sm">{(+product?.total?.replaceAll('.', '')?.replace('đ', '') * product.quantity
+                                        <td className="py-4 text-sm">{(+product?.total * product.quantity
                                         ).toLocaleString('en-GB')} đ</td>
                                         <td className="py-4 text-sm text-right">
                                             <DeleteIcon onClick={(() => removeProductById(product?.id, product?.color))}

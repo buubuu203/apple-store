@@ -11,7 +11,7 @@ class ColorDetails extends Model
 
     protected $table = 'color_details';
     protected $primaryKey = 'id';
-    protected $fillable = ['product_color_id', 'URL'];
+    protected $fillable = ['product_color_id', 'imgURL'];
 
     public function product_color()
     {

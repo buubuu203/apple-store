@@ -16,9 +16,9 @@ class CreateColorDetailsTable extends Migration
         Schema::create('color_details', function (Blueprint $table) {
             $table->id();
             $table->integer('product_color_id');
-            $table->string('URL');
+            $table->string('imgURL');
             $table->timestamps();
-        }); 
+        });
     }
 
     /**
@@ -31,4 +31,3 @@ class CreateColorDetailsTable extends Migration
         Schema::dropIfExists('color_details');
     }
 }
-
