@@ -27,7 +27,7 @@ const ProductPage = ({ updateCount }) => {
         // Khoi tao san pham vua bam
         const productCart = {
             id: prod.id,
-            imgURL: prod.imgURL,
+            thumbnail: prod.thumbnail,
             title: prod.title,
             price: prod.price,
             color: colorRef.current,
@@ -113,7 +113,7 @@ return (
                 <div className="max-w-xl overflow-hidden rounded-lg">
                   <img
                     className="h-full w-full max-w-full object-cover"
-                    src={product?.imgURL}
+                    src={product?.thumbnail}
                     alt=""
                   />
                 </div>
@@ -126,7 +126,7 @@ return (
                   >
                     <img
                       className="h-full w-full object-cover"
-                      src={product?.imgURL}
+                      src={product?.thumbnail}
                       alt=""
                     />
                   </button>
@@ -136,7 +136,7 @@ return (
                   >
                     <img
                       className="h-full w-full object-cover"
-                      src={product?.imgURL}
+                      src={product?.thumbnail}
                       alt=""
                     />
                   </button>
@@ -146,7 +146,7 @@ return (
                   >
                     <img
                       className="h-full w-full object-cover"
-                      src={product?.imgURL}
+                      src={product?.thumbnail}
                       alt=""
                     />
                   </button>

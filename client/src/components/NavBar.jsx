@@ -72,13 +72,18 @@ const Navbar = ({ count }) => {
                     {show && (
                         <div>
                             <input type="text" id="search-box" onChange={(e) => (e.target.value)} className=' lg:flex hidden font-normal text-black absolute right-28 rounded-md px-2 top-6' placeholder='Search...' />
-                            {/* <div id="item-list" className='absolute text-gray-dark  lg:flex hidden'>
-                                <ol>
-                                    {filteredList.map((item, index) => (
-                                        <li key={index}>{item}</li>
-                                    ))}
-                                </ol>
-                            </div> */}
+                            <ul className="flex-1 lg:flex justify-center items-center gap-16  hidden ">
+                        {navLinks.map((item) => (
+                            <li key={item.name} >
+                                <a
+                                    href={`/categories/${item?.id}`}
+                                    className=" cursor-pointer text-white hover:text-gray"
+                                >
+                                    {item.name}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
                         </div>
                     )}
                     <div className='flex'>
