@@ -11,7 +11,7 @@ class Order extends Model
 
     protected $table = 'orders';
     protected $primaryKey = 'id';
-    protected $fillable = ['user_id', 'note', 'order_date', 'status', 'total_money', 'selected']; // Add 'product_id' to the fillable array.
+    protected $fillable = ['user_id', 'note', 'order_date', 'status', 'total_money', 'selected', 'product_id']; // Add 'product_id' to the fillable array.
 
     public function user()
     {
