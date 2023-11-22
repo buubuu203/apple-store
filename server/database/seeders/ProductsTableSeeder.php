@@ -23,6 +23,7 @@ class ProductsTableSeeder extends Seeder
         $products = [
             [
                 //Macbook
+                //1
                 'category_id' => 1,
                 'title' => 'MacBook Air M1 2020 13 inch | 8GB/256GB',
                 'price' => 28490000,
@@ -36,10 +37,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 1.29,
                 'size' => '304.1 x 212.4 x 16.1 mm',
                 'capacities' => '256GB',
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',//1
                 'deleted' => 0
             ],
             [
+                //2
                 'category_id' => 1,
                 'title' => 'MacBook Air M2 13-inch 2022 | 8GB/256GB',
                 'price' => 33990000,
@@ -53,10 +55,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 1.24,
                 'size' => 'Dài 304.1 mm x Ngang 215 mm x Dày 11.3 mm',
                 'capacities' => '256GB',
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m2_8gb_256gb_didongviet.webp',//1
                 'deleted' => 0
             ],
             [
+                //3
                 'category_id' => 1,
                 'title' => 'MacBook Pro M2 Pro 14 inch 2023 | 16GB/512GB',
                 'price' => 46990000,
@@ -69,10 +72,28 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 18.0,
                 'size' => '14.2 inch',
                 'capacities' => '512GB',
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_pro_14_inch_m2_pro_2023_512gb_didongviet_2x.webp',//1
                 'deleted' => 0,
             ],
             [
+                //4
+                'category_id' => 1,
+                'title' => 'MacBook Pro M2 Max 14 inch 2023 | 32GB/1TB1',
+                'price' => 81990000,
+                'discount' => 74990000,
+                'description' => '',
+                'cpu' => 'Apple M2 Max (30-Core GPU)',
+                'ram' => 32,
+                'resolution' => '3024x1964 pixels',
+                'display' => '14.2 inch - Tần số quét 120Hz',
+                'batterylife' => 18.0,
+                'size' => '14.2 inch',
+                'capacities' => '1TB',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_pro_m2_didongviet.webp',//1
+                'deleted' => 0,
+            ],
+            [
+                //5
                 'category_id' => 1,
                 'title' => 'MacBook Pro M2 Max 16 inch 2023 | 32GB/1TB',
                 'price' => 84990000,
@@ -85,10 +106,11 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 22.0,
                 'size' => '16 inch',
                 'capacities' => '1TB',
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_pro_16_inch_m2_max_2023_1tb_didongviet_2x.webp',//1
                 'deleted' => 0,
             ],
             [
+                //6
                 'category_id' => 1,
                 'title' => 'MacBook Pro 13-inch 2022 | M2 8GB/256GB',
                 'price' => 28990000,
@@ -102,10 +124,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 1.4,
                 'size' => 'Dày 1.62cm',
                 'capacities' => '256GB',
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_pro_m2_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //7
                 'category_id' => 1,
                 'title' => 'MacBook Air M2 15-inch 2023 | 8GB/256GB',
                 'price' => 31390000,
@@ -119,10 +142,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 1.51,
                 'size' => 'Dài 340.4 mm - Rộng 237.6 mm - Dày 11.5 mm',
                 'capacities' => '256GB',
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m2_2023_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //8
                 'category_id' => 1,
                 'title' => 'Mac Studio M2 Max 2023 | 32GB/512GB',
                 'price' => 54990000,
@@ -135,10 +159,11 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 22.0,
                 'size' => null,
                 'capacities' => '512GB',
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/mac_studio_2023_512gb_didongviet.webp',//1
                 'deleted' => 0, 
             ],
             [
+                //9
                 'category_id' => 1,
                 'title' => 'MacBook Air M2 15-inch 2023 | 8GB/256GB',
                 'price' => 109990000,
@@ -151,10 +176,11 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 22.0,
                 'size' => null,
                 'capacities' => '256GB',
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/mac_studio_2023_1tb_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //10
                 'category_id' => 1,
                 'title' => 'Mac Pro M2 Ultra 2023 | 64GB/1TB',
                 'price' => 179990000,
@@ -167,10 +193,11 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 22.0,
                 'size' => null,
                 'capacities' => '1TB',
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/mac_pro_2023_m2_ultra_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //11
                 'category_id' => 1,
                 'title' => 'MacBook Air M2 15-inch 2023 | 8GB/512GB (Sạc 70W)',
                 'price' => 36990000,
@@ -183,11 +210,12 @@ class ProductsTableSeeder extends Seeder
                 'batterylife' => 18.0,
                 'size' => null,
                 'capacities' => '512GB',
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m2_2023_512gb_sac_70w_didongviet.webp',//1
                 'deleted' => 0,
             ],
             //Iphone
             [
+                //1
                 'category_id' => 3,
                 'title' => 'Iphone 11 64GB Chính Hãng (VN/A)',
                 'price' => 10390000,
@@ -201,10 +229,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 194,
                 'size' => '150.9 x 75.7 x 8.3 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_11_64gb_chinh_hang_3.webp',//1
                 'deleted' => 0,
             ],
             [
+                //2
                 'category_id' => 3,
                 'title' => 'Iphone 11 128GB Chính Hãng (VN/A)',
                 'price' => 11890000,
@@ -218,10 +247,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 194,
                 'size' => '150.9 x 75.7 x 8.3 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_11_128gb_chinhhang_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //3
                 'category_id' => 3,
                 'title' => 'Iphone 12 64GB Chính Hãng (VN/A)',
                 'price' => 14890000,
@@ -235,10 +265,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 164,
                 'size' => 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.4 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_12_64gb_mau_tim_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //4
                 'category_id' => 3,
                 'title' => 'Iphone 12 128GB Chính Hãng (VN/A)',
                 'price' => 14790000,
@@ -252,10 +283,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 164,
                 'size' => 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.4 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_12_128gb_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //5
                 'category_id' => 3,
                 'title' => 'Iphone 13 256GB Chính Hãng (VN/A)',
                 'price' => 21290000,
@@ -269,10 +301,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 164,
                 'size' => '146.7 x 71.5 x 7.4 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_13_256gb_didongviet_1.webp',//1
                 'deleted' => 0,
             ],
             [
+                //6
                 'category_id' => 3,
                 'title' => 'Iphone 14 256GB Chính Hãng (VN/A)',
                 'price' => 21890000,
@@ -286,10 +319,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 172,
                 'size' => 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.8 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_14_256gb_didongviet_1_1.webp',//1
                 'deleted' => 0,
             ],
             [
+                //7
                 'category_id' => 3,
                 'title' => 'Iphone 14 512GB Chính Hãng (VN/A)',
                 'price' => 23290000,
@@ -303,10 +337,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 172,
                 'size' => 'Dài 146.7 mm - Ngang 71.5 mm - Dày 7.8 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_14_512gb_likenew_didongviet_1.webp',//1
                 'deleted' => 0,
             ],
             [
+                //8
                 'category_id' => 3,
                 'title' => 'Iphone 14 Pro 512GB Chính Hãng (VN/A)',
                 'price' => 31990000,
@@ -320,10 +355,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 206,
                 'size' => 'Dài 147.5 mm - Ngang 71.5 mm - Dày 7.85 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_14_pro_512gb_didongviet_1.webp',//1
                 'deleted' => 0,
             ],
             [
+                //9
                 'category_id' => 3,
                 'title' => 'Iphone 14 Pro Max 128GB Chính Hãng (VN/A)',
                 'price' => 25690000,
@@ -337,10 +373,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 240,
                 'size' => 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_14_pro_max_128gb_didongviet_5.webp',//1
                 'deleted' => 0,
             ],
             [
+                //10
                 'category_id' => 3,
                 'title' => 'Iphone 14 Pro Max 256GB Chính Hãng (VN/A)',
                 'price' => 28590000,
@@ -354,10 +391,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 240,
                 'size' => 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_14_pro_max_256gb_didongviet_1_1.webp',//1
                 'deleted' => 0,
             ],
             [
+                //11
                 'category_id' => 3,
                 'title' => 'Iphone 14 Pro Max 512GB Chính Hãng (VN/A)',
                 'price' => 35790000,
@@ -371,10 +409,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 240,
                 'size' => 'Dài 160.7 mm - Ngang 77.6 mm - Dày 7.85 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_14_pro_max_512gb_didongviet_2_1.webp',//1
                 'deleted' => 0,
             ],
             [
+                //12
                 'category_id' => 3,
                 'title' => 'iPhone 15 Pro Max 256GB Chính hãng (VN/A)',
                 'price' => 34490000,
@@ -388,10 +427,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 221,
                 'size' => 'Dài 159.9 mm - Ngang 76.7 mm - Dày 8.25 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_15_pro_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //13
                 'category_id' => 3,
                 'title' => 'iPhone 15 128GB Chính hãng (VN/A)',
                 'price' => 21790000,
@@ -405,11 +445,12 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 171,
                 'size' => 'Dài 147.6 mm - Ngang 71.6 mm - Dày 7.80 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/iphone/iphone_15_didongviet.webp',//1
                 'deleted' => 0,
             ],
             //Ipad
             [
+                //1
                 'category_id' => 2,
                 'title' => 'Ipad 10.9-inch 2022 | 64GB 5G',
                 'price' => 13890000,
@@ -423,10 +464,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 481,
                 'size' => 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_10_9inch_2022_64gb_5G_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //2
                 'category_id' => 2,
                 'title' => 'Ipad 10.9-inch 2022 | 64GB Wifi',
                 'price' => 10490000,
@@ -440,10 +482,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 477,
                 'size' => 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_10_9inch_2022_64gb_wifi_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //3
                 'category_id' => 2,
                 'title' => 'Ipad 10.9-inch 2022 | 256GB 5G',
                 'price' => 18490000,
@@ -457,10 +500,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 477,
                 'size' => 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_10_9inch_2022_256gb_5G.webp',//1
                 'deleted' => 0,
             ],
             [
+                //4
                 'category_id' => 2,
                 'title' => 'Ipad 10.9-inch 2022 | 256GB Wifi',
                 'price' => 14590000,
@@ -474,10 +518,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 477,
                 'size' => 'Dài 248.6 mm - Ngang 179.5 mm - Dày 7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_10_9inch_2022_256gb_wifi_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //5
                 'category_id' => 2,
                 'title' => 'Ipad Air 5 2022 | M1 64GB Wifi & 5G',
                 'price' => 17390000,
@@ -491,10 +536,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 462,
                 'size' => 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_air_5_2022_M1_64gb_wifi_5G.webp',//1
                 'deleted' => 0,
             ],
             [
+                //6
                 'category_id' => 2,
                 'title' => 'Ipad Air 5 2022 | M1 64GB Wifi',
                 'price' => 13390000,
@@ -508,10 +554,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 461,
                 'size' => 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_air_5_2022_M1_64gb_wifi.webp',//1
                 'deleted' => 0,
             ],
             [
+                //7
                 'category_id' => 2,
                 'title' => 'Ipad Air 5 2022 | M1 256GB Wifi',
                 'price' => 17790000,
@@ -525,10 +572,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 461,
                 'size' => 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_air_5_2022_M1_256gb_wifi.webp',//1
                 'deleted' => 0,
             ],
             [
+                //8
                 'category_id' => 2,
                 'title' => 'Ipad Air 5 2022 | M1 256GB Wifi & 5G',
                 'price' => 23290000,
@@ -542,10 +590,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 462,
                 'size' => 'Dài 247.6 mm - Ngang 178.5 mm - Dày 6.1 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_air5_2022_M1_256gb_wifi_5G.webp',//1
                 'deleted' => 0,
             ],
             [
+                //9
                 'category_id' => 2,
                 'title' => 'Ipad Gen 9 2021 | Wifi & 4G 64GB',
                 'price' => 9490000,
@@ -559,10 +608,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 487,
                 'size' => '250.6 x 174.1 x 7.5 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_gen_9_2021_64gb_wifi_4g_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //10
                 'category_id' => 2,
                 'title' => 'Ipad Gen 9 2021 | Wifi 64GB',
                 'price' => 6790000,
@@ -576,10 +626,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 487,
                 'size' => '250.6 x 174.1 x 0.29 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_gen_9_2021_64gb_wifi.webp',//1
                 'deleted' => 0,
             ],
             [
+                //11
                 'category_id' => 2,
                 'title' => 'Ipad Gen 9 2021 | Wifi & 4G 256GB',
                 'price' => 16390000,
@@ -593,10 +644,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 487,
                 'size' => '250.6 x 174.1 x 7.5 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_gen_9_2021_256gb_wifi_4g_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //12
                 'category_id' => 2,
                 'title' => 'Ipad Gen 9 2021 | Wifi 256GB',
                 'price' => 11290000,
@@ -610,10 +662,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 487,
                 'size' => '250.6 x 174.1 x 7.5 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_gen_9_2021_256gb_wifi.webp',//1
                 'deleted' => 0,
             ],
             [
+                //13
                 'category_id' => 2,
                 'title' => 'Ipad mini 6 2021 | 64GB Wifi & 5G',
                 'price' => 15290000,
@@ -627,10 +680,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 487,
                 'size' => 'Dài 195.4 mm - Ngang 134.8 mm - Dày 6.3 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_mini_6_2021_64gb_wifi_5g.webp',//1
                 'deleted' => 0,
             ],
             [
+                //14
                 'category_id' => 2,
                 'title' => 'Ipad mini 6 2021 | 64GB Wifi',
                 'price' => 10990000,
@@ -644,10 +698,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '195.4 x 134.8 x 6.3mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_mini_6_2021_64gb_wifi.webp',//1
                 'deleted' => 0,
             ],
             [
+                //15
                 'category_id' => 2,
                 'title' => 'Ipad mini 6 2021 | 256GB Wifi & 5G',
                 'price' => 19990000,
@@ -661,10 +716,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '206 x 138 x 6.1 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_mini_6_2021_256gb_wifi_5g.webp',//1
                 'deleted' => 0,
             ],
             [
+                //16
                 'category_id' => 2,
                 'title' => 'Ipad mini 6 2021 | 256GB Wifi',
                 'price' => 16790000,
@@ -678,10 +734,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '195.4 x 134.8 x 6.3mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_mini_6_2021_256gb_wifi.webp',//1
                 'deleted' => 0,
             ],
             [
+                //17
                 'category_id' => 2,
                 'title' => 'Ipad Pro M2 11-inch (2022) | 256GB Wifi',
                 'price' => 23190000,
@@ -695,10 +752,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_pro_11_inch_2022_m2_256gb_wifi_didongviet_1.webp',//1
                 'deleted' => 0,
             ],
             [
+                //18
                 'category_id' => 2,
                 'title' => 'Ipad Pro M2 11-inch (2022) | 128Gb 5G',
                 'price' => 23290000,
@@ -712,10 +770,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_pro_11_inch_m2_128gb_5g_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //19
                 'category_id' => 2,
                 'title' => 'Ipad Pro M2 11-inch (2022) | 128GB Wifi',
                 'price' => 19550000,
@@ -729,10 +788,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_pro_11_inch_m2_128gb_wifi_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //20
                 'category_id' => 2, 
                 'title' => 'Ipad Pro M2 11-inch (2022) | 1TB Wifi',
                 'price' => 38990000,
@@ -746,10 +806,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_pro_M2_11inch_2022_1TB_wifi.webp',//1
                 'deleted' => 0,
             ],
             [
+                //21
                 'category_id' => 2,
                 'title' => 'Ipad Pro M2 12.9-inch (2022) | 256GB Wifi',
                 'price' => 30990000,
@@ -763,11 +824,12 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/ipad/ipad_pro_m2_12_9_inch_256gb_wifi_didongviet.webp',//1
                 'deleted' => 0,
             ],
             //AirPods            
             [
+                //1
                 'category_id' => 5,
                 'title' => 'Tai nghe Apple AirPods 2 Chính Hãng (VN/A) (No Wireless Charge)',
                 'price' => 2590000,
@@ -781,10 +843,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 'hộp sạc 38.2g',
                 'size' => '16.5 x 18.0 x 40.5 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/Airpods/apple_airpods_2_2022_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //2
                 'category_id' => 5,
                 'title' => 'Tai nghe Apple AirPods Pro 2 2022 Chính Hãng',
                 'price' => 5690000,
@@ -798,10 +861,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => 'tai nghe 5.3g, hộp sạc 38.2g',
                 'size' => 'Dài 30.9 mm x Rộng 21.8 mm x Dày 24 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/Airpods/apple_airpods_pro_2_2022_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //3
                 'category_id' => 5,
                 'title' => 'Tai nghe Apple AirPods 3 2022 Lightning Chính Hãng',
                 'price' => 4190000,
@@ -815,11 +879,12 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '4.28 gram (mỗi tai nghe)',
                 'size' => '30.79 x 18.26 x 19.21 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/Airpods/apple_airpods_3_2022_didongviet.webp',//1
                 'deleted' => 0,
             ],
             //Watch
             [
+                //1
                 'category_id' => 4,
                 'title' => 'Apple Watch SE 2 (2022) 40mm (GPS) Viền nhôm - Dây cao su',
                 'price' => 5790000,
@@ -833,10 +898,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '26.4g',
                 'size' => '40 mm - 34 mm - 10.7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_SE_2_2022_40_mm_GPS_Viền_nhôm_Dây_cao_su.webp',//1
                 'deleted' => 0,
             ],
             [
+                //2
                 'category_id' => 4,
                 'title' => 'Apple Watch SE 2 (2022) 44mm (GPS) Viền nhôm - Dây cao su',
                 'price' => 6590000,
@@ -850,10 +916,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '33g',
                 'size' => '44 x 38 x 10.7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_SE_2_2022_44_mm_GPS_Viền_nhôm_Dây_cao_su.webp',//1
                 'deleted' => 0,
             ],
             [
+                //3
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 8 45mm (GPS) Dây cao su',
                 'price' => 9590000,
@@ -867,10 +934,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '38.8g',
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_8_45_mm_GPS_Dây_cao_su_didongviet_1.webp',//1
                 'deleted' => 0,
             ],
             [
+                //4
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 41mm (GPS) Viền nhôm - Dây cao su size M/L',
                 'price' => 10490000,
@@ -883,10 +951,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '41 x 35 x 10,7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_41_mm_GPS_Viền_nhôm_Dây_cao_su_size_M_L_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //5
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 41mm (GPS) Viền nhôm - Dây cao su size S/M',
                 'price' => 10490000,
@@ -900,10 +969,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '41 x 35 x 10,7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_41_mm_GPS_Viền_nhôm_Dây_cao_su_size_S_M_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //6
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 41mm (LTE) Viền thép không gỉ - Dây cao su size M/L',
                 'price' => 18990000,
@@ -917,10 +987,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '41 x 35 x 10,7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_41_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_M_L_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //7
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 41mm (LTE) Viền thép không gỉ - Dây cao su size S/M',
                 'price' => 18990000,
@@ -933,10 +1004,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '41 x 35 x 10,7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_41_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_S_M_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //8
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 41mm (GPS) Viền nhôm - Dây quấn thể thao',
                 'price' => 10490000,
@@ -949,10 +1021,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_41mm_GPS_Viền_nhôm_Dây_quấn_thể_thao_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //9
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 45mm (GPS) Viền nhôm - Dây cao su size S/M',
                 'price' => 11290000,
@@ -965,10 +1038,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_45_mm_GPS_Viền_nhôm_Dây_cao_su_size_S_M_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //10
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 45mm (LTE) Viền nhôm - Dây cao su size M/L',
                 'price' => 13890000,
@@ -981,10 +1055,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_cao_su_size_M_L_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //11
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 45mm (LTE) Viền nhôm - Dây cao su size S/M',
                 'price' => 13890000,
@@ -997,10 +1072,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_S_M_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //12
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 45mm (LTE) Viền nhôm - Dây quấn thể thao',
                 'price' => 13890000,
@@ -1013,10 +1089,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_45_mm_LTE_Viền_nhôm_Dây_quấn_thể_thao_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //13
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 45mm (LTE) Viền thép không gỉ - Dây cao su size S/M',
                 'price' => 20290000,
@@ -1029,10 +1106,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '38.8 gram',
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_cao_su_size_S_M_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //14
                 'category_id' => 4,
                 'title' => 'Apple Watch Series 9 45mm (LTE) Viền thép không gỉ - Dây Milanese',
                 'price' => 20290000,
@@ -1045,10 +1123,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => '38.8 gram',
                 'size' => '45 x 38 x 10,7 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Series_9_45_mm_LTE_Viền_thép_không_gỉ_Dây_Milanese_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //15
                 'category_id' => 4,
                 'title' => 'Apple Watch Ultra 2 49mm (LTE) Viền Titan - Dây Alpine Loop size L',
                 'price' => 21990000,
@@ -1061,10 +1140,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '49 x 44 x 14.4 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_L_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //17
                 'category_id' => 4,
                 'title' => 'Apple Watch Ultra 2 49mm (LTE) Viền Titan - Dây Alpine Loop size S',
                 'price' => 21990000,
@@ -1077,10 +1157,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '49 x 44 x 14.4 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Alpine_Loop_size_S_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //18
                 'category_id' => 4,
                 'title' => 'Apple Watch Ultra 2 49mm (LTE) Viền Titan - Dây Trail Loop size M/L',
                 'price' => 21990000,
@@ -1093,10 +1174,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '49 x 44 x 14.4 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_M_L_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //19
                 'category_id' => 4,
                 'title' => 'Apple Watch Ultra 2 49mm (LTE) Viền Titan - Dây Trail Loop size S/M',
                 'price' => 21990000,
@@ -1109,10 +1191,11 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => null,
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000/img/watch/Apple_Watch_Ultra_2_49_mm_LTE_Viền_Titan_Dây_Trail_Loop_size_S_M_didongviet.webp',//1
                 'deleted' => 0,
             ],
             [
+                //20
                 'category_id' => 4,
                 'title' => 'Apple Watch Ultra 2 49mm (LTE) Viền Titan - Dây Ocean',
                 'price' => 21990000,
@@ -1125,7 +1208,7 @@ class ProductsTableSeeder extends Seeder
                 'weight' => null,
                 'size' => '49 x 44 x 14.4 mm',
                 'capacities' => null,
-                'thumbnail' => 'http://127.0.0.1:8000/img/mac/macbook_air_m1_8gb_256gb_didongviet.webp',
+                'thumbnail' => 'http://127.0.0.1:8000//img/watch/Apple_Watch_Ultra2_49_mm_LTE_Viền_Titan_Dây_Ocean_didongviet.webp',//1
                 'deleted' => 0,
             ],
         ];

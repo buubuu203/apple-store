@@ -728,6 +728,11 @@ class ProductColorsTableSeeder extends Seeder
                 'quantity' => 33,
             ],
             //product_id = 37 //13
+            [
+                'product_id' => 37,
+                'name' => 'Trắng',
+                'quantity' => 15,
+            ],
             //product_id = 38 //14
             [
                 'product_id' => 38,
@@ -898,6 +903,144 @@ class ProductColorsTableSeeder extends Seeder
             ],
             //Airpod
             //product_id = 46 //1
+            [
+                'product_id' => 46,
+                'name' => 'Trắng',
+                'quantity' => 19
+            ],
+            //product_id = 47 //2
+            [
+                'product_id' => 47,
+                'name' => 'Trắng',
+                'quantity' => 23
+            ],
+            //product_id = 48 //3
+            [
+                'product_id' => 48,
+                'name' => 'Trắng',
+                'quantity' => 30
+            ],
+            //Watch
+            //product_id = 49 //1
+            [
+                'product_id' => 49,
+                'name' => 'Trắng',
+                'quantity' => 25
+            ],
+            //product_id = 50 //2
+            [
+                'product_id' => 50,
+                'name' => 'Trắng',
+                'quantity' => 19
+            ],
+            //product_id = 51 //3
+            [
+                'product_id' => 51,
+                'name' => 'Trắng',
+                'quantity' => 29
+            ],
+            //product_id = 52 //4
+            [
+                'product_id' => 52,
+                'name' => 'Trắng',
+                'quantity' => 27
+            ],
+            //product_id = 53 //5
+            [
+                'product_id' => 53,
+                'name' => 'Trắng',
+                'quantity' => 19
+            ],
+            //product_id = 54 //6
+            [
+                'product_id' => 54,
+                'name' => 'Trắng',
+                'quantity' => 25
+            ],
+            //product_id = 55 //7
+            [
+                'product_id' => 55,
+                'name' => 'Trắng',
+                'quantity' => 19
+            ],
+            //product_id = 56 //8
+            [
+                'product_id' => 56,
+                'name' => 'Trắng',
+                'quantity' => 29
+            ],
+            //product_id = 57 //9
+            [
+                'product_id' => 57,
+                'name' => 'Trắng',
+                'quantity' => 27
+            ],
+            //product_id = 58 //10
+            [
+                'product_id' => 58,
+                'name' => 'Trắng',
+                'quantity' => 19
+            ],
+            //product_id = 59 //11
+            [
+                'product_id' => 59,
+                'name' => 'Trắng',
+                'quantity' => 25
+            ],
+            //product_id = 60 //12
+            [
+                'product_id' => 60,
+                'name' => 'Trắng',
+                'quantity' => 19
+            ],
+            //product_id = 61 //13
+            [
+                'product_id' => 61,
+                'name' => 'Trắng',
+                'quantity' => 29
+            ],
+            //product_id = 62 //14
+            [
+                'product_id' => 62,
+                'name' => 'Trắng',
+                'quantity' => 27
+            ],
+            //product_id = 63 //15
+            [
+                'product_id' => 63,
+                'name' => 'Trắng',
+                'quantity' => 19
+            ],
+            // //product_id = 64 //16
+            // [
+            //     'product_id' => 64,
+            //     'name' => 'Trắng',
+            //     'quantity' => 25
+            // ],
+            //product_id = 65 //17
+            [
+                'product_id' => 65,
+                'name' => 'Trắng',
+                'quantity' => 19
+            ],
+            //product_id = 66 //18
+            [
+                'product_id' => 51,
+                'name' => 'Trắng',
+                'quantity' => 29
+            ],
+            //product_id = 67 //19
+            [
+                'product_id' => 52,
+                'name' => 'Trắng',
+                'quantity' => 27
+            ],
+            //product_id = 68 //20
+            [
+                'product_id' => 68,
+                'name' => 'Trắng',
+                'quantity' => 19
+            ],
 
         ];
         foreach ($colors as $color) {
