@@ -30,3 +30,9 @@ Route::post('/users/register', [UserController::class, 'register']);
 Route::post('/users/login', [UserController::class, 'login']);
 // orders
 Route::post('/order/create', [OrdersController::class, 'createOrders']);
+//product
+Route::put('/update/product/{id}', [ProductController::class, 'updateProduct']);
+Route::delete('/delete/product/{id}', [ProductController::class, 'deleteProductById']);
+Route::post('/create/product', [ProductController::class, 'createProduct']);
+//category
+Route::post('/create/category', [CategoryController::class, 'createCategory']);

@@ -74,7 +74,60 @@ class ProductController extends Controller
     {
         //
     }
+    public function updateProduct(Request $request, $id)
+    {
+        // Validate incoming request data
+        $validatedData = $request->validate([
+            'category_id' => 'required',
+            'title' => 'required',
+            'price' => 'required',
+            'discount' => 'nullable',
+            'description' => 'nullable',
+            'cpu' => 'nullable',
+            'ram' => 'nullable',
+            'resolution' => 'nullable',
+            'display' => 'nullable',
+            'batterylife' => 'nullable',
+            'weight' => 'nullable',
+            'size' => 'nullable',
+            'capacities' => 'nullable',
+            'thumbnail' => 'nullable',
+            'deleted' => 'required',
+        ]);
 
+        // Find the product by ID
+        $product = Product::findOrFail($id);
+
+        // Update the product with the validated data
+        $product->update($validatedData);
+
+        // Return a JSON response with the status
+        return response()->json(['status' => 'success', 'message' => 'Product updated successfully']);
+    }
+
+
+    public function deleteProductById($id)
+    {
+        try {
+            $product = Product::findOrFail($id);
+            $product->delete();
+
+            return response()->json(['message' => 'Product deleted successfully']);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Failed to delete product', 'error' => $e->getMessage()], 500);
+        }
+    }
+
+    public function createProduct(Request $request)
+    {
+        try {
+            $product = Product::create($request->all());
+
+            return response()->json(['message' => 'Product created successfully', 'data' => $product]);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Failed to create product', 'error' => $e->getMessage()], 500);
+        }
+    }
     /**
      * Update the specified resource in storage.
      *
