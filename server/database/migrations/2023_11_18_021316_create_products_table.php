@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->integer('category_id');
             $table->string('title');
             $table->integer('price');
-            $table->integer('discount')->nullable();
+            $table->integer('historyCost')->nullable();
             $table->longText('description')->nullable();
             $table->string('cpu')->nullable();
             $table->integer('ram')->nullable();
