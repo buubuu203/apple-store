@@ -50,7 +50,27 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validate the incoming request data
+        $request->validate([
+            'category_id' => 'required|exists:categories,id',
+            'title' => 'required|string',
+            'price' => 'required|numeric',
+            'discount' => 'nullable|numeric',
+            'colors' => 'required|array',
+        ]);
+
+        // Create the product
+        $product = Product::create($request->except('colors'));
+
+        // Add colors to the product with quantity
+        foreach ($request->input('colors') as $color) {
+            $product->product_colors()->create([
+                'name' => $color['name'],
+                'quantity' => $color['quantity'],
+            ]);
+        }
+
+        return response()->json(['message' => 'Product created successfully'], 201);
     }
 
     /**
