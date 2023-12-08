@@ -101,7 +101,7 @@ class ProductController extends Controller
             'category_id' => 'required',
             'title' => 'required',
             'price' => 'required',
-            'discount' => 'nullable',
+            'historyCost' => 'nullable',
             'description' => 'nullable',
             'cpu' => 'nullable',
             'ram' => 'nullable',
