@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\ProductColors;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -31,14 +32,21 @@ class ProductController extends Controller
     public function getProductsByCatID($id)
     {
 
-        $products = DB::table('products')->where('category_id', $id)->get();
-        return response()->json($products);
+        try {
+
+            $products = DB::table('products')->where('category_id', $id)->get();
+
+            return response()->json($products);
+        } catch (\Exception $e) {
+
+            return $e->getMessage();
+        }
     }
 
     public function getProductByID($id)
     {
 
-        $products = Product::with('product_colors', 'product_colors.colorDetails')->find($id);
+        $products = Product::with('product_colors')->find($id);
         return response()->json($products);
     }
 
@@ -101,11 +109,23 @@ class ProductController extends Controller
         // Update the product with the validated data
         $product->update($validatedData);
 
+        $productColors = $request->input('product_colors', []); // Assuming product_colors is an array in the request
+
+        // Loop through each product color and update or create as needed
+        foreach ($productColors as $color) {
+            $productColor = ProductColors::updateOrCreate(
+                ['id' => $color['id']], // assuming each product color has an 'id' field
+                [
+                    'name' => $color['name'],
+                    'hex_code' => $color['hex_code'],
+                    'quantity' => $color['quantity'],
+                ]
+            );
+        }
+
         // Return a JSON response with the status
         return response()->json(['status' => 'success', 'message' => 'Product updated successfully']);
     }
-
-
     public function deleteProductById($id)
     {
         try {
@@ -121,7 +141,39 @@ class ProductController extends Controller
     public function createProduct(Request $request)
     {
         try {
-            $product = Product::create($request->all());
+            // Validate incoming request data
+            $validatedData = $request->validate([
+                'category_id' => 'required',
+                'historyCost' => 'nullable',
+                'description' => 'nullable',
+                'cpu' => 'nullable',
+                'ram' => 'nullable',
+                'resolution' => 'nullable',
+                'display' => 'nullable',
+                'batterylife' => 'nullable',
+                'weight' => 'nullable',
+                'size' => 'nullable',
+                'capacities' => 'nullable',
+                'title' => 'required',
+                'price' => 'required',
+                'thumbnail' => 'nullable',
+                'deleted' => 'required',
+                'product_colors.*.name' => 'required',
+                'product_colors.*.hex_code' => 'required',
+                'product_colors.*.quantity' => 'required|integer|min:0',
+            ]);
+
+            // Create the product
+            $product = Product::create($validatedData);
+
+            // Create associated product colors
+            $productColors = $request->input('product_colors', []);
+
+            foreach ($productColors as $colorData) {
+                $productColor = new ProductColors($colorData);
+                // Associate the product color with the product
+                $product->product_colors()->save($productColor);
+            }
 
             return response()->json(['message' => 'Product created successfully', 'data' => $product]);
         } catch (\Exception $e) {

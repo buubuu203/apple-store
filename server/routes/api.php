@@ -36,3 +36,11 @@ Route::delete('/delete/product/{id}', [ProductController::class, 'deleteProductB
 Route::post('/create/product', [ProductController::class, 'createProduct']);
 //category
 Route::post('/create/category', [CategoryController::class, 'createCategory']);
+
+//Users
+Route::post('/create/users', [UserController::class, 'createUser']);
+Route::get('/users', [UserController::class, 'getAllUsers']);
+Route::get('/users/{id}', [UserController::class, 'getUserById']);
+Route::put('/update/users/{id}', [UserController::class, 'updateUser']);
+Route::delete('/delete/users/{id}', [UserController::class, 'deleteUser']);
+Route::post('/login', [UserController::class, 'login']);

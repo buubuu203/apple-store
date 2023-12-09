@@ -3,78 +3,86 @@ import { Link, useNavigate } from "react-router-dom";
 import { giaohangnhanh, giaohangtietkiem } from "../assets/img";
 import Button from "../components/Button";
 import { createOrders } from "../api/orders";
+import { Controller, useForm } from "react-hook-form";
+import toast, { Toaster } from "react-hot-toast";
+const Provinces = [
+  "An Giang",
+  "Bà Rịa - Vũng Tàu",
+  "Bạc Liêu",
+  "Bắc Kạn",
+  "Bắc Giang",
+  "Bắc Ninh",
+  "Bến Tre",
+  "Bình Dương",
+  "Bình Định",
+  "Bình Phước",
+  "Bình Thuận",
+  "Cà Mau",
+  "Cao Bằng",
+  "Cần Thơ",
+  "Đà Nẵng",
+  "Đắk Lắk",
+  "Đắk Nông",
+  "Điện Biên",
+  "Đồng Nai",
+  "Đồng Tháp",
+  "Gia Lai",
+  "Hà Giang",
+  "Hà Nam",
+  "Hà Nội",
+  "Hà Tây",
+  "Hà Tĩnh",
+  "Hải Dương",
+  "Hải Phòng",
+  "Hòa Bình",
+  "Hồ Chí Minh",
+  "Hậu Giang",
+  "Hưng Yên",
+  "Khánh Hòa",
+  "Kiên Giang",
+  "Kon Tum",
+  "Lai Châu",
+  "Lào Cai",
+  "Lạng Sơn",
+  "Lâm Đồng",
+  "Long An",
+  "Nam Định",
+  "Nghệ An",
+  "Ninh Bình",
+  "Ninh Thuận",
+  "Phú Thọ",
+  "Phú Yên",
+  "Quảng Bình",
+  "Quảng Nam",
+  "Quảng Ngãi",
+  "Quảng Ninh",
+  "Quảng Trị",
+  "Sóc Trăng",
+  "Sơn La",
+  "Tây Ninh",
+  "Thái Bình",
+  "Thái Nguyên",
+  "Thanh Hóa",
+  "Thừa Thiên – Huế",
+  "Tiền Giang",
+  "Trà Vinh",
+  "Tuyên Quang",
+  "Vĩnh Long",
+  "Vĩnh Phúc",
+  "Yên Bái",
+];
 
 const CheckOut = () => {
   const navigate = useNavigate();
   const [products, setProducts] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+  const form = useForm({
+    defaultValues: {
+      email: "",
+      phone_number: "",
+    },
+  });
 
-  const Provinces = [
-    "An Giang",
-    "Bà Rịa - Vũng Tàu",
-    "Bạc Liêu",
-    "Bắc Kạn",
-    "Bắc Giang",
-    "Bắc Ninh",
-    "Bến Tre",
-    "Bình Dương",
-    "Bình Định",
-    "Bình Phước",
-    "Bình Thuận",
-    "Cà Mau",
-    "Cao Bằng",
-    "Cần Thơ",
-    "Đà Nẵng",
-    "Đắk Lắk",
-    "Đắk Nông",
-    "Điện Biên",
-    "Đồng Nai",
-    "Đồng Tháp",
-    "Gia Lai",
-    "Hà Giang",
-    "Hà Nam",
-    "Hà Nội",
-    "Hà Tây",
-    "Hà Tĩnh",
-    "Hải Dương",
-    "Hải Phòng",
-    "Hòa Bình",
-    "Hồ Chí Minh",
-    "Hậu Giang",
-    "Hưng Yên",
-    "Khánh Hòa",
-    "Kiên Giang",
-    "Kon Tum",
-    "Lai Châu",
-    "Lào Cai",
-    "Lạng Sơn",
-    "Lâm Đồng",
-    "Long An",
-    "Nam Định",
-    "Nghệ An",
-    "Ninh Bình",
-    "Ninh Thuận",
-    "Phú Thọ",
-    "Phú Yên",
-    "Quảng Bình",
-    "Quảng Nam",
-    "Quảng Ngãi",
-    "Quảng Ninh",
-    "Quảng Trị",
-    "Sóc Trăng",
-    "Sơn La",
-    "Tây Ninh",
-    "Thái Bình",
-    "Thái Nguyên",
-    "Thanh Hóa",
-    "Thừa Thiên – Huế",
-    "Tiền Giang",
-    "Trà Vinh",
-    "Tuyên Quang",
-    "Vĩnh Long",
-    "Vĩnh Phúc",
-    "Yên Bái",
-  ];
   const resetCart = () => {
     // window.localStorage.removeItem('cart')
     // navigate('/')
@@ -90,7 +98,7 @@ const CheckOut = () => {
 
     const orders = products.map((product) => {
       return {
-        user_id: 1,
+        user_id: form.getValues("user_id"),
         note: "This is a new order",
         order_date: formattedDate,
         status: 1,
@@ -106,11 +114,12 @@ const CheckOut = () => {
         const result = window.confirm("Are you sure you want to proceed?");
         if (result) {
           window.localStorage.removeItem("cart");
+          toast.success("Đặt hàng thành công");
           navigate("/");
         }
       })
       .catch(() => {
-        alert("Lỗi đặt hàng");
+        toast.error("Lỗi đặt hàng");
       });
     console.log(orders);
   };
@@ -127,13 +136,25 @@ const CheckOut = () => {
     setProducts(cart);
   }, []);
 
+  useEffect(() => {
+    const userJson = window.localStorage.getItem("_user");
+    const _user = JSON.parse(userJson);
+    const formUser = {
+      user_id: _user.id,
+      email: _user.email,
+      fullname: _user.fullname,
+    };
+    form.reset(formUser);
+  }, [form]);
+
   return (
     <div>
       <div class="font-SFPro flex flex-col items-center border-b bg-white py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32">
-        <Link href="/" class="text-2xl font-bold text-black">
+        <Link to="/" class="text-2xl font-bold text-black">
           Apple Store
         </Link>
       </div>
+      <Toaster />
       <div class="font-SFPro grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32">
         <div class="px-4 pt-8">
           {/* TODO: backend link giua shopping cart va payment */}
@@ -152,12 +173,15 @@ const CheckOut = () => {
                     alt={product?.name}
                   />
                   <div class="flex w-full flex-col px-4 py-4">
-                    <span class="font-semibold">{product?.name}</span>
+                    <span class="font-semibold">{product?.title}</span>
                     {/* ten bien the - color; gb (backend) */}
-                    <span class="float-right text-gray-dark">
-                      {product?.RAM}
+                    <span class="float-right font-bold text-gray-dark">
+                      Ram: {product?.ram} GB
                     </span>
-                    <p class="text-lg font-bold">{product?.price}</p>
+                    <p class="text-sm font-bold">
+                      {" "}
+                      Giá {(+product?.price).toLocaleString()} VND
+                    </p>
                   </div>
                 </div>
               );
@@ -227,12 +251,20 @@ const CheckOut = () => {
               Email
             </label>
             <div class="relative">
-              <input
-                type="text"
-                id="email"
+              <Controller
                 name="email"
-                class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
-                placeholder="your.email@gmail.com"
+                defaultValue=""
+                control={form.control}
+                render={({ field }) => {
+                  return (
+                    <input
+                      type="text"
+                      {...field}
+                      class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                      placeholder="your.email@gmail.com"
+                    />
+                  );
+                }}
               />
               <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                 <svg
@@ -255,15 +287,23 @@ const CheckOut = () => {
               for="card-holder"
               class="mt-4 mb-2 block text-sm font-medium"
             >
-              Chủ thẻ
+              Họ và tên
             </label>
             <div class="relative">
-              <input
-                type="text"
-                id="card-holder"
-                name="card-holder"
-                class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm uppercase shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
-                placeholder="Your full name here"
+              <Controller
+                name="fullname"
+                defaultValue=""
+                control={form.control}
+                render={({ field }) => {
+                  return (
+                    <input
+                      type="text"
+                      {...field}
+                      class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm uppercase shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                      placeholder="Your full name here"
+                    />
+                  );
+                }}
               />
               <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                 <svg

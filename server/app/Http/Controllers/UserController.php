@@ -23,50 +23,30 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
-
-    function register(Request $req)
-    {
-        $req->validate([
-            'fullname' => 'required|string',
-            'email' => 'required|email|unique:users',
-            'phone_number' => 'required|string|unique:users',
-            'password' => 'required|string|min:6',
-        ]);
-
-        $user = new User();
-        $user->fullname = $req->input('fullname');
-        $user->email = $req->input('email');
-        $user->phone_number = $req->input('phone_number');
-        $user->password = Hash::make($req->input('password'));
-        $user->role_id = 1; //Gán role_id là 1 cho người dùng
-        $user->deleted = 0; //Gán delete là 0, khởi tạo người dùng
-        $user->save();
-
-        return response()->json(['message' => 'Người dùng đã đăng ký thành công']);
-    }
 
     function login(Request $req)
     {
         $req->validate([
             'email' => 'required|email',
-            'password' => 'required',
+            'password' => 'required|string|min:6',
         ]);
 
         $user = User::where('email', $req->input('email'))->first();
+
         if ($user) {
             if (Hash::check($req->input('password'), $user->password)) {
-                return response()->json(['message' => 'Đăng nhập thành công']);
+                // Exclude the 'password' field from the response
+                $userData = $user->makeHidden('password');
+
+                return response()->json(['message' => 'Đăng nhập thành công', 'user' => $userData], 200);
             } else {
-                return response()->json(['message' => 'Mật khẩu không đúng']);
+                return response()->json(['message' => 'Mật khẩu không đúng'], 401);
             }
         } else {
-            return response()->json(['message' => 'Email không đúng']);
+            return response()->json(['message' => 'Email không đúng'], 401);
         }
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -74,10 +54,6 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
 
     /**
      * Display the specified resource.
@@ -108,11 +84,42 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function updateUser(Request $request, $id)
     {
-        //
-    }
+        $validatedData = $request->validate([
+            'fullname' => 'required|string',
+            'email' => 'required|email|unique:users,email,' . $id,
+            'phone_number' => 'required|string|unique:users,phone_number,' . $id,
+            'password' => 'nullable|string|min:6', // Password is optional for updates
+        ]);
 
+        // Find the user by ID
+        $user = User::findOrFail($id);
+
+        // Update the user with the validated data
+        $user->fill($validatedData);
+
+        // Hash the password if present
+        if ($request->filled('password')) {
+            $user->password = Hash::make($request->input('password'));
+        }
+
+        // Save the updated user
+        $user->save();
+
+        return response()->json(['message' => 'User updated successfully', 'data' => $user]);
+    }
+    public function getAllUsers()
+    {
+        try {
+            // Retrieve all users
+            $users = User::all();
+
+            return response()->json(['message' => 'Users retrieved successfully', 'data' => $users]);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Failed to retrieve users', 'error' => $e->getMessage()], 500);
+        }
+    }
     /**
      * Remove the specified resource from storage.
      *
@@ -122,5 +129,57 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function deleteUser($id)
+    {
+        try {
+            // Find the user by ID
+            $user = User::findOrFail($id);
+
+            // Delete the user
+            $user->delete();
+
+            return response()->json(['message' => 'User deleted successfully']);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Failed to delete user', 'error' => $e->getMessage()], 500);
+        }
+    }
+    public function createUser(Request $request)
+    {
+        $request->validate([
+            'fullname' => 'required|string',
+            'email' => 'required|email|unique:users,email',
+            'phone_number' => 'required|string|unique:users,phone_number',
+            'password' => 'required|string|min:6',
+        ]);
+
+        // Hash the password before creating the user
+        $hashedPassword = Hash::make($request->input('password'));
+
+        // Create the user with the hashed password
+        $user = User::create([
+            'fullname' => $request->input('fullname'),
+            'email' => $request->input('email'),
+            'phone_number' => $request->input('phone_number'),
+            'role_id' => $request->input('role_id'),
+            'password' => $hashedPassword,
+            'deleted' => 0,
+
+            // Add other fields as needed
+        ]);
+
+        return response()->json(['message' => 'User created successfully', 'data' => $user]);
+    }
+
+    public function getUserById($id)
+    {
+        try {
+            // Find the user by ID
+            $user = User::findOrFail($id);
+
+            return response()->json(['message' => 'User retrieved successfully', 'data' => $user]);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Failed to retrieve user', 'error' => $e->getMessage()], 404);
+        }
     }
 }

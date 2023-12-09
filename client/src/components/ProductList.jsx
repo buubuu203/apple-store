@@ -6,7 +6,6 @@ import {  useParams } from 'react-router-dom'
 import {getAllProductByCategoryId} from '../api/products'
 // import { Macbook } from '../constants';
 
-// FIXME: Sort theo gia'
 const ProductList = (props) => {
     const { id } = useParams();
     const [page, setPage] = useState(1);
